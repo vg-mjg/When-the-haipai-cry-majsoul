@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 282: end of line expected.
+    show nana at left 1
+                      ^
+
+Ren'Py Version: Ren'Py 7.3.5.606
+Mon Jun 29 21:35:07 2020

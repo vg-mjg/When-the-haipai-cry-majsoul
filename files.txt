@@ -1,0 +1,200 @@
+gui.rpy
+gui.rpyc
+images.rpy
+images.rpyc
+options.rpy
+options.rpyc
+screens.rpy
+screens.rpyc
+script.rpy
+script.rpyc
+transforms.rpy
+transforms.rpyc
+cache/bytecode.rpyb
+cache/pyanalysis.rpyb
+cache/screens.rpyb
+gui/frame.png
+gui/game_menu.png
+gui/main_menu.png
+gui/namebox.png
+gui/notify.png
+gui/nvl.png
+gui/skip.png
+gui/textbox.png
+gui/window_icon.png
+gui/bar/bottom.png
+gui/bar/left.png
+gui/bar/right.png
+gui/bar/top.png
+gui/button/check_foreground.png
+gui/button/check_selected_foreground.png
+gui/button/choice_hover_background.png
+gui/button/choice_idle_background.png
+gui/button/hover_background.png
+gui/button/idle_background.png
+gui/button/quick_hover_background.png
+gui/button/quick_idle_background.png
+gui/button/radio_foreground.png
+gui/button/radio_selected_foreground.png
+gui/button/slot_hover_background.png
+gui/button/slot_idle_background.png
+gui/overlay/confirm.png
+gui/overlay/game_menu.png
+gui/overlay/main_menu.png
+gui/phone/nvl.png
+gui/phone/textbox.png
+gui/phone/bar/bottom.png
+gui/phone/bar/left.png
+gui/phone/bar/right.png
+gui/phone/bar/top.png
+gui/phone/button/check_foreground.png
+gui/phone/button/check_selected_foreground.png
+gui/phone/button/choice_hover_background.png
+gui/phone/button/choice_idle_background.png
+gui/phone/button/hover_background.png
+gui/phone/button/idle_background.png
+gui/phone/button/radio_foreground.png
+gui/phone/button/radio_selected_foreground.png
+gui/phone/button/slot_hover_background.png
+gui/phone/button/slot_idle_background.png
+gui/phone/overlay/game_menu.png
+gui/phone/overlay/main_menu.png
+gui/phone/scrollbar/horizontal_hover_bar.png
+gui/phone/scrollbar/horizontal_hover_thumb.png
+gui/phone/scrollbar/horizontal_idle_bar.png
+gui/phone/scrollbar/horizontal_idle_thumb.png
+gui/phone/scrollbar/vertical_hover_bar.png
+gui/phone/scrollbar/vertical_hover_thumb.png
+gui/phone/scrollbar/vertical_idle_bar.png
+gui/phone/scrollbar/vertical_idle_thumb.png
+gui/phone/slider/horizontal_hover_bar.png
+gui/phone/slider/horizontal_hover_thumb.png
+gui/phone/slider/horizontal_idle_bar.png
+gui/phone/slider/horizontal_idle_thumb.png
+gui/phone/slider/vertical_hover_bar.png
+gui/phone/slider/vertical_hover_thumb.png
+gui/phone/slider/vertical_idle_bar.png
+gui/phone/slider/vertical_idle_thumb.png
+gui/scrollbar/horizontal_hover_bar.png
+gui/scrollbar/horizontal_hover_thumb.png
+gui/scrollbar/horizontal_idle_bar.png
+gui/scrollbar/horizontal_idle_thumb.png
+gui/scrollbar/vertical_hover_bar.png
+gui/scrollbar/vertical_hover_thumb.png
+gui/scrollbar/vertical_idle_bar.png
+gui/scrollbar/vertical_idle_thumb.png
+gui/slider/horizontal_hover_bar.png
+gui/slider/horizontal_hover_thumb.png
+gui/slider/horizontal_idle_bar.png
+gui/slider/horizontal_idle_thumb.png
+gui/slider/vertical_hover_bar.png
+gui/slider/vertical_hover_thumb.png
+gui/slider/vertical_idle_bar.png
+gui/slider/vertical_idle_thumb.png
+images/.directory
+images/VN two electric boogaloo.zip
+images/bart.png
+images/bg jail.jpg
+images/bg parlor.jpg
+images/dhat.png
+images/dhatgrey.png
+images/mai.png
+images/osamu.png
+images/police.png
+images/policegrey.png
+images/zan.png
+images/zangrey.png
+images/VN two electric boogaloo/.directory
+images/VN two electric boogaloo/Backyard_garden.jpg
+images/VN two electric boogaloo/Badge.png
+images/VN two electric boogaloo/Batting_cage.jpg
+images/VN two electric boogaloo/Beach.jpg
+images/VN two electric boogaloo/Bogged.jpg
+images/VN two electric boogaloo/Bookshelf.jpg
+images/VN two electric boogaloo/Camping_store.jpg
+images/VN two electric boogaloo/Camping_store_outside.jpg
+images/VN two electric boogaloo/Classroom.jpg
+images/VN two electric boogaloo/Clubroom.jpg
+images/VN two electric boogaloo/Couch.jpg
+images/VN two electric boogaloo/Counselling_office.jpg
+images/VN two electric boogaloo/DDR.jpg
+images/VN two electric boogaloo/Forest.jpg
+images/VN two electric boogaloo/Forest_moon.jpg
+images/VN two electric boogaloo/Gamecentre.jpg
+images/VN two electric boogaloo/Gym.jpg
+images/VN two electric boogaloo/Hallway.jpg
+images/VN two electric boogaloo/Hinata.png
+images/VN two electric boogaloo/Hinata_grey.png
+images/VN two electric boogaloo/Hinata_house.jpg
+images/VN two electric boogaloo/Hinata_inside.jpg
+images/VN two electric boogaloo/Hinata_party.png
+images/VN two electric boogaloo/Hinata_party_grey.png
+images/VN two electric boogaloo/Hobby_shop.jpg
+images/VN two electric boogaloo/Ichihime.png
+images/VN two electric boogaloo/Ichihime_grey.png
+images/VN two electric boogaloo/Jail.jpg
+images/VN two electric boogaloo/Karaoke.jpg
+images/VN two electric boogaloo/Keiku.png
+images/VN two electric boogaloo/Keiku_bedroom.jpg
+images/VN two electric boogaloo/Keiku_bedroom_night.jpg
+images/VN two electric boogaloo/Keiku_bedroom_sunset.jpg
+images/VN two electric boogaloo/Keiku_bond.png
+images/VN two electric boogaloo/Keiku_bond_grey.png
+images/VN two electric boogaloo/Keiku_fencing.png
+images/VN two electric boogaloo/Keiku_fencing_grey.png
+images/VN two electric boogaloo/Keiku_grey.png
+images/VN two electric boogaloo/Keiku_party.png
+images/VN two electric boogaloo/Keiku_party_grey.png
+images/VN two electric boogaloo/Keiku_wasted.png
+images/VN two electric boogaloo/Keiku_wasted_grey.png
+images/VN two electric boogaloo/Library.jpg
+images/VN two electric boogaloo/Maccas.jpg
+images/VN two electric boogaloo/Menu.jpg
+images/VN two electric boogaloo/Nana.png
+images/VN two electric boogaloo/Nana_bond.png
+images/VN two electric boogaloo/Nana_bond_grey.png
+images/VN two electric boogaloo/Nana_fencing.png
+images/VN two electric boogaloo/Nana_fencing_grey.png
+images/VN two electric boogaloo/Nana_grey.png
+images/VN two electric boogaloo/Rec_centre.jpg
+images/VN two electric boogaloo/School_front.jpg
+images/VN two electric boogaloo/Seating.jpg
+images/VN two electric boogaloo/Skatepark.jpg
+images/VN two electric boogaloo/Tent.jpg
+images/VN two electric boogaloo/Tourney.jpg
+images/VN two electric boogaloo/Train.jpg
+images/VN two electric boogaloo/Waccas_table.jpg
+images/VN two electric boogaloo/Xenia's_house.jpg
+images/VN two electric boogaloo/Xenia's_house_night.jpg
+images/VN two electric boogaloo/Xenia.png
+images/VN two electric boogaloo/Xenia_bedroom.jpg
+images/VN two electric boogaloo/Xenia_grey.png
+images/VN two electric boogaloo/Xenia_livingroom.jpg
+images/VN two electric boogaloo/Xenia_party.png
+images/VN two electric boogaloo/Xenia_party_grey.png
+images/VN two electric boogaloo/Yui.png
+images/VN two electric boogaloo/Yui_bedroom.jpg
+images/VN two electric boogaloo/Yui_bedroom_night.jpg
+images/VN two electric boogaloo/Yui_grey.png
+images/VN two electric boogaloo/double_rii_tenhou.png
+images/VN two electric boogaloo/in this specific circumstance what action would you take to try to secure your victory.jpg
+images/VN two electric boogaloo/jansou.jpg
+images/VN two electric boogaloo/locker.jpg
+images/VN two electric boogaloo/locker_graffiti.jpg
+images/VN two electric boogaloo/msys03.ogg
+images/VN two electric boogaloo/msys04.ogg
+images/VN two electric boogaloo/msys08.ogg
+images/VN two electric boogaloo/school_garden.jpg
+images/VN two electric boogaloo/school_garden_sunset.jpg
+images/VN two electric boogaloo/what WOULD you do.png
+images/VN two electric boogaloo/what do.png
+images/VN two electric boogaloo/wwyd.png
+saves/_reload-2-LT1.save
+saves/auto-1-LT1.save
+saves/auto-2-LT1.save
+saves/auto-3-LT1.save
+saves/auto-4-LT1.save
+saves/navigation.json
+saves/persistent
+tl/None/common.rpym
+tl/None/common.rpymc

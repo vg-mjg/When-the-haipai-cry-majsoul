@@ -1,0 +1,36 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "renpy/common/00keymap.rpy", line 421, in script
+    python hide:
+  File "renpy/common/00keymap.rpy", line 421, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 440, in _execute_python_hide
+    renpy.save("_reload-1", "reload save game")
+AttributeError: 'NoneType' object has no attribute 'stores'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/common/00keymap.rpy", line 421, in script
+    python hide:
+  File "/home/cero/renpy-7.3.5-sdk/renpy/ast.py", line 914, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/home/cero/renpy-7.3.5-sdk/renpy/python.py", line 2028, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "renpy/common/00keymap.rpy", line 421, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 440, in _execute_python_hide
+    renpy.save("_reload-1", "reload save game")
+  File "/home/cero/renpy-7.3.5-sdk/renpy/loadsave.py", line 398, in save
+    roots = renpy.game.log.freeze(None)
+  File "/home/cero/renpy-7.3.5-sdk/renpy/python.py", line 1925, in freeze
+    self.complete(False)
+  File "/home/cero/renpy-7.3.5-sdk/renpy/python.py", line 1531, in complete
+    self.current.stores[name], self.current.delta_ebc[name] = sd.get_changes(begin)
+AttributeError: 'NoneType' object has no attribute 'stores'
+
+Linux-4.13.0-32-generic-x86_64-with-debian-stretch-sid
+Ren'Py 7.3.5.606
+ 
+Mon Jun 29 21:35:23 2020
