@@ -9,7 +9,7 @@ define who=Character("???")
 define y=Character("Yui")
 define n = Character("Nana")
 define h = Character("Hinata")
-
+define x = Character("Xenia")
 
 label start:
 
@@ -159,7 +159,7 @@ label classroom:
     k "(Ugh, why do they have to announce it over the speaker system like that? It’s so embarrassing.)"
 label counsellor:
     scene bg counsellor
-    show bart at left1
+    show hag at left1
     h1 "Keikumusume, please take a seat."
     show hat at right1
     k "Sure."
@@ -281,6 +281,243 @@ label game:
     show nana at left1
     n "Wow. Yikes!"
     k "Ehehe, next hand."
+#    {play tile shuffling sounds}
+    k "(Hmmmm... I can riichi here for a pair wait. But which wait should I pick?)"
+#    {present the following options: south wind, north wind. If North is picked, play the following dialogue.}
+    menu:
+        "North":
+            k "(I'll go with the pair wait on the north wind!)"
+            k "(...)"
+            k "(...)"
+            k "(Come on, come on...)"
+            k "(Ah, I just drew the south wind!)"
+            k "(Geez come on!)"
+        "South":
+            k "(I'll go with the pair wait on the south wind!)"
+            k "(...)"
+            k "(...)"
+            k "(Come on, come on...)"
+            k "(Ah! I just drew the north wind!)"
+            k "(Geez come on!)"
+
+    n "Ron! That's mangan, 12000 points!"
+#    {Cut music, play https://www.youtube.com/watch?v=szDKbPLq-to}
+    k "(Even though I came fourth, and even though I seriously embarrassed myself, that was pretty fun.)"
+    hide nana
+    show xenia at left1
+    x "Oh? Who's this new girl?"
+    n "Oh Xenia, you're back! Are you going to be able to make it to the tournament this weekend?"
+    hide hat
+    show nana at right1
+    x "I just barely managed to convince my parents to let me go. So long as I'm back home by 7 it'll be fine."
+    n "Great! Now this here is Keikumusume, she'll be our fifth player in the tournament."
+    hide xenia
+    show hat at left1
+    k "Wait, I'm your what now?"
+    n "Our fifth player. We're really lucky that you showed up when you did. This local tournament needs five people per team and we were one short until you came along."
+    n "We actually had a club member leave quite recently."
+    k "Well, I guess I could do it. Just don't expect too much from me."
+    hide nana
+    show yui at right1
+    y "Yep. I don't expect too much from you."
+    k "(Oof. Even though she's just repeating what I just said, that stings a little.)"
+    y "..."
+    hide hat
+    show hinata at left1
+    h "Yui, that's a little..."
+    hide hinata
+    show xenia at left1
+    x "Anyway, tell us about yourself, Keiku. Oh, can I call you that? Saying ‘Keikumusume’ every time is just a little long is all."
+    hide yui
+    show hat at right1
+    k "Oh yeah, that's fine."
+    k "Well, my hobbies include reading, writing, and I'm also technically a mahjong detective."
+    hide xenia
+    show hinata at left1
+    h "You work for the MCD? While in high school? That’s amazing."
+    k "Thanks. I've only actually solved one case though."
+    hide hinata
+    show nana at left1
+    n "Tell us about it! Is it really like how it is in all those television dramas about MCD officers? Do you have a catchphrase you shout when you send someone to the shadowrealm?"
+    k "Honestly it was pretty similar to what you'd see in a detective manga, or even a video game. As for the catchphrase, I guess it was something like..."
+#    {Play KAAAAN.wav}
+    k "KAAAAAAAAN!"
+#    {Play SORERONDE.wav}
+    k "SORE RON DE!"
+#    {Play YAKUMAN.wav}
+    k "YAKUMAN!"
+    k "Aaaah, honestly I actually feel sort of embarrassed shouting that out loud."
+    hide hat
+    show yui at right1
+    y "That sounded cool."
+    n "Yeah that was super cool!"
+    hide nana
+    show xenia at left1
+    x "Being a mahjong detective is a noble cause. There's nothing to be embarrassed about."
+    hide yui
+    show hat at right1
+    k "Ehehehe."
+    hide xenia
+    k "(I think I should ask them about themselves too. If I want to join this club, I should get to know them a little better.)"
+$ q1=False
+$ q2=False
+$ q3=False
+$ q4=False
+label first_choice:
+    scene bg clubroom
+    menu:
+        "Who should I talk to?"
+
+        "Hinata":
+            show hinata at left1
+            show hat at right1
+            k "What about you, Hinata, do you have any hobbies?"
+            h "Well, when I'm not playing mahjong, I enjoy gardening a lot."
+            h "I have a big garden at home. The plants are like my babies."
+            h "It's really satisfying watching them grow. It saves me a lot of money being able to use my own vegetables for cooking."
+            h "My favourite plants to grow are different varieties of berries. They’re somewhat delicate and they’re a lot of hard work, but the payoff is wonderful."
+            h "Right now I’m trying to grow some strawberries in the school’s garden."
+            h "You really do need to be careful around berries though. Often people eat them before they’re ripe and get sick."
+            h "A lot of people get sick foraging for wild berries and mushrooms."
+            h "Every year people die after misidentifying wild berries and mushrooms."
+            k "Um, I'll keep that in mind."
+            h "You should come around to my garden sometime. I'll let you borrow some of my herbs."
+            $ q1=True
+            jump first_choice
+
+        "Yui":
+            show yui at left1
+            show hat at right1
+            k "So Yui, do you have any sort of hobbies?"
+            y "Yes. I really like anime."
+            k "Ah well, I'm a big light novel fan, and a lot of anime adapt those, so I guess that sort of makes me an anime fan too. What sort of anime do you like?"
+            y "...Gundam"
+            k "Huh? I couldn't hear you."
+            y "I really like Gundam."
+            k "Sorry, I still didn't quite catch that."
+            y "Don't worry about it. It's nothing. I just like anime in general."
+            k "(Hmmmm. I think she's hiding something. But I don't think she means anything bad by it.)"
+            y "Well if you ever want to watch anime together I wouldn't mind."
+            $ q2=True
+            jump first_choice
+
+        "Nana":
+            show nana at left1
+            show hat at right1
+            k "So what are you into, Nana?"
+            n "Oh, I'm into sports."
+            k "Really? What kind of sports?"
+            n "Oh, you know. This and that. Rugby, wrestling, football, the American kind of football, tennis, golf, curling, birdman rallying, etc."
+            n "I think my favourite kind is skateboarding though."
+            n "I get a lot of offers to join sports clubs but it'd be a conflict of interest with my student council duties. I'd feel like I'd have to allocate more budget to whichever club I'm in."
+            n "That's actually why I joined the mahjong club. All you need is a mahjong set and a table and you're good to go."
+            k "Wow, that's a lot of different sports."
+            n "Right? But I think it's important to stay fit. You only get one body, so you need to take care of it."
+            n "Let me know if you ever want to do some sports with me, kay?"
+            $ q3=True
+            jump first_choice
+
+        "Xenia":
+            show xenia at left1
+            show hat at right1
+            k "Do you have any hobbies, Xenia?"
+            x "Not really. I don't actually have a lot of free time."
+            k "Really? Why?"
+            x "It's my family. They're ridiculously strict."
+            x "For example, when I get home tonight I must study until 7, have a piano lesson at 8, practice latin until 9, and then I have to be asleep by 9:30."
+            x "This club time is the only time I'm allowed to truly relax."
+            k "That sounds really tough."
+            x "Indeed. I suppose that's the drawback of living with parents that are as rich as mine."
+            k "They’re rich?"
+            x "Quite so. My father's expectations for me are simply too high. He's always like 'when I was your age, I was already pulling myself up by my bootstraps and blah blah blah.'"
+            x "Actually, you should come over sometime. He loves flaunting his wealth, so he's always very hospitable to guests."
+            x "It's also an easy way for me to escape all these annoying extracurricular lessons."
+            k "Hmmm, I'll definitely consider it."
+            k "(I am kind of curious what sort of rich people house she lives in.)"
+            $ q4=True
+            jump first_choice
+
+
+        "That's all I guess" if (q1&q2&q3&q4) == True :
+            jump next
+
+label next:
+    scene bg clubroom
+    "*ding dong* *ding dong*"
+    show hat at left1
+    k "Ah, the bell's ringing."
+    show nana at right1
+    n "Time to go then."
+    hide hat
+    show hinata at left1
+    h "Yep, I'll see you all next meeting."
+    hide nana
+    show yui at right1
+    y "Mhm."
+    hide hinata
+    show xenia at left1
+    x "Ah, is it really that time already?"
+    hide xenia
+    show nana at left1
+    n "Anyway, I look forward to seeing you at the next club meeting, Keiku."
+    n "We really were in a jam before you suddenly showed up."
+    n "I had no idea what to do about this weekend tournament, but then you just rushed in."
+    y "You were quite the deus ex machina."
+    hide nana
+    show hat at left1
+    k "Well, I'm glad to hear that, but my mahjong definitely isn't up to tournament level yet."
+    hide yui
+    show xenia at right1
+    x "Oh don't worry dear, we'll whip you into shape in no time..."
+    hide xenia
+    show hinata at right1
+    h "Oh, we should probably give Keiku our numbers, right?"
+    h "That way we can keep her in the loop."
+    k "O-oh, thank you!"
+    k "(The phone numbers of four girls in one day...)"
+    k "(If I was a guy I'd be over the moon right now.)"
+    #{Change bg scene, Keikus room at night. Stop music, play cricket sounds https://www.youtube.com/watch?v=Olfg9KK_bmE}
+    #    {add music here: some ambivalent contemplation music, like https://www.youtube.com/watch?v=-l1W6g7UYtY}
+    scene bg keikunight
+    show hat
+    k "(They seemed like a strange bunch.)"
+    k "(But I'm really happy that they accepted me so easily.)"
+    k "(I wish I knew earlier that making friends would have been as easy as just walking into a club room.)"
+    k "(I still feel sorta lonely. I still really miss Watson.)"
+    k "(But maybe with these people, things won't be so bad.)"
+    k "(. . .)"
+    k "( z z z )"
+    scene bg schoolfront
+    show hat
+    k "(Another boring day at school has gone by.)"
+    k "(I don't have any exams coming up.)"
+    k "(I don't feel like actually doing any of this homework either.)"
+    k "(. . .)"
+    k "(Maybe what that counsellor hag said was right. Maybe I really should try making some friends.)"
+    k "(I could try calling someone from the club and asking them to hang out.)"
+    k "(But what if that's too imposing? I only just met them yesterday. I don't want to just barge in on them.)"
+    k "(But then again, you don't make friends by not talking to anyone.)"
+    k "(They all made offers too. So it should be fine, right?)"
+    k "(Which one should I text though.)"
+    k "(Somehow this feels like a big decision. It really shouldn't be. I'm just asking someone to hang out.)"
+    k "(But for some reason it feels like this is going to be some sort of major turning point for me.)"
+    menu:
+        "Who should I ask?"
+
+        "Yui":
+            "faggot"
+
+        "Nana":
+            "good taste"
+
+        "Xenia":
+            "perfect taste"
+
+        "Hinata":
+            "that's art-chan for (You)"
+        
+
+
 
 
 

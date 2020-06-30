@@ -31,6 +31,12 @@ image nana =  ConditionSwitch(
 image hinata =  ConditionSwitch(
             "_last_say_who == 'h'", "hinata.png",
             "not _last_say_who == 'h'", "hinatagrey.png")
+image hag =  ConditionSwitch(
+            "_last_say_who == 'h1'", "hag.png",
+            "not _last_say_who == 'h1'", "haggrey.png")
+image xenia =  ConditionSwitch(
+            "_last_say_who == 'x'", "xenia.png",
+            "not _last_say_who == 'x'", "xeniagrey.png")
 
 image mai=Image("mai.png")
 image bart=Image("bart.png")
