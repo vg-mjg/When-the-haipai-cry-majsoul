@@ -505,19 +505,19 @@ label next:
         "Who should I ask?"
 
         "Yui":
-            "faggot"
+            jump yui_date1
 
         "Nana":
-            "good taste"
+            jump nana_date1
 
         "Xenia":
-            "perfect taste"
+            jump xenia_date1
 
         "Hinata":
-            "that's art-chan for (You)"
-        
+            jump hinata_date1
 
-
+label post_date1:
+    "I hope you saved before the choice fag"
 
 
 

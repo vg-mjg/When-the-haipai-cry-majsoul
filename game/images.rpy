@@ -38,6 +38,19 @@ image xenia =  ConditionSwitch(
             "_last_say_who == 'x'", "xenia.png",
             "not _last_say_who == 'x'", "xeniagrey.png")
 
+image hatfence =  ConditionSwitch(
+            "_last_say_who == 'k'", "hatfence.png",
+            "not _last_say_who == 'k'", "hatfencegrey.png")
+image hatbondwast =  ConditionSwitch(
+            "_last_say_who == 'k'", "hatbondwast.png",
+            "not _last_say_who == 'k'", "hatbondwastgrey.png")
+
+image nanafence =  ConditionSwitch(
+            "_last_say_who == 'n'", "nanafence.png",
+            "not _last_say_who == 'n'", "nanafencegrey.png")
+
+
+
 image mai=Image("mai.png")
 image bart=Image("bart.png")
 image osamu=Image("osamu.png")

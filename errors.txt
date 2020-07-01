@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 507: choice menuitem expects a non-empty block.
-    "Yui":
-          ^
+File "game/hinata.rpy", line 4: expected statement.
+    k: "(I think I’ll text Hinata. She seemed like a nice person.)"
+     ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Tue Jun 30 20:49:30 2020
+Wed Jul  1 11:14:13 2020
