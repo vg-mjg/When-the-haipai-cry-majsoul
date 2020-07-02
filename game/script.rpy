@@ -505,20 +505,318 @@ label next:
         "Who should I ask?"
 
         "Yui":
+            $ girl="Yui"
             jump yui_date1
 
         "Nana":
+            $ girl="Nana"
             jump nana_date1
 
         "Xenia":
+            $ girl="Xenia"
             jump xenia_date1
 
         "Hinata":
+            $ girl="Hinata"
             jump hinata_date1
 
 label post_date1:
-    "I hope you saved before the choice fag"
+    scene bg keiku
+    "*Kikikanri!* *Kikikanri!*"
+    show hat
+    k "Ugh, be quiet you useless alarm..."
+    k "*Yawwwwwn*"
+    k "(It’s that time already huh?)"
+    scene bg schoolfront
+    "...."
+    scene bg classroom
+#    {play clock ticking noise https://www.youtube.com/watch?v=8VUgLhAvN0U}
+    k "(Class is going so slowly today. I want it to end already.)"
+    k "(I feel something tingling in my stomach. It’s like there’s a ping-pong ball bouncing around my head.)"
+    k "(Is this what it feels like to actually have something to be excited about?)"
+    k "(I can’t believe I’m actually looking forward to the club meeting so much.)"
+    k "(That counsellor was right. I’m going to have to eat my hat.)"
+    k "(. . .)"
+    k "(Come on you dumb clock, move faster!)"
+    "*time passes*"
+    "*Bing bong* *Bing bong*"
+    k "(About time!)"
+    scene bg clubroom
+#    {Play https://www.youtube.com/watch?v=szDKbPLq-to}
+    hide hat
+    show nana at right1
+    show hat at left1
+    n "Ah, Keiku, you’re here."
+    k "Hi Nana. Where is everyone?"
+    n "Ah, they’re running a little late. So right now it’s just me and Yui here."
+    n "Actually, we were wondering if you could settle a debate for us."
+    n "Which do you think is cooler. Shounen anime or mecha anime?"
+    hide hat
+    show yui at left1
+    y "Mecha anime is definitely cooler."
+    n "Nuh-uh, no way. That’s for nerds."
+    menu:
+        "Mecha":
+            y "That’s right, mecha is definitely the best."
+            n "What? No way."
 
+        "Shounen":
+            n "That’s right! Shounen is definitely the best genre."
+            y "I disagree. Mecha is better, and I can objectively prove it."
+            if girl=="Yui":
+                y "Keikumusume, I thought you would understand at least."
+
+    n "Shounen anime is all about self-improvement and making yourself stronger."
+    n "In a mecha anime, only the robots can get stronger instead of your own body."
+    n "So obviously the shounen anime will be more interesting."
+    y "Ah, but you can get better at piloting though."
+    y "You see, the original Mobile Suit Gundam is a perfect example of this, as shown by the growth of the protagonist Amuro Ray."
+    y "At the start of the anime he’s really not very good at piloting the gundam. He’s carried solely by how strong the Gundam is, relative to Zeon mobile suits."
+    y "However, as the series goes on, the mobile suits from Zeon get stronger and stronger, and Amuro has to get better as a pilot in order to keep up."
+    y "By the end of the series Amuro’s position has reversed, and he is now piloting an inferior machine and only survives due to his improved piloting skills."
+    y "I think the scene with Ramba Ral is a really good example of…"
+    n "So, Keiku! What sort of anime do you like best?"
+    y "Ah, I wasn’t finished talking…"
+    hide yui
+    show hat at left1
+    k "I personally like detective anime the best."
+    k "Although honestly I read a lot more light novels than I watch anime."
+    n "Ah, personally I could never get into reading. Having something visual just feels a bit more, tactile, y’know?"
+    hide nana
+    show hinata at right1
+    h "Hello everyone."
+    hide hat
+    show xenia at left1
+    x "Good afternoon."
+    hide hinata
+    show nana at right1
+    n "Ah, Hinata, Xenia. We need you to help us settle something. Which anime genre is best?"
+    hide nana
+    show hinata at right1
+    h "I like shoujo and magical girl anime the best actually. Stuff like K-on is nice too."
+    x "Yep, that does seem like the sort of anime Hinata would like. Probably a little too girlish for your tastes, Nana."
+    hide hinata
+    show nana at right1
+    n "Yeah. Shoujo anime is a little too mushy for me. I have no interest in it."
+    x "I don’t actually watch much anime. But for me, it’s gambling anime."
+    x "In any case, let’s get down to business."
+    n "Right. If we want to have a shot at this weekend's tournament, we’re going to need to train Keiku up."
+    hide xenia
+    show hat at left1
+    k "Training? Like mahjong training?"
+    k "Also, when and where is this tournament supposed to happen? Is there a prize?"
+    n "Nope, no prize. It’s just for fun."
+    n "Unless you can classify ‘reputation’ as a prize."
+    n "I’ll text you the details later. Now onto training."
+    hide nana
+    show hinata at right1
+    h "We’re just going to look at a series of mahjong problems to solve."
+
+    #{change bgm to  https://www.youtube.com/watch?v=szDKbPLq-to}
+    h "Let’s start off with something simple. What would you discard in this situation?"
+    hide hinata
+    hide hat
+    scene bg wwyd1
+    pause 3
+    menu:
+        "Red 5m":
+            show nana at right1
+            n "Keiku, are you nuts?"
+            show yui at left1
+            y "That’s a very unsafe discard."
+            hide nana
+            show hinata at right1
+            h "Hey, she’s new, lay off a little."
+            h "Although yes, that’s not what I would have chosen."
+
+        "9s":
+            show xenia at right1
+            x "Yep, the nine souzu is what I would have picked too."
+            show hinata at left1
+            h "Really? Why the nine souzu?"
+            hide hinata
+            show hat at left1
+            k "There’s two of them. If you discard one of them and it passes, then that’s a free safe tile for the next turn."
+            x "Precisely. It’s also a terminal tile, so it’s quite safe to begin with."
+            hide hat
+            show yui at left1
+            y "While it is true that one passing would give a free safe tile, I think it’s more important to try avoiding the ippatsu."
+            y "The fact of the matter is that there’s more potential patterns that involve waiting on the nine sou than the honour tile."
+            x "Well, I suppose this is one of those things we’ll just have to agree to disagree on."
+            y "Indeed. While I’d prefer to have an objective answer, that’s very difficult to find in mahjong."
+
+        "Chun":
+            show yui at left1
+            y "I agree. The red dragon is definitely the safest discard."
+            show xenia at right1
+            x "Huh. I had a different answer."
+            x "I would have actually discarded the nine souzu myself."
+            x "If you discard one and it passes, then you get two free safe tiles."
+            y "That’s true. However, I don’t think that outweighs the safety of the red dragon."
+            y "The fact of the matter is that there are a lot less combinations of tiles that create tenpais waiting on honour tiles."
+            hide xenia
+            show nana at right1
+            n "I think this is one of those cases where there isn’t exactly an objectively right answer."
+
+    hide yui
+    hide hinata
+    hide hat
+    hide nana
+    hide xenia
+    scene bg clubroom
+    show nana at right1
+    n "Alright, next question, here we go."
+    scene bg wwyd2
+    hide nana
+    menu:
+        "1p":
+            show yui at right1
+            y "Why did you pick that discard?"
+            show hat at left1
+            k "Well, just because it gives you the possibility of getting pinfu, and to avoid the one pin - two pin edge wait on the three pin."
+            y "Hmmmmmm."
+            y "I understand your reasoning, but I don’t think it’s optimal."
+            y "Your chance of getting a non furiten tenpai for pinfu is pretty low here. You’d have to draw the six souzu."
+            y "Furthermore, given that your opponent has called on triplets of the one souzu and the one manzu, there’s a high chance that they’re waiting on the one pin for chanta, junchan, sanshoku doukou or even something even scarier like chinroutou."
+            k "Hmmmm. I guess you’re right then."
+            y "It’s not like your answer didn’t have any merit behind it at all though."
+            y "Getting a tenpai with two dora, riichi, and pinfu, could bring you very close to first place."
+            y "With ura dora it could even reach haneman."
+            hide hat
+            show hinata at left1
+            h "Yes. Even though I agree with Yui’s answer, it’s not completely cut and dry."
+            hide hinata
+            hide yui
+
+        "2p":
+            show yui at right1
+            y "I agree with your answer, Keikumusume. But why did you pick that answer?"
+            y "Having the right answer is great, but your reasoning for it is important too."
+            show hat at left1
+            k "Well, it’s simple. I already have tenpai if I discard the two pin, and I have a safe tile too."
+            k "Discarding the one pin wouldn’t give me a greater number of tiles to wait on."
+            k "It’d also be slightly more dangerous, since the shimocha’s calls indicate a high probability of chanta, junchan, sanshoku doukou or even something even scarier like chinroutou."
+            y "Yep. That’s the same reasoning I had."
+            y "Some people might try to argue that you should discard the one pin since it can upgrade the hand with pinfu if you draw a six souzu."
+            y "But I don’t think it’s worth the risk."
+            hide hat
+            hide yui
+
+    scene bg clubroom
+    show nana
+    n "Alright, let’s do one more and then play a game."
+    hide nana
+    scene bg wwyd3
+    show hat at left1
+    k "Some information is missing. When did the player call this chi?"
+    show xenia at right1
+    x "I was just about to mention that, but I like your attention to details. As expected from a true mahjong detective. Chi was called shortly before the first riichi."
+    hide hat
+    hide xenia
+
+    menu:
+        "2s":
+            show xenia at right1
+            x "I see, so you’d discard the two souzu. Why is that?"
+            show hat at left1
+            k "Well, the way I see it, the two souzu is safe against the shimocha’s riichi, since the toimen was able to safely discard it."
+            k "I guess technically the two souzu is pretty dangerous since the kamicha could still be waiting on it, but at least it guarantees I won’t get double ronned."
+            x "Heh, that’s a valid reasoning. But this is actually something like a trick question."
+            k "Huh? What do you mean?"
+            x "This problem is from an actual tournament. The player discarded the two souzu and dealt into last place’s mangan."
+            k "Ah, so was the correct answer to discard the red dragon instead then?"
+            x "Nope. If they discarded the red dragon, they would have been ronned by second place’s mangan instead."
+            k "So it’s basically a no win scenario? What good is a problem like this then?"
+            hide xenia
+            show hinata at right1
+            h "Well, I think what’s important is that your answer has reasoning and justification behind it."
+            h "Perhaps the two souzu would have passed nine times out of ten, and in this case it just didn’t."
+            h "That’s just mahjong though. It’s kind of like life. You make the best decision you can and if it doesn’t work out, then that just can’t be helped."
+            hide hinata
+            hide hat
+        "3s":
+            show hat at right1
+            k "I think I’d discard the red dragon."
+            show xenia at left1
+            x "I see. Why is that?"
+            k "Well, honour tiles are usually safe tiles, right?"
+            k "The only way anyone could be waiting on them is with a pair or for a triplet, which is pretty unlikely."
+            x "Heh. That is true, but this is actually a trick question."
+            x "You see, this problem is actually taken directly from a famous tournament match."
+            x "In that match, the red dragon would have actually dealt into second place’s mangan hand."
+            k "Huh? So does that mean the correct answer was two souzu then? That seems like the most reasonable second option. It’s safe against second place since the toimen dropped it after they declared riichi."
+            x "That’s true, but the two souzu isn’t a safe choice either. That would have dealt into fourth place’s mangan hand."
+            k "So both reasonable options are wrong then? What’s the point of this problem?"
+            hide xenia
+            show hinata at left1
+            h "Well, I think what’s important is that your answer has reasoning and justification behind it."
+            h "Perhaps the red dragon would have passed nine times out of ten, and in this case it just didn’t."
+            h "That’s just mahjong though. It’s kind of like life. You make the best decision you can and if it doesn’t work out, then that just can’t be helped."
+            hide hinata
+            hide hat
+    scene bg clubroom
+    show hinata
+    h "Well, that’s that. Shall we play a few games now?"
+    hide hinata
+    scene bg black
+#    {Fade to black, play mahjong tiles sfx in the background}
+    "....."
+#    {bg change, school at sunset}
+    scene bg schoolfront
+    show hat at left1
+    k "(Aaah, those games were really fun.)"
+    k "(Even though I didn’t win a single one of them.)"
+    k "See you all on the weekend!"
+    show nana at right1
+    n "Yep. See you all then."
+    hide hat
+    show yui at left1
+    y "Bye bye."
+    hide nana
+    show xenia at right1
+    x "Have a good night, everybody."
+    hide yui
+    show hinata at left1
+    h "Best of luck, everyone."
+    hide hinata
+    #{Fade to black, bg change to Keikus room at night}
+    scene bg keikunight
+    show hat
+    k "(Club was a lot of fun today.)"
+    k "(Even if half of it was just goofing off.)"
+    k "(I’m sort of nervous about this tournament though. I really don’t want to embarrass myself.)"
+    k "(Guess I’ll just have to do my best, and let the heavens take care of the rest.)"
+    k "(. . .)"
+    k "( z z z )"
+
+label pre_date2:
+    scene bg keiku
+    "*kikikanri!* *kikikanri!*"
+#    {Play boy in the windmill}
+    show hat
+    k "Yawwwwwwn."
+    k "Time for another school day."
+    k "Thank god it’s friday."
+    scene bg schoolfront
+    show hat
+    k "(Ahhhhhh, history class is so dull. I want the weekend to hurry up already.)"
+    k "(Why do we have to learn about Australian history in a Japanese school?)"
+    k "(Nothing happened there, it’s so boring and irrelevant.)"
+    k "(I wonder what [girl] is doing this afternoon. Maybe they’d like to hang out.)"
+    k "(I’ll send them a text.)"
+    k "(. . .)"
+    "*bzzt*"
+    if girl=="Yui":
+        jump yui_date2
+    if girl=="Nana":
+        jump nana_date2
+    if girl=="Xenia":
+        jump xenia_date2
+    if girl=="Hinata":
+        jump hinata_date2
+
+label post_date2:
+    "F"
 
 
 

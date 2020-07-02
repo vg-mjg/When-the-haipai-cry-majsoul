@@ -1,4 +1,4 @@
-Wed Jul  1 11:23:12 2020
+Thu Jul  2 17:36:42 2020
 Linux-4.13.0-32-generic-x86_64-with-debian-stretch-sid
 Ren'Py 7.3.5.606
  
@@ -7,11 +7,11 @@ Bootstrap to the start of init.init took 0.07s
 Early init took 0.00s
 Loader init took 0.01s
 Loading error handling took 0.16s
-Loading script took 2.20s
-Loading save slot metadata. took 0.02s
+Loading script took 2.70s
+Loading save slot metadata. took 0.03s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.23s
+Running init code took 0.21s
 Loading analysis data took 0.00s
 Analyze and compile ATL took 0.01s
 Index archives took 0.00s
@@ -21,13 +21,13 @@ Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc. took 0.03s
 DPI scale factor: 1.000000
-Creating interface object took 0.03s
+Creating interface object took 0.04s
 Cleaning stores took 0.00s
-Init translation took 0.04s
+Init translation took 0.05s
 Build styles took 0.01s
 Load screen analysis took 0.00s
-Analyze screens took 0.07s
+Analyze screens took 0.05s
 Save screen analysis took 0.08s
-Prepare screens took 0.18s
+Prepare screens took 0.22s
 Save pyanalysis. took 0.09s
 Save bytecode. took 0.09s
