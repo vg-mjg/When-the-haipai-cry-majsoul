@@ -48,6 +48,9 @@ image hatbondwast =  ConditionSwitch(
 image nanafence =  ConditionSwitch(
             "_last_say_who == 'n'", "nanafence.png",
             "not _last_say_who == 'n'", "nanafencegrey.png")
+image cat =  ConditionSwitch(
+            "_last_say_who == 'i'", "cat.png",
+            "not _last_say_who == 'i'", "catgrey.png")
 
 
 

@@ -10,6 +10,8 @@ define y=Character("Yui")
 define n = Character("Nana")
 define h = Character("Hinata")
 define x = Character("Xenia")
+define i = Character("Ichihime")
+define everyone = Character("Everybody")
 
 label start:
 
@@ -816,7 +818,541 @@ label pre_date2:
         jump hinata_date2
 
 label post_date2:
-    "F"
+    scene bg keiku
+    "*Kiki kanri!* *Kiki kanri!*"
+    "*yawwwwwwn*"
+    #{Play https://www.youtube.com/watch?v=yN77vYbXLB4 }
+    show hat
+    k "(Ah, that tournament is happening today.)"
+    k "(Oh look, Nana texted me the time and place.)"
+    k "(Better get going then. I don’t want to keep them all waiting.)"
+    #{Fade to black, play train noises, bg change to front of some sort of rec center.}
+    scene bg rec
+    show hat
+    k "(This place isn’t particularly big. I guess they did just say this was a local tournament though.)"
+    hide hat
+    show nana at right1
+    n "Yo, Keiku!"
+    show xenia at left1
+    x "Yoohoo."
+    hide nana
+    show yui at right1
+    y "Hello."
+    hide xenia
+    show hat at left1
+    k "(Ah, they’re all here already.)"
+    k "Hey guys. Where are we meant to go?"
+    hide yui
+    show hinata at right1
+    h "Just follow us."
+    scene bg tourney
+    show hat at left1
+    k "So how does this team format work anyway?"
+    show hinata at right1
+    h "Have you ever read that manga, Saki?"
+    h "It’s like that. Each team starts out with 100,000 points and plays five hanchans with the players swapping out."
+    k "Woah, will we be going to the nationals or something if we win this?"
+    h "Nope. It’s purely for fun."
+    hide hat
+    show nana at left1
+    n "Also for reputation. Can’t forget the reputation."
+    hide hinata
+    show yui at right1
+    y "We already have a reputation."
+    y "A reputation for losing."
+    hide nana
+    show xenia at left1
+    x "It’s unfortunate, but true. Our team is cursed with terrible luck."
+    hide yui
+    show hat at right1
+    k "Cursed? What do you mean?"
+    x "We’ve played in four of these sorts of tournaments before and every time one of us dealt into a yakuman."
+    x "In fact, our previous fifth club member actually left precisely because she was worried this tournament would be her turn."
+    hide hat
+    show yui at right1
+    y "I keep telling you, we’re not cursed. It was unlikely for us to have dealt into a yakuman four tournaments in a row, but it’s not as if it’s impossible."
+    y "It’s all just superstition in the end."
+    hide xenia
+    show nana at left1
+    n "No way. You can’t go four tournaments in a row dealing into yakuman hands without some sort of supernatural involvement."
+    y "In your case we don’t need to involve the supernatural to explain it. You dealt the chun after someone already ponned the haku and the hatsu."
+    n "But I had such a nice iishanten! What were the odds, Yui? What were the odds!?"
+    hide yui
+    show hinata at right1
+    h "Anyway, that’s how that is. I don’t believe in curses or anything like that, Keiku, but you might want to be a bit careful around potential yakuman hands."
+    hide nana
+    show hat at left1
+    k "Right. I’m going to break that curse. There’s no way I’d deal into a yakuman!"
+    k "Also, what order are we playing in?"
+    hide hinata
+    show yui at right1
+    y "Would you mind playing last?"
+    y "Please don’t take any offense to this, but you’re our newest member."
+    y "So I think the best strategy would be for us to build you a big points lead, and then let you turtle and pass the last hanchan with quick and safe hands."
+    k "No offense taken. I can definitely do that."
+    hide yui
+    show nana at right1
+    n "Great. I’ll go first then. Xenia, you go second, Hinata, you go third, Yui, you go fourth."
+    k "Also, does our team have a name?"
+    hide hat
+    show yui at left1
+    y "Yep. We called ourselves ‘The Winning Team’."
+    n "I came up with that one. I thought it would be funny if we actually won, and I thought it’d also be funny if we lost."
+    hide nana
+    show xenia at right1
+    x "I think that name is what cursed us, to be honest."
+    y "Even I can believe in a curse like that."
+    hide yui
+    show hinata at left1
+    h "God truly does have a sense of irony."
+    hide xenia
+    show nana at right1
+    n "W-well, don’t blame me. You all agreed to the name!"
+    n "Anyway, it’s going to be starting soon. Good luck, guys!"
+    hide hinata
+    show hat at left1
+    k "Good luck, Nana."
+    n "Ehe, just leave it to me."
+    scene bg seats
+    #{Play https://files.catbox.moe/i91fhx.ogg }
+    show hat
+    k "(Oh wow, it’s starting, this is so exciting.)"
+    k "(Even though there’s no incentive or prize, I really want us to win this!)"
+    k "(Truly, we can become ‘The Winning Team’.)"
+    hide hat
+    show hat at left1
+    show yui at right1
+    y "Nana’s playing really riskily again."
+    hide yui
+    show xenia at right1
+    x "Indeed. She loses big, but she also wins big."
+    if girl=="Nana":
+        k "(The way Nana plays is so bold. It’s really impressive. It’s like she doesn’t even care if someone else riichis, she just charges ahead with no fear.)"
+        k "(Even the way she announces her tsumos and rons is cool. It’s as if looking stylish is part of her strategy.)"
+    hide xenia
+    show hinata at right1
+    h "Wow, she’s getting us quite a lead. We might actually be able to make it this time."
+    hide hat
+    show yui at left1
+    y "I wouldn’t have discarded that dora there."
+    y "But risky plays of that sort is why Nana is fun to watch."
+    hide hinata
+    show xenia at right1
+    x "Wouldn’t have her play any other way."
+    hide xenia
+    hide yui
+    "(Time passes.)"
+    n "Ron! That’s game. GG!"
+    show nana at right1
+    n "Well guys, how’d you like that?"
+    show xenia at left1
+    x "Splendid and bold play, like usual."
+    hide xenia
+    show hinata at left1
+    h "I felt like I was going to faint at some of those dora discards."
+    n "Hehe, I was really worried about a few of my oikake riichis."
+    n "I didn’t want to get scolded by anyone for taking useless risks again. But they mostly paid off."
+    n "You’re up now, Xenia, good luck."
+    hide nana
+    show xenia at right1
+    x "Thanks. I’ll be back with some extra points."
+    h "I’m really looking forward to seeing what sort of monster dora hand Xenia is able to unleash here."
+    hide xenia
+    show yui at right1
+    y "That’s just another superstition. There’s no reason to believe Xenia is anymore likely to draw doras than the rest of us."
+    h "Come on, Yui. We all know she’s more likely to draw doras than the rest of us. Her hands are rich in doras."
+    y "I won’t believe it until I see the stats."
+    y "Although I will admit, this starting hand does have a lot of doras."
+    hide hinata
+    show nana at left1
+    n "Yep. It’s like the gods just hand her doras just because they feel like it."
+    hide yui
+    if girl=="Xenia":
+        show hat at right1
+        k "(Wow, that really is a lot of doras. She just keeps drawing them one after another. Her hand is so rich in doras.)"
+        k "(The way she carries herself while playing is kind of charming too. It’s like she’s showing off.)"
+        k "(But showing off in a subtle way. The way she smiles when she declares her wins, it’s like she’s bragging to her opponents while also being polite at the same time. It’s very classy.)"
+        hide hat
+    n "Wow, look who gets another yakuhai dora call."
+    show hinata at right1
+    h "That’s Xenia for you."
+    hide hinata
+    hide nana
+    "(Time passes.)"
+    show yui at left1
+    y "Excellent work, Xenia."
+    show xenia at right1
+    x "Naturally. I hope you all appreciated the uradora bomb in south 3."
+    x "Good luck, Hinata."
+    hide xenia
+    show hinata at right1
+    h "Thank you. I won’t waste this lead you’ve gotten us."
+    y "Hinata's style of play is always really interesting to watch."
+    hide yui
+    show xenia at left1
+    x "Indeed. I would always just call riichi as soon as possible, but she usually refrains until she’s upgraded her hand with extra yaku or dora."
+    hide hinata
+    if girl=="Hinata":
+        show hat at right1
+        k "(They’re right. The way Hinata plays is incredible.)"
+        k "(If she can upgrade her hand, she’ll wait until it happens, before declaring riichi. That level of restraint is admirable.)"
+        k "(It’s kind of like the way she gardens. It’s like she nurtures her hand to grow it into the strongest it can be, before declaring riichi and harvesting it.)"
+        hide hat
+    show nana at right1
+    n "Woah. Did she seriously just pass on a ron?"
+    x "Well, if she draws the 4pin here, she can discard the 1pin to upgrade her pinfu hand with tanyao and iipeikou."
+    hide nana
+    show yui at right1
+    y "Wow, she managed to draw it. Is she going to riichi it?"
+    x "Nope. I think she’s still looking to draw in the 4man too, so that she can add sanshoku doujun to her iipeikou."
+    hide xenia
+    show nana at left1
+    n "Wow, she actually managed to draw the 4man as well."
+    y "And there’s the riichi."
+    hide yui
+    show xenia at right1
+    x "The way she plays is truly fascinating. She managed to take a measly riichi pinfu hand and turned it into riichi, pinfu, iipeikou, and sanshoku for mangan."
+    n "That’s our Hinata."
+    hide nana
+    hide xenia
+    "(Time passes.) "
+    show nana at left1
+    n "Great work, Hinata. There were a lot of hands where I would have just instantly called riichi, but it looks like your delays paid off."
+    show hinata at right1
+    h "Thanks. I was a little worried about a few hands, but they all grew to their full potential in the end."
+    h "Good luck, Yui."
+    hide nana
+    show yui at left1
+    y "Thank you. I’ll make sure to preserve our lead."
+    h "We’re pretty far ahead, so having someone like Yui play in the fourth position was a smart choice, Nana."
+    n "Yeah, her defensive game is crazy. Unless she’s in the middle of a riichi, she’ll never deal in."
+    hide yui
+    show xenia at left1
+    x "I can never tell if she’s lucky or if she’s just good at calculating odds though."
+    h "Well, no matter what, she’ll definitely insist that all of her plays were calculated."
+    x "Well, if nothing else, she certainly has a perfect poker face."
+    if girl=="Yui":
+        hide hinata
+        show hat at right1
+        k "(Yui looks so calm while playing. Like she’s got everything totally under control.)"
+        k "(Other people might say that she’s just very lucky, but I think she’s just playing in a way that maximises the chances of success.)"
+        k "(It’s as if she’s making a million calculations at once in regards to what could be in the wall and her opponents’ hands.)"
+        hide hat
+    hide hinata
+    show nana at right1
+    n "Yep, with a face like that she was pretty much born for either mahjong or poker."
+    hide nana
+    hide xenia
+    "(Time passes.)"
+    show hinata at left1
+    h "Great work, Yui. Not only did you preserve our lead, but you even extended it a bit."
+    show yui at right1
+    y "Thanks. Good luck, Keikumusume. Don’t be nervous, just remember what you practiced and play defensively."
+    hide hinata
+    show nana at left1
+    n "Yep. Given that you’ve only been here for a few days, the curse shouldn’t have taken hold of you yet. You’ll do great."
+    y "Don’t worry about that curse. It’s all just superstition."
+    hide nana
+    show hat at left1
+    k "Thanks. I’m going to keep this lead and we’re going to win!"
+    scene bg tablemat
+    show hat
+    k "(Alright, I’ve got this. No need to be nervous.)"
+    k "(We have a 42,000 point lead over everyone else.)"
+    k "(There’s absolutely no way I can lose here.)"
+    hide hat
+    show hat at left1
+    show cat at right1
+    i "Oh Keiku, long time no see nya!"
+    k "(Huh? Is that who I think it is? No way.)"
+    k "Ichihime, is that you?"
+    i "That’s right nya. It’s nyice to see you again!"
+    k "(Oh wow, she just ran straight up and hugged me.)"
+    k "(I appreciate the sentiment, but now I’ve got that gross cat hair all over me again…)"
+    k "It’s nice to see you again too. How’s everyone in the shrine doing?"
+    i "They’re all doing good. Riu says that she’s looking forward to working with you once you graduate highschool and join the MCD full time."
+    k "Ah, maybe I’ll have to take her up on that tea offer she gave me after the Joseph incident."
+    k "By the way, what are you doing here? You’re one of the top players in Japan, aren’t you a little too important for a tournament like this?"
+    i "Nyat at all. Mahjong is fun, but when I’m doing it for work they’re all like ‘oh no Ichihime, you can’t pon this, can’t kan that’, and it’s very boring."
+    i "So this seemed like a fun way to spend my day off."
+    i "Anyway, good luck Keiku nya!"
+    k "You too!"
+    k "(Wait, she’s a monster player, why would I wish her good luck?)"
+    k "(If anything, it’d only be fair for me to wish she has bad luck.)"
+    k "(Whatever. No matter how good her luck is, I just need to play better than her.)"
+    k "(We’re The Winning Team! There’s no one we can’t beat!)"
+    scene bg black
+    "Time passes..."
+    scene bg tablemat
+    show hat at left1
+    show cat at right1
+    k "(Alright! The hanchan’s almost over! I can’t believe I’ve actually managed to hang onto our lead.)"
+    k "(I might have taken a hit here or there, but I’ve still got a lead of 20,000 points. I just need to make it through this final hand.)"
+    i "Double riichi nya!"
+    k "(Hoh? A double riichi? Don’t make me laugh. Even if I deal into that, we’ll still be in first.)"
+    k "(But just to be sure, I’ll play around it.)"
+    k "(I’ll discard this worthless Xia tile. That’ll be safe.)"
+    #{play https://www.youtube.com/watch?v=iVay367HM3Y}
+    i ". . ."
+    k ". . ."
+    i "RON NYAA! Kokushi musou! That’ll be 48,000 points, please."
+    i "Good game everynyan!"
+    k ". . ."
+    k "Y-yep. Good game."
+    k "T-thanks for playing guys."
+    scene bg seats
+    show hat at left1
+    k "What were the odds! Who wouldn’t have discarded the xia against a double riichi?"
+    k "(Mahjong is bullshit!)"
+    show hinata at right1
+    h "There there. It happens."
+    hide hat
+    show yui at left1
+    y "I would have done the same. You made the right move, just not in hindsight."
+    hide hinata
+    show xenia at right1
+    x "Yeah, that was quite unpredictable."
+    hide yui
+    show nana at left1
+    n "You can’t fight off a curse."
+    x "You can make the right play and you get hit by a daisangen just because."
+    x "That’s mahjong, baby."
+    hide xenia
+    show hinata at right1
+    h "So really, don’t feel too bad, Keiku. You were great out there."
+    n "Really, you were just unfortunate that today happened to be Ichihime’s day off."
+    hide nana
+    show hat at left1
+    k "Awawawawa."
+    k "Thanks, guys."
+    hide hinata
+    show cat at right1
+    i "Thanks for playing, Keiku. I had a lot of fun seeing you again."
+    i "Make sure to stop by the shrine sometime nya."
+    k "Call me if there’s another murder."
+    hide hat
+    show nana at left1
+    n "Oh, can we all get autographs, Ichihime?"
+    i "Of course. Anything for a beloved fanya."
+    hide cat
+    show yui at right1
+    y "Keiku. How do you know Ichihime?"
+    hide nana
+    show hat at left1
+    k "She was involved in the very first mahjong crime I solved. It was a murder that had occurred within the shrine."
+    hide yui
+    show hinata at right1
+    h "They really just let you take a murder for your first case? Involved with the Mahjong Soul Shrine no less? Is that even legal?"
+    k "Yep. You’d be surprised at what the MCD can get away with."
+    k "If you’re a detective, it’s totally legal for you to just give your work to someone else with zero training."
+    hide hinata
+    show nana at right1
+    n "Wow, what a weird system. It sounds like something out of a manga or a detective game."
+    hide hat
+    show cat at left1
+    i "It was pretty surprising to see someone like Keiku show up instead of a typical detective."
+    i "I’ve gotta get going nyao. It was nyice meeting you all. Sayonyara."
+    hide cat
+    show hinata at left1
+    h "I’m surprised at how nice a celebrity like her is in person."
+    hide hinata
+    show hat at left1
+    k "So what happens now? There’s no award ceremony or anything?"
+    n "Nope. That’s that."
+    h "Thanks a lot for joining the club, Keiku. If you weren’t here we might not have been able to play. It was a lot of fun."
+    k "No, thank you all for having me. I didn’t think that losing at mahjong could be this fun."
+    k "What happens now, though?"
+    hide hat
+    show yui at left1
+    y "Now it’s time for the club’s tradition."
+    n "Yep. Whenever we play a tournament we go out for WcDonald’s afterwards."
+    hide yui
+    show xenia at left1
+    x "You know, I could always pay for us to eat somewhere nicer than in WcDonald’s."
+    n "Nonsense. No one else does a chicken burger as good as their WcChicken."
+    hide nana
+    show hinata at right1
+    h "The food might be awful, but tradition is tradition."
+label maccas:
+    scene bg maccas
+#    {play  https://www.youtube.com/watch?v=szDKbPLq-to }
+    show nana at left1
+    n "Alright girls, what do you each want?"
+    show hinata at right1
+    h "I’ll just have a salad and a WcFlurry."
+    hide hinata
+    show xenia at right1
+    x "I’ll have a black squid ink burger."
+    n "For me, it’s the WcChicken."
+    hide xenia
+    show yui at right1
+    y "I’d like a Happy Meal with the transformers toy."
+    hide yui
+    show hat at right1
+    n "Keiku, what will you have?"
+    k "Hmmmmmmm."
+    k "I’m feeling pretty hungry. What’s a big burger on the menu?"
+    hide nana
+    show hinata at left1
+    h "The Big Wac?"
+    k "That looks big, but I want to go bigger."
+    hide hinata
+    show nana at left1
+    n "Well then, what about the Bigger Wac?"
+    k "That does look even bigger, but not quite big enough."
+    k "Hmmmhmmm."
+    k "I’ll have the Biggest Wac."
+    hide nana
+    show yui at left1
+    y "Will you really be alright eating something that big?"
+    k "Of course. The fat all just goes to my thighs in the end anyway."
+    scene bg maccastable
+    show nana
+    n "Before this feast begins, I’d like to say a few words."
+    n "Today you all played extremely well. Every single one of us deserves praise."
+    n "Especially Keiku here, who would have won us the whole shebang, were it not for that awful curse."
+    n "Mahjong is a game of skill, but also luck."
+    n "So as long as each and every one of us did our best, we really don’t need to worry about whether or not we won or lost."
+    n "Everyone in the tournament who sincerely played their best is a winner in my eyes."
+    n "Kanpai!"
+
+#    {The following line was originally labelled as ‘everyone else’, I’m not sure how it should be done correctly. For now I’ll keep it as just text without character but please consider changing.}
+    everyone "Kanpai!"
+    hide nana
+    show nana at left1
+    show hat at right1
+    k "That was a nice speech, Nana."
+    k "Although honestly I kind of feel like that was directed at me specifically. I don’t see anyone else at this table that recently dealt into a yakuman."
+    n "Hehe, I simply thought you could use the reassurance."
+    hide nana
+    show hinata at left1
+    h "If you think about it though, that speech really does apply to all of us. We’ve all dealt into yakumans."
+    hide hat
+    show yui at right1
+    y "If you extrapolate further, that speech applies to everyone who plays mahjong."
+    y "Statistically speaking, everyone will eventually deal into a yakuman if they play long enough."
+    hide hinata
+    show xenia at left1
+    x "Yui, would you say that you believe everyone is destined to deal into a yakuman? I didn’t know you believed in things like destiny."
+    y "I wouldn’t say it’s like destiny. It’s more like a force of nature."
+    y "It’s like dying. It’ll happen to everyone eventually."
+    hide yui
+    show hinata at right1
+    h "That’s a pretty morbid comparison, but you’re not wrong."
+    h "All you can really do is to try and prolong the time before your inevitable yakuman deal-in. There’s no need to feel bad about things you can’t control."
+    h "I think the same thing applies to fourth places in mahjong. Eventually, everyone gets hit by a fourth place. So you shouldn’t feel bad about it when it does happen to you."
+    x "But when you think about it that way, it really does beg the question of why we even play mahjong in the first place."
+    x "If it’s inevitable that we’re going to get unlucky and take fourth place every now and then, isn’t it also just as valid to say that everyone will get lucky and take first eventually?"
+    x "Can one truly be proud of a first place that was inevitable?"
+    hide xenia
+    show nana at left1
+    n "Personally, I don’t really think about that. I don’t have to look for ways to cope after I take a first place, so there’s no need to think about that sort of thing, ehehehe."
+    h "I suppose it goes back to the age old arguments about luck versus skill in mahjong."
+    n "Remember the mahjongers’ old adage. ’It’s just luck whenever you win, and pure skill when I win!’"
+    hide hinata
+    show xenia at right1
+    x "Nana, that’s nothing more than a coping strategy."
+#    {The next line originally said ‘your average mahjong’, without ‘player’. I’m not sure whether it was intentional, please double-check.}
+    x "Although your average mahjong player definitely needs plenty of those."
+    hide nana
+    show yui at left1
+    y "True skill in mahjong is reflected in your performance over hundreds of games. A wide space is needed to eliminate the influence of flukes and chance."
+    y "So I don’t think a tournament like this is really reflective of any team’s true skill. It’s just five hanchans after all."
+    hide xenia
+    show hinata at right1
+    h "Exactly. Now if this was a league that went on for weeks and weeks of games, that would be a bit more accurate."
+    hide yui
+    show nana at left1
+    n "Can you imagine if we, The Winning Team, entered a league like that and lost?"
+    n "We wouldn’t even be able to blame it on bad luck. We’d look like total idiots!"
+    hide hinata
+    show xenia at right1
+    x "Ahahahaha. Yes, indeed. At least this way we can invent a curse to blame it all on."
+    hide nana
+    show hinata at left1
+    h "Hey, Keiku’s been quiet for a while."
+    h "Keiku, are you alright there?"
+    hide xenia
+    show hat at right1
+    k "Mmmm… oh….mffff….yeah, I’m just eating, still."
+    h "You’re really going at that Biggest Mac. You’re barely halfway done. Are you sure that you’re going to be able to finish that?"
+    k "Well, I have to admit, I am starting to feel a bit full. I’ll be fine though."
+    k "All that stuff you guys were saying was really inspiring."
+    k "I always thought that games were all just like, you either win it or you lose it."
+    h "The random nature of mahjong makes the line between a win and a loss a bit blurry."
+    h "In some situations, you can come third and lose points, but still consider that a victory."
+    hide hat
+    show yui at left1
+    y "I think that it’s possible to even consider certain fourth places as victories."
+    y "Given all the elements of the game that are out of your control, you could hypothesize that there is a maximum score and placement one can get in each game relative to one’s opponents."
+    y "Thus your goal in each game would simply be to achieve that maximum score. Even if that score is in fourth place, you would want to achieve it so that damage can be kept to a minimum."
+    hide hinata
+    show hat at right1
+    k "I see, I see."
+    k "Maybe you could apply this to life in general too? We’re all just trying to do our best in life. We shouldn’t be moaning about how we could have gotten more out of it, just so long as we’ve gotten the most we could have out of it."
+    hide yui
+    show xenia at left1
+    x "I think that’s a splendid way of looking at life, Keiku."
+    x "But, the trouble with that way of thinking is not knowing whether you’ve done everything you can or if you can go even higher."
+    hide xenia
+    show nana at left1
+    n "Well, maybe it’s like, there’s no way of knowing if you’ve really done everything you can, so you should just always keep going as hard as you can to get as close to it as possible."
+    k "I think I finally understand why this game is so important to people now."
+    k "Mahjong is just like life, in the end. We’re all thrown about by random chance and we’re just trying to make the best of what we’re given."
+    hide hat
+    show hinata at right1
+    h "Yeah, mahjong sounds like a pretty apt metaphor for life when you put it that way."
+    h "Although it’s a little depressing to think about. Mahjong and life both have winners and they both have losers."
+    n "That’s fine. All you have to do is just try to not be one of the losers."
+    h "Maybe life would be nicer if we all just collectively decided to go noten every turn."
+    hide nana
+    show yui at left1
+    y "But then there’d still be winners and losers based on the seating placements."
+    hide hinata
+    show xenia at right1
+    x "I think the metaphor breaks down at that point."
+    x "Keiku, how’s the burger? You’re still only halfway through."
+    hide yui
+    show hat at left1
+    k "Yeah, this is definitely way too big."
+    k "I think I’m just going to take it home with me."
+    k "(I’ll just keep it under my hat.)"
+    hide xenia
+    show hinata at right1
+    h "..."
+    hide hat
+    show nana at left1
+    n "..."
+    hide hinata
+    show yui at right1
+    y "..."
+    hide nana
+    show xenia at left1
+    x "..."
+    hide yui
+    show hat at right1
+    k "What? What’s wrong, guys?"
+    x "Did you just put the burger under your hat?"
+    k "Yep. What about it?"
+    hide xenia
+    show nana at left1
+    n "Doesn’t that get it dirty? Doesn’t that feel gross?"
+    k "Oh, don’t worry about that. It just works."
+    hide nana
+    show yui at left1
+    y "Does it?"
+    k "Yep."
+    hide yui
+    show hinata at left1
+    h "I could swear the hat just winked at me..."
+    k "Anyway, it looks like everyone's done eating, so what happens now?"
+    k "(It’s only 5pm and I’ve got nothing to do tonight. I might as well stay in the city a while longer.)"
+    k "It’s getting a little late, but I think I’m going to hang around the city a bit."
+label pre_date3:
+    "fin"
+
+
+
 
 
 

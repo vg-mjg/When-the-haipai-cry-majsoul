@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/hinata.rpy", line 159: expected statement.
-    {bg fade to black, fade out into garden sunset time}
-                                                        ^
-
-File "game/hinata.rpy", line 170: expected statement.
-    {Bg fade to black and change to Keikus room at night.}
-                                                          ^
+File "game/script.rpy", line 1038: end of line expected.
+    k "(Other people might say that she’s just very lucky, but I think she’s just playing in a way that maximises the chances of success.")
+                                                                                                                                          ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Thu Jul  2 17:29:20 2020
+Thu Jul  2 22:00:19 2020
