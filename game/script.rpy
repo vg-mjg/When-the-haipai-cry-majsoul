@@ -27,11 +27,11 @@ label start:
     dk "Officer. Tell me about the crime scene here."
     show dhat at left1
     show police at right1
-    p "This group were playing a hanchan, and they found that there was an extra haku in their set."
+    p "This group was playing a hanchan, and they found that there was an extra haku in their set."
     p "We’ve also found that the set is missing a two sou."
     dk "Have you checked to make sure that it’s a standard issue set for silver ranked games?"
     p "Yes of course."
-    dk "Hmmmmm"
+    dk "Hmmmmm..."
     dk "Yeah these tiles are definitely from your standard silver set."
     dk "They’re made of the usual cheap wood, everything is painted on instead of engraved, and they’re all greasy as hell."
     dk "You’ve identified the set, right?"
