@@ -1,5 +1,5 @@
 label xenia_date1:
-    scene bg schoolfront
+    scene bg schoolfront with fade
     show hat
     k "(I think I’ll call Xenia. She seemed like a fun person.)"
     k "(Also she’s rich. Gotta grab opportunities when you see ‘em.)"
@@ -26,7 +26,7 @@ label xenia_date1:
     k "Alright, I’ll see you there."
 #    {Scene transition, front of Xenias house. Kekumusume is using her bond outfit}
 #    {Remember to add gate plus loud buzzing sound}
-    scene bg xeniafront
+    scene bg xeniafront with fade
     show xenia at right1
     show hatbond at left1
     x "Ah, I’m so glad you came over. Give me one second, I just need to explain to my father."
@@ -41,7 +41,7 @@ label xenia_date1:
     show xenia at right1
     x "God, saying that felt disgusting."
     x "In any case, come in."
-    scene bg xeniaroom
+    scene bg xeniaroom with fade
     k "(I followed Xenia inside, up the stairs, and into her room.)"
     k "(I can hear the faint mutterings of men downstairs.)"
     show xenia at right1
@@ -117,7 +117,7 @@ label xenia_date1:
 #    {scene change, Keikus bedroom (night)}
 #    {Play crickets noise}
 #        {same as above}
-    scene bg keikunight
+    scene bg keikunight with fade
     show hat
     k "(Aaaa, my head feels funny.)"
     k "(I feel like if I got out of this bed, the floor would just collapse underneath me.)"
@@ -134,7 +134,7 @@ label xenia_date1:
 label xenia_date2:
     show hat
     k "Alright. She said to meet her out the front of school."
-    scene bg schoolfront
+    scene bg schoolfront with fade
 #    {Play https://www.youtube.com/watch?v=IDv7fPjHDxc0  /// really REALLY not sure about this but I can’t think of anything}
 #    {Another potential option: https://www.youtube.com/watch?v=wL5hVgLET-U&list=PLKbO8VpACX_5U43g4JofYURa6D733iWsw&index=7}
 #        {i suggest https://www.youtube.com/watch?v=E4g5iC5NfK4&list=PLox5jLt6-2odF5YZl8hlFyqiNy8dm_efc&index=6 or anything in that playlist}
@@ -154,11 +154,11 @@ label xenia_date2:
     x "Yes, actually. Have you ever played baseball before, Keiku?"
     k "Huh, baseball?"
     x "Yep. There’s no better way to unwind than the batting cages. We’ll take the train."
-    scene bg train
+    scene bg train with fade
     "...."
 #    {Fade bg to black, play some train noises (https://www.youtube.com/watch?v=xugNNnGhRIY) , fade out bg to batting cages}
 #    {Play https://mega.nz/folder/f8EUHCIB#pOX8ovIQx0mQ9eFdiXf5UA/file/KwswRSgJ}
-    scene bg batting
+    scene bg batting with fade
     show xenia
     x "Two cages and 100 balls for me and my friend please."
     "That’ll be $50."
@@ -243,7 +243,7 @@ label xenia_date2:
     x "Ugh. It seems like our batting session will be cut short. What a shame."
     k "Ah, that really is a shame. I was enjoying our conversation."
     x "Well, my house is on the way to yours, right? We can keep talking on the train."
-    scene bg train
+    scene bg train with fade
     show hat at left1
     k "Hey Xenia, you said that you like camping, right?"
     show xenia at right1
@@ -263,7 +263,7 @@ label xenia_date2:
     k "Anyway, I’ll see you at the tournament tomorrow."
     x "Yep. Best of luck!"
     k "You too!"
-    scene bg keikunight
+    scene bg keikunight with fade
     show hat
     k "(That was a lot of fun.)"
     k "(Or at least it was when I actually managed to connect the bat with the ball.)"
@@ -278,10 +278,10 @@ label xenia_date2:
 
 
 label xenia_date3:
-    scene bg maccastable
+    scene bg maccastable with fade
     show nana at left1
     n "Well, I’m off. Laters, guys."
-    show hinata at right1
+    show hinata at righthinata
     h "Yep. See you all on monday."
     hide nana
     show yui at left1
@@ -297,7 +297,7 @@ label xenia_date3:
     x "That’s fine. Now’s the time we buy them."
     x "It’s an excellent opportunity, after all."
     k "You’re right. If we’re here in the city then we might as well go look at a camping store right now."
-    scene bg campingstore
+    scene bg campingstore with fade
 #    {Play https://www.youtube.com/watch?v=sdpmAAuR1N0&list=PL3-XFrU0Gj6lCJmooIqRJX-kYwhP3fOce&index=14 }
     show hat at left1
     show xenia at right1
@@ -317,7 +317,7 @@ label xenia_date3:
     x "Indeed it does. However it’s simply not robust enough."
     k "(I don’t know anything about this stuff at all. I guess it’s fine to just let her take care of it.)"
     k "(She really is full of surprises.)"
-    scene bg campingstoreout
+    scene bg campingstoreout with fade
     show xenia at right1
     show hat at left1
     x "Right, that’s everything we need."
@@ -325,7 +325,7 @@ label xenia_date3:
     x "Why? I can carry my own share just fine."
     k "Fair enough, then. I wouldn’t have minded doing it. After all, you’re the one who paid for everything."
     x "It’s still not really money that I earned, though. I guess I just want to feel like I did something myself, huh."
-    scene bg train
+    scene bg train with fade
     show hat at left1
     show xenia at right1
     k "Say, Xenia, when do you want to actually do this sneak camping trip?"
@@ -351,7 +351,7 @@ label xenia_date3:
     x "Indeed. My stop’s coming up now. I trust that you’ll be there tonight."
     k "You can count on it. I’ll see you tonight."
 
-    scene bg keikusunset
+    scene bg keikusunset with fade
     show hat
     k "(I’ve got about an hour before I need to go to Xenia’s. I guess I’ll lie down and read for a bit.)"
     k "(. . .)"
@@ -368,10 +368,10 @@ label xenia_date3:
     k "(Yeah, she’d definitely kill me if I ever actually referred to her as a princess, haha.)"
     k "(Ahhhh, what am I thinking. It’s just a camping trip. Nothing more than that.)"
     k "(Tick tock. Come on, move faster, clock.)"
-    scene bg keikunight
+    scene bg keikunight with fade
     show hat
     k "(Finally! I’d better hop on that late night train.)"
-    scene bg xenianight
+    scene bg xenianight with fade
     show xenia at left1
     show hat at right1
     x "Oh, Keiku, you came. Thank you so much."
@@ -383,7 +383,7 @@ label xenia_date3:
     x "Alright, let’s start walking."
 #    {change background to forest at night.}
 #    {play https://www.youtube.com/watch?v=cQwCOBBLXEI }
-    scene bg forest
+    scene bg forest with fade
     show hat at left1
     show xenia at right1
     k "This forest is pretty dense. Aren’t you worried about getting lost, Xenia?"
@@ -434,7 +434,7 @@ label xenia_date3:
     k "I’m sorry if it sounds like I’m lecturing you or anything like that."
     x "Nah, it’s fine. I like you, and I appreciate whatever you have to say."
     x "We’re here, by the way. This is the spot we’re going to use to pitch our tent."
-    scene bg forestmoon
+    scene bg forestmoon with fade
     show hat at left1
     show xenia at right1
     #{Play  https://www.youtube.com/watch?v=VWPACef2_eY }
@@ -457,7 +457,7 @@ label xenia_date3:
     k "(I wouldn’t mind camping out here with her forever.)"
     k "(Or at least I wouldn’t if it wasn’t so cold!)"
     x "Keiku, it’s done!"
-    scene bg tent
+    scene bg tent with fade
     show hat at left1
     show xenia at right1
     k "I know earlier I said that this tent looked small, but somehow it feels a lot bigger when you’re actually inside it."
@@ -490,9 +490,9 @@ label xenia_date3:
     k "Hehehe, that’s fine, I wasn’t expecting you to just drop everything and move in with a girl you’d only known for a week."
     k "But just for tonight, you and I can have this whole world to ourselves."
     x "Let’s make tonight a night to remember."
-    scene bg xeniaart
+    scene bg xeniaart with fade
     $ renpy.pause (10.0)
-    scene bg tent
+    scene bg tent with fade
     show hat at left1
     show xenia at right1
     k "That was an amazing night, Xenia."
@@ -502,7 +502,7 @@ label xenia_date3:
     x "We’re definitely doing this again, though. There’s no way I’d let this be the last time we go out camping."
     x "They can disown me for all I care."
     k "My doors are always open for you if that ends up happening."
-    scene bg xeniafront
+    scene bg xeniafront with fade
     show hat at left1
     show xenia at right1
     k "How are you going to get back over the gate?"
@@ -536,7 +536,7 @@ label xenia_date3:
     m "So thank you for being my daughter’s friend."
     m "I think we’ve been a little too protective of her. Feel free to take her out camping any time."
     k "Right. Thank you!"
-    scene bg black
+    scene bg black with fade
     show hat
     k "(Since I joined the mahjong club, my life has become a lot brighter.)"
     k "(In just one week, I’ve not only made friends, but also met a lover.)"

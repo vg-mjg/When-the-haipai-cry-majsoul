@@ -4,6 +4,11 @@ transform left1:
 transform right1:
     xpos 0.9 xanchor 1.0 ypos 1.0 yanchor 1.0
 
+transform lefthinata:
+    xpos 0.05 xanchor 0.0 ypos 1.0 yanchor 1.0
+
+transform righthinata:
+    xpos 1.0 xanchor 1.0 ypos 1.0 yanchor 1.0
 
 
 

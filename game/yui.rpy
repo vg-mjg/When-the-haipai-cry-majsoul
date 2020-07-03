@@ -1,5 +1,5 @@
 label yui_date1:
-    scene bg schoolfront
+    scene bg schoolfront with fade
     show hat
     k "(Yui... she seemed like an interesting person. I think I'll give her a ring.)"
     "*abababa* *abababa*"
@@ -11,7 +11,7 @@ label yui_date1:
     y "Come to my house after school. I'll text you the address."
     k "(She's already inviting me to her house? That's a bit forwards, but I guess it's not an issue.)"
 #    {Scene change, Yui's house}
-    scene bg yuibedroom
+    scene bg yuibedroom with fade
     hide hat
     show yui at right1
     y "Hello. I'm glad you came."
@@ -69,7 +69,7 @@ label yui_date1:
     y "Yep. Goodbye. Thank you very much for coming over."
     hide yui
 #    {Scene change. Keikumusume’s bedroom at night. Play crickets https://www.youtube.com/watch?v=Olfg9KK_bmE}
-    scene bg keikunight
+    scene bg keikunight with fade
     show hat
     k "(That was weird. What was up with all that staring and physically dragging me along?)"
     k "(She seems really nice though. I wouldn't mind hanging out with her again.)"
@@ -84,7 +84,7 @@ label yui_date1:
 label yui_date2:
     show hat
     k "She said to meet her at her locker."
-    scene bg lockerg
+    scene bg lockerg with fade
     show hat
     k "(Hmm, judging by what she texted me, her locker should be right here.)"
     k "(Looks like I got here first.)"
@@ -117,7 +117,7 @@ label yui_date2:
     y "I see. Let’s go then."
     k "(Ah, she’s walking away. I’m so lucky that she didn’t need to take anything out of her locker.)"
     k "(I’ll just have to go to school early on monday and clean it off before she gets there.)"
-    scene bg yuibedroom
+    scene bg yuibedroom with fade
     show hat at left1
     show yui at right1
     k "So what are we doing this afternoon, anyway?"
@@ -159,7 +159,7 @@ label yui_date2:
     k "Very observant. I don’t think it’s a spoiler for me to say that you’re right there."
     y "Oh that was correct? Thanks. This is fun."
     k "(Watching her solve these is a blast. I’d like to see if she could solve one of my amateur works sometime.)"
-    scene bg yuibedroomn
+    scene bg yuibedroomn with fade
     show hat at left1
     show yui at right1
 
@@ -209,7 +209,7 @@ label yui_date2:
     k "Yep! Let’s do our best. See ya tomorrow."
     hide yui
     hide hat
-    scene bg keikunight
+    scene bg keikunight with fade
     show hat
     k "(I’m glad that Yui liked ‘Cry of the Seacat’.)"
     k "(Seeing someone else get passionate about a story you love is a really nice feeling.)"
@@ -221,7 +221,7 @@ label yui_date2:
     jump post_date2
 
 label yui_date3:
-    scene bg waccastable
+    scene bg waccastable with fade
     show nana at left1
     n "Well, I’m off. Laters, guys."
     show hinata at right1
@@ -238,7 +238,7 @@ label yui_date3:
     k "(Where’s a place in the city that Yui would enjoy?)"
     k "Are arcades still a thing?"
     y "They’re still around. I know a great one in this area."
-    scene bg arcade
+    scene bg arcade with fade
     #{Play https://www.youtube.com/watch?v=3ko-0jUzF4U }
     show hat at left1
     show yui at right1
@@ -274,7 +274,7 @@ label yui_date3:
     y "Alright, then."
     k "(There’s no way I’ll lose to her in a dancing game.)"
     k "(Yui definitely doesn’t seem like the athletic type.)"
-    scene bg ddr
+    scene bg ddr with fade
     show hat at left1
     show yui at right1
     k "(Yeah this is easy, I just have to follow the onscreen prompts.)"
@@ -300,7 +300,7 @@ label yui_date3:
     k "Is there anywhere else in the city you’d like to go then?"
     y "Yep. There’s a model store I wanted to stop by at on my way home. But if you’re not interested in that sort of thing it’s fine."
     k "Let’s go then. I’m interested in whatever it is that you’re interested in."
-    scene bg modelstore
+    scene bg modelstore with fade
     show hat at left1
     show yui at right1
     k "Wooooow, there’s so many toys here."
@@ -336,7 +336,7 @@ label yui_date3:
     y "It’s got a complete inner frame that allows for full scale transformations. It’s really amazing."
     k "(I don’t know what that means, but I’m happy she’s happy.)"
     y "I’m just going to go ring this up and we can go."
-    scene bg train #to change
+    scene bg train  with fade #to change
     show hat at left1
     show yui at right1
     k "Yui, you’re on a seperate train line to me, right?"
@@ -350,7 +350,7 @@ label yui_date3:
     y "Would you like to meet up again?"
     k "Of course! Just text me a time and place and I’ll be there."
     y "Thank you. I’ll see you tomorrow, then."
-    scene bg keikunight
+    scene bg keikunight with fade
     show hat
     k "(Today's tournament was a lot of fun.)"
     k "(Especially watching Yui play. The way she thinks is so fascinating.)"
@@ -362,7 +362,7 @@ label yui_date3:
     jump yui_final
 
 label yui_final:
-    scene bg keiku
+    scene bg keiku with fade
     "*Kiki kanri!* *Kikikanri!*"
     show hat
     k "Yawwwwwwn."
@@ -436,7 +436,8 @@ label yui_final:
     y "Keiku, do you mind if I get a little closer?"
     k "Get as close as you want."
 #    {Display CG art for Yui}
-    scene bg yuiart
+    scene bg yuiart with fade
+    $ renpy.pause (10.0)
     k "(She’s lying on top of me now. It’s like she’s burying herself in my chest.)"
     k "(It feels so warm.)"
     y "Do you mind if we just stay like this for a while?"
@@ -448,7 +449,7 @@ label yui_final:
     k "(I don’t need to say anything to understand her, and she doesn’t need to say anything to understand me.)"
     k "(I think that’s the best communication there is.)"
     k "(We can stay like this forever.)"
-    scene bg black
+    scene bg black with fade
     k "(Since I joined the mahjong club, my life has become a lot brighter.)"
     k "(In just one week, I’ve not only made friends, but also met a lover.)"
     k "(I’m not sure how long me and Yui will last.)"
@@ -458,4 +459,3 @@ label yui_final:
     k "(I need to visit Watson’s grave again soon. In a way, he taught me to not close myself off. I need to thank him for that.)"
     k "(I can’t go back in time and spend more time with him. But I’ll be sure to treasure the time I have with Yui now.)"
     jump post_date3
-    

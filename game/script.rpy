@@ -1,26 +1,26 @@
 
-define k = Character("Keikumusume")
-define dk = Character("Detective Keikumusume")
-define p = Character("Policeman")
-define z = Character("Zan")
+define k = Character("Keikumusume", color="#1adf0a")
+define dk = Character("Detective Keikumusume", color="#1adf0a")
+define p = Character("Policeman", color="#e60101")
+define z = Character("Zan", color="#009702")
 define sp= Character("PA speaker")
-define h1 = Character("Hag")
+define h1 = Character("Hag", color="#6c00a2")
 define who=Character("???")
-define y=Character("Yui")
-define n = Character("Nana")
-define h = Character("Hinata")
-define x = Character("Xenia")
-define i = Character("Ichihime")
+define y=Character("Yui", color="#88b2e1")
+define n = Character("Nana", color="#ecf300")
+define h = Character("Hinata", color="#f50563")
+define x = Character("Xenia", color="#05aef1")
+define i = Character("Ichihime", color="#fc1b1b")
 define everyone = Character("Everybody")
-define m = Character("Sawako")
-define b1 = Character("Igor Bogdanoff")
-define b2 = Character("Grichka Bogdanoff")
-define boss = Character("???")
-define w = Character("wwyd-chan")
+define m = Character("Sawako", color="#7400d5")
+define b1 = Character("Igor Bogdanoff", color="#db1919")
+define b2 = Character("Grichka Bogdanoff", color="#db1919")
+define boss = Character("???", color="#db1919")
+define w = Character("wwyd-chan", color="#f22199")
 
 label start:
 
-    scene bg parlor
+    scene bg parlor with fade
     show dhat
     dk "(Another case of mahjong cheating huh.)"
     dk "(These mahjongers, they’re just silver room rookies. I don’t know why the mcd even bothered to send me out here.)"
@@ -42,7 +42,7 @@ label start:
     dk "I don’t think it’s possible for someone to do that with just their thumb. Not unless they were some sort of super human."
     dk "Show me the suspects."
     p "Yes ma’am!"
-    scene bg jail
+    scene bg jail  with fade
     show dhat at left1
     show police at right1
     dk "These are all four players from the hanchan, correct?"
@@ -115,11 +115,11 @@ label start:
     p "Excellent work as always detective Keikumusume. Job well done!"
     dk "No need to thank me officer. Just doing my job."
 label op_credits:
-    scene bg credits
+    scene bg credits  with fade
     ">The Winning Team presents…"
     "A >The Winning Team production."
 label moping:
-    scene bg keikunight
+    scene bg keikunight  with fade
     show hat
     k "(Another pathetic case is over.)"
     k "(I’m glad that I’m not involved in any more petty murder cases and all, but damn, they sure are all so pointless.)"
@@ -148,7 +148,7 @@ label moping:
     k "(I always found those jokes so corny. I'd laugh and tell you I was busy reading.) "
     k "(If I could wish for anything, right now, I'd just wish that we could play a game of mahjong together. Just one game like you wanted to.)"
 label classroom:
-    scene bg classroom
+    scene bg classroom with fade
     "*the next afternoon*"
     show hat
     k "(Another day at school is over, huh.)"
@@ -165,7 +165,7 @@ label classroom:
     sp "Keikumusume. You’re wanted in the counsellor’s office. Keikumusume, please come to the counsellor’s office before heading home."
     k "(Ugh, why do they have to announce it over the speaker system like that? It’s so embarrassing.)"
 label counsellor:
-    scene bg counsellor
+    scene bg counsellor with fade
     show hag at left1
     h1 "Keikumusume, please take a seat."
     show hat at right1
@@ -205,7 +205,7 @@ label counsellor:
     h1 "Yes, right now. You can consider it an order from the principal if you like."
     h1 "Have fun."
     hide hag
-    scene bg hallway
+    scene bg hallway with fade
     show hat
     k "(Ahhhhhhhh! That dumb hag!)"
     k "(I guess I have no choice. It’s decided that I’m going to be joining the mahjong club.)"
@@ -216,7 +216,7 @@ label counsellor:
     k "(What if they get mad at me because I haven't memorised all of the scoring rules? I don't even know how to count fu. Aw gosh this could be so embarrassing.)"
     k "(But there’s no use thinking about that. If I can solve a murder case then I can join a mahjong club. I just need to take these first steps inside.)"
 label mahjongclub:
-    scene bg clubroom
+    scene bg clubroom with fade
     show hat at left1
     k "H-hello…"
     k "HELLO! I, WOULD LIKE TO JOIN THE MAHJONG CLUB. PLEASE. THANK YOU."
@@ -236,7 +236,7 @@ label mahjongclub:
     show yui at left1
     y "None of us call her banana."
     hide nana
-    show hinata at right1
+    show hinata at righthinata
     h "Hello, my name’s Hinata. Welcome to the club."
     y "My name's Yui."
     k "Ah, I'm Keiku. Keikumusume! I'm very new to mahjong but I'd really like to play with you guys."
@@ -252,7 +252,7 @@ label mahjongclub:
     y "Yep. I don't like playing sanma at all."
     k "(Okay. This is just like the online games of mahjong I've played. There's no need to be nervous!)"
 label game:
-    scene bg double
+    scene bg double with fade
     k "What to do....."
     menu:
         "Riichi":
@@ -261,7 +261,7 @@ label game:
             k "D-daburi riichi!"
         "Riichi":
             k "D-daburi riichi!"
-    scene bg clubroom
+    scene bg clubroom with fade
     show nana at right1
     show yui at left1
     n "A double riichi on your very first turn? Looks like we have a prodigy in our club."
@@ -271,7 +271,7 @@ label game:
     k "(Hmmm, I think everyone's trying to fold?)"
     k "Ah, ron! Double riichi! Pinfu! That's ummm, 3900 points!"
     hide yui
-    show hinata at left1
+    show hinata at lefthinata
     h "So be it then."
     hide hat
     show nana at right1
@@ -330,7 +330,7 @@ label game:
     k "(Oof. Even though she's just repeating what I just said, that stings a little.)"
     y "..."
     hide hat
-    show hinata at left1
+    show hinata at lefthinata
     h "Yui, that's a little..."
     hide hinata
     show xenia at left1
@@ -340,7 +340,7 @@ label game:
     k "Oh yeah, that's fine."
     k "Well, my hobbies include reading, writing, and I'm also technically a mahjong detective."
     hide xenia
-    show hinata at left1
+    show hinata at lefthinata
     h "You work for the MCD? While in high school? That’s amazing."
     k "Thanks. I've only actually solved one case though."
     hide hinata
@@ -371,12 +371,12 @@ $ q2=False
 $ q3=False
 $ q4=False
 label first_choice:
-    scene bg clubroom
+    scene bg clubroom with fade
     menu:
         "Who should I talk to?"
 
         "Hinata":
-            show hinata at left1
+            show hinata at lefthinata
             show hat at right1
             k "What about you, Hinata, do you have any hobbies?"
             h "Well, when I'm not playing mahjong, I enjoy gardening a lot."
@@ -449,14 +449,14 @@ label first_choice:
             jump next
 
 label next:
-    scene bg clubroom
+    scene bg clubroom with fade
     "*ding dong* *ding dong*"
     show hat at left1
     k "Ah, the bell's ringing."
     show nana at right1
     n "Time to go then."
     hide hat
-    show hinata at left1
+    show hinata at lefthinata
     h "Yep, I'll see you all next meeting."
     hide nana
     show yui at right1
@@ -477,7 +477,7 @@ label next:
     show xenia at right1
     x "Oh don't worry dear, we'll whip you into shape in no time..."
     hide xenia
-    show hinata at right1
+    show hinata at righthinata
     h "Oh, we should probably give Keiku our numbers, right?"
     h "That way we can keep her in the loop."
     k "O-oh, thank you!"
@@ -485,7 +485,7 @@ label next:
     k "(If I was a guy I'd be over the moon right now.)"
     #{Change bg scene, Keikus room at night. Stop music, play cricket sounds https://www.youtube.com/watch?v=Olfg9KK_bmE}
     #    {add music here: some ambivalent contemplation music, like https://www.youtube.com/watch?v=-l1W6g7UYtY}
-    scene bg keikunight
+    scene bg keikunight with fade
     show hat
     k "(They seemed like a strange bunch.)"
     k "(But I'm really happy that they accepted me so easily.)"
@@ -494,7 +494,7 @@ label next:
     k "(But maybe with these people, things won't be so bad.)"
     k "(. . .)"
     k "( z z z )"
-    scene bg schoolfront
+    scene bg schoolfront with fade
     show hat
     k "(Another boring day at school has gone by.)"
     k "(I don't have any exams coming up.)"
@@ -528,15 +528,15 @@ label next:
             jump hinata_date1
 
 label post_date1:
-    scene bg keiku
+    scene bg keiku with fade
     "*Kikikanri!* *Kikikanri!*"
     show hat
     k "Ugh, be quiet you useless alarm..."
     k "*Yawwwwwn*"
     k "(It’s that time already huh?)"
-    scene bg schoolfront
+    scene bg schoolfront with fade
     "...."
-    scene bg classroom
+    scene bg classroom with fade
 #    {play clock ticking noise https://www.youtube.com/watch?v=8VUgLhAvN0U}
     k "(Class is going so slowly today. I want it to end already.)"
     k "(I feel something tingling in my stomach. It’s like there’s a ping-pong ball bouncing around my head.)"
@@ -548,7 +548,7 @@ label post_date1:
     "*time passes*"
     "*Bing bong* *Bing bong*"
     k "(About time!)"
-    scene bg clubroom
+    scene bg clubroom with fade
 #    {Play https://www.youtube.com/watch?v=szDKbPLq-to}
     hide hat
     show nana at right1
@@ -590,7 +590,7 @@ label post_date1:
     k "Although honestly I read a lot more light novels than I watch anime."
     n "Ah, personally I could never get into reading. Having something visual just feels a bit more, tactile, y’know?"
     hide nana
-    show hinata at right1
+    show hinata at righthinata
     h "Hello everyone."
     hide hat
     show xenia at left1
@@ -599,7 +599,7 @@ label post_date1:
     show nana at right1
     n "Ah, Hinata, Xenia. We need you to help us settle something. Which anime genre is best?"
     hide nana
-    show hinata at right1
+    show hinata at righthinata
     h "I like shoujo and magical girl anime the best actually. Stuff like K-on is nice too."
     x "Yep, that does seem like the sort of anime Hinata would like. Probably a little too girlish for your tastes, Nana."
     hide hinata
@@ -616,15 +616,17 @@ label post_date1:
     n "Unless you can classify ‘reputation’ as a prize."
     n "I’ll text you the details later. Now onto training."
     hide nana
-    show hinata at right1
+    show hinata at righthinata
     h "We’re just going to look at a series of mahjong problems to solve."
 
     #{change bgm to  https://www.youtube.com/watch?v=szDKbPLq-to}
     h "Let’s start off with something simple. What would you discard in this situation?"
     hide hinata
     hide hat
-    scene bg wwyd1
-    pause 3
+    scene bg wwyd1 with fade
+    $ renpy.pause (10.0)
+    $ s1=False
+    $ s2=False
     menu:
         "Red 5m":
             show nana at right1
@@ -632,14 +634,14 @@ label post_date1:
             show yui at left1
             y "That’s a very unsafe discard."
             hide nana
-            show hinata at right1
+            show hinata at righthinata
             h "Hey, she’s new, lay off a little."
             h "Although yes, that’s not what I would have chosen."
 
         "9s":
             show xenia at right1
             x "Yep, the nine souzu is what I would have picked too."
-            show hinata at left1
+            show hinata at lefthinata
             h "Really? Why the nine souzu?"
             hide hinata
             show hat at left1
@@ -670,11 +672,12 @@ label post_date1:
     hide hat
     hide nana
     hide xenia
-    scene bg clubroom
+    scene bg clubroom with fade
     show nana at right1
     n "Alright, next question, here we go."
-    scene bg wwyd2
+    scene bg wwyd2 with fade
     hide nana
+    $ renpy.pause (10.0)
     menu:
         "1p":
             show yui at right1
@@ -690,7 +693,7 @@ label post_date1:
             y "Getting a tenpai with two dora, riichi, and pinfu, could bring you very close to first place."
             y "With ura dora it could even reach haneman."
             hide hat
-            show hinata at left1
+            show hinata at lefthinata
             h "Yes. Even though I agree with Yui’s answer, it’s not completely cut and dry."
             hide hinata
             hide yui
@@ -710,11 +713,12 @@ label post_date1:
             hide hat
             hide yui
 
-    scene bg clubroom
+    scene bg clubroom with fade
     show nana
     n "Alright, let’s do one more and then play a game."
     hide nana
-    scene bg wwyd3
+    scene bg wwyd3 with fade
+    $ renpy.pause (10.0)
     show hat at left1
     k "Some information is missing. When did the player call this chi?"
     show xenia at right1
@@ -736,13 +740,13 @@ label post_date1:
             x "Nope. If they discarded the red dragon, they would have been ronned by second place’s mangan instead."
             k "So it’s basically a no win scenario? What good is a problem like this then?"
             hide xenia
-            show hinata at right1
+            show hinata at righthinata
             h "Well, I think what’s important is that your answer has reasoning and justification behind it."
             h "Perhaps the two souzu would have passed nine times out of ten, and in this case it just didn’t."
             h "That’s just mahjong though. It’s kind of like life. You make the best decision you can and if it doesn’t work out, then that just can’t be helped."
             hide hinata
             hide hat
-        "3s":
+        "Chun":
             show hat at right1
             k "I think I’d discard the red dragon."
             show xenia at left1
@@ -756,21 +760,21 @@ label post_date1:
             x "That’s true, but the two souzu isn’t a safe choice either. That would have dealt into fourth place’s mangan hand."
             k "So both reasonable options are wrong then? What’s the point of this problem?"
             hide xenia
-            show hinata at left1
+            show hinata at lefthinata
             h "Well, I think what’s important is that your answer has reasoning and justification behind it."
             h "Perhaps the red dragon would have passed nine times out of ten, and in this case it just didn’t."
             h "That’s just mahjong though. It’s kind of like life. You make the best decision you can and if it doesn’t work out, then that just can’t be helped."
             hide hinata
             hide hat
-    scene bg clubroom
+    scene bg clubroom with fade
     show hinata
     h "Well, that’s that. Shall we play a few games now?"
     hide hinata
-    scene bg black
+    scene bg black with fade
 #    {Fade to black, play mahjong tiles sfx in the background}
     "....."
 #    {bg change, school at sunset}
-    scene bg schoolfront
+    scene bg schoolfront with fade
     show hat at left1
     k "(Aaah, those games were really fun.)"
     k "(Even though I didn’t win a single one of them.)"
@@ -784,11 +788,11 @@ label post_date1:
     show xenia at right1
     x "Have a good night, everybody."
     hide yui
-    show hinata at left1
+    show hinata at lefthinata
     h "Best of luck, everyone."
     hide hinata
     #{Fade to black, bg change to Keikus room at night}
-    scene bg keikunight
+    scene bg keikunight with fade
     show hat
     k "(Club was a lot of fun today.)"
     k "(Even if half of it was just goofing off.)"
@@ -798,14 +802,16 @@ label post_date1:
     k "( z z z )"
     if s1&s2:
         jump secret
-    scene bg keiku
+    scene bg keiku with fade
     "*kikikanri!* *kikikanri!*"
 label pre_date2:
     show hat
     k "Yawwwwwwn."
     k "Time for another school day."
+    scene bg schoolfront with fade
+    show hat
     k "Thank god it’s friday."
-    scene bg schoolfront
+    scene bg classroom with fade
     show hat
     k "(Ahhhhhh, history class is so dull. I want the weekend to hurry up already.)"
     k "(Why do we have to learn about Australian history in a Japanese school?)"
@@ -824,7 +830,7 @@ label pre_date2:
         jump hinata_date2
 
 label post_date2:
-    scene bg keiku
+    scene bg keiku with fade
     "*Kiki kanri!* *Kiki kanri!*"
     "*yawwwwwwn*"
     #{Play https://www.youtube.com/watch?v=yN77vYbXLB4 }
@@ -833,7 +839,7 @@ label post_date2:
     k "(Oh look, Nana texted me the time and place.)"
     k "(Better get going then. I don’t want to keep them all waiting.)"
     #{Fade to black, play train noises, bg change to front of some sort of rec center.}
-    scene bg rec
+    scene bg rec with fade
     show hat
     k "(This place isn’t particularly big. I guess they did just say this was a local tournament though.)"
     hide hat
@@ -849,12 +855,12 @@ label post_date2:
     k "(Ah, they’re all here already.)"
     k "Hey guys. Where are we meant to go?"
     hide yui
-    show hinata at right1
+    show hinata at righthinata
     h "Just follow us."
-    scene bg tourney
+    scene bg tourney with fade
     show hat at left1
     k "So how does this team format work anyway?"
-    show hinata at right1
+    show hinata at righthinata
     h "Have you ever read that manga, Saki?"
     h "It’s like that. Each team starts out with 100,000 points and plays five hanchans with the players swapping out."
     k "Woah, will we be going to the nationals or something if we win this?"
@@ -884,7 +890,7 @@ label post_date2:
     y "In your case we don’t need to involve the supernatural to explain it. You dealt the chun after someone already ponned the haku and the hatsu."
     n "But I had such a nice iishanten! What were the odds, Yui? What were the odds!?"
     hide yui
-    show hinata at right1
+    show hinata at righthinata
     h "Anyway, that’s how that is. I don’t believe in curses or anything like that, Keiku, but you might want to be a bit careful around potential yakuman hands."
     hide nana
     show hat at left1
@@ -909,7 +915,7 @@ label post_date2:
     x "I think that name is what cursed us, to be honest."
     y "Even I can believe in a curse like that."
     hide yui
-    show hinata at left1
+    show hinata at lefthinata
     h "God truly does have a sense of irony."
     hide xenia
     show nana at right1
@@ -919,7 +925,7 @@ label post_date2:
     show hat at left1
     k "Good luck, Nana."
     n "Ehe, just leave it to me."
-    scene bg seats
+    scene bg seats with fade
     #{Play https://files.catbox.moe/i91fhx.ogg }
     show hat
     k "(Oh wow, it’s starting, this is so exciting.)"
@@ -936,7 +942,7 @@ label post_date2:
         k "(The way Nana plays is so bold. It’s really impressive. It’s like she doesn’t even care if someone else riichis, she just charges ahead with no fear.)"
         k "(Even the way she announces her tsumos and rons is cool. It’s as if looking stylish is part of her strategy.)"
     hide xenia
-    show hinata at right1
+    show hinata at righthinata
     h "Wow, she’s getting us quite a lead. We might actually be able to make it this time."
     hide hat
     show yui at left1
@@ -954,7 +960,7 @@ label post_date2:
     show xenia at left1
     x "Splendid and bold play, like usual."
     hide xenia
-    show hinata at left1
+    show hinata at lefthinata
     h "I felt like I was going to faint at some of those dora discards."
     n "Hehe, I was really worried about a few of my oikake riichis."
     n "I didn’t want to get scolded by anyone for taking useless risks again. But they mostly paid off."
@@ -980,7 +986,7 @@ label post_date2:
         k "(But showing off in a subtle way. The way she smiles when she declares her wins, it’s like she’s bragging to her opponents while also being polite at the same time. It’s very classy.)"
         hide hat
     n "Wow, look who gets another yakuhai dora call."
-    show hinata at right1
+    show hinata at righthinata
     h "That’s Xenia for you."
     hide hinata
     hide nana
@@ -991,7 +997,7 @@ label post_date2:
     x "Naturally. I hope you all appreciated the uradora bomb in south 3."
     x "Good luck, Hinata."
     hide xenia
-    show hinata at right1
+    show hinata at righthinata
     h "Thank you. I won’t waste this lead you’ve gotten us."
     y "Hinata's style of play is always really interesting to watch."
     hide yui
@@ -1024,7 +1030,7 @@ label post_date2:
     "(Time passes.) "
     show nana at left1
     n "Great work, Hinata. There were a lot of hands where I would have just instantly called riichi, but it looks like your delays paid off."
-    show hinata at right1
+    show hinata at righthinata
     h "Thanks. I was a little worried about a few hands, but they all grew to their full potential in the end."
     h "Good luck, Yui."
     hide nana
@@ -1050,7 +1056,7 @@ label post_date2:
     hide nana
     hide xenia
     "(Time passes.)"
-    show hinata at left1
+    show hinata at lefthinata
     h "Great work, Yui. Not only did you preserve our lead, but you even extended it a bit."
     show yui at right1
     y "Thanks. Good luck, Keikumusume. Don’t be nervous, just remember what you practiced and play defensively."
@@ -1061,7 +1067,7 @@ label post_date2:
     hide nana
     show hat at left1
     k "Thanks. I’m going to keep this lead and we’re going to win!"
-    scene bg tablemat
+    scene bg tablemat with fade
     show hat
     k "(Alright, I’ve got this. No need to be nervous.)"
     k "(We have a 42,000 point lead over everyone else.)"
@@ -1087,9 +1093,9 @@ label post_date2:
     k "(If anything, it’d only be fair for me to wish she has bad luck.)"
     k "(Whatever. No matter how good her luck is, I just need to play better than her.)"
     k "(We’re The Winning Team! There’s no one we can’t beat!)"
-    scene bg black
+    scene bg black with fade
     "Time passes..."
-    scene bg tablemat
+    scene bg tablemat with fade
     show hat at left1
     show cat at right1
     k "(Alright! The hanchan’s almost over! I can’t believe I’ve actually managed to hang onto our lead.)"
@@ -1106,11 +1112,11 @@ label post_date2:
     k ". . ."
     k "Y-yep. Good game."
     k "T-thanks for playing guys."
-    scene bg seats
+    scene bg seats with fade
     show hat at left1
     k "What were the odds! Who wouldn’t have discarded the xia against a double riichi?"
     k "(Mahjong is bullshit!)"
-    show hinata at right1
+    show hinata at righthinata
     h "There there. It happens."
     hide hat
     show yui at left1
@@ -1124,7 +1130,7 @@ label post_date2:
     x "You can make the right play and you get hit by a daisangen just because."
     x "That’s mahjong, baby."
     hide xenia
-    show hinata at right1
+    show hinata at righthinata
     h "So really, don’t feel too bad, Keiku. You were great out there."
     n "Really, you were just unfortunate that today happened to be Ichihime’s day off."
     hide nana
@@ -1147,7 +1153,7 @@ label post_date2:
     show hat at left1
     k "She was involved in the very first mahjong crime I solved. It was a murder that had occurred within the shrine."
     hide yui
-    show hinata at right1
+    show hinata at righthinata
     h "They really just let you take a murder for your first case? Involved with the Mahjong Soul Shrine no less? Is that even legal?"
     k "Yep. You’d be surprised at what the MCD can get away with."
     k "If you’re a detective, it’s totally legal for you to just give your work to someone else with zero training."
@@ -1159,7 +1165,7 @@ label post_date2:
     i "It was pretty surprising to see someone like Keiku show up instead of a typical detective."
     i "I’ve gotta get going nyao. It was nyice meeting you all. Sayonyara."
     hide cat
-    show hinata at left1
+    show hinata at lefthinata
     h "I’m surprised at how nice a celebrity like her is in person."
     hide hinata
     show hat at left1
@@ -1177,14 +1183,14 @@ label post_date2:
     x "You know, I could always pay for us to eat somewhere nicer than in WcDonald’s."
     n "Nonsense. No one else does a chicken burger as good as their WcChicken."
     hide nana
-    show hinata at right1
+    show hinata at righthinata
     h "The food might be awful, but tradition is tradition."
 label maccas:
-    scene bg maccas
+    scene bg maccas with fade
 #    {play  https://www.youtube.com/watch?v=szDKbPLq-to }
     show nana at left1
     n "Alright girls, what do you each want?"
-    show hinata at right1
+    show hinata at righthinata
     h "I’ll just have a salad and a WcFlurry."
     hide hinata
     show xenia at right1
@@ -1199,7 +1205,7 @@ label maccas:
     k "Hmmmmmmm."
     k "I’m feeling pretty hungry. What’s a big burger on the menu?"
     hide nana
-    show hinata at left1
+    show hinata at lefthinata
     h "The Big Wac?"
     k "That looks big, but I want to go bigger."
     hide hinata
@@ -1212,7 +1218,7 @@ label maccas:
     show yui at left1
     y "Will you really be alright eating something that big?"
     k "Of course. The fat all just goes to my thighs in the end anyway."
-    scene bg maccastable
+    scene bg maccastable with fade
     show nana
     n "Before this feast begins, I’d like to say a few words."
     n "Today you all played extremely well. Every single one of us deserves praise."
@@ -1231,7 +1237,7 @@ label maccas:
     k "Although honestly I kind of feel like that was directed at me specifically. I don’t see anyone else at this table that recently dealt into a yakuman."
     n "Hehe, I simply thought you could use the reassurance."
     hide nana
-    show hinata at left1
+    show hinata at lefthinata
     h "If you think about it though, that speech really does apply to all of us. We’ve all dealt into yakumans."
     hide hat
     show yui at right1
@@ -1243,7 +1249,7 @@ label maccas:
     y "I wouldn’t say it’s like destiny. It’s more like a force of nature."
     y "It’s like dying. It’ll happen to everyone eventually."
     hide yui
-    show hinata at right1
+    show hinata at righthinata
     h "That’s a pretty morbid comparison, but you’re not wrong."
     h "All you can really do is to try and prolong the time before your inevitable yakuman deal-in. There’s no need to feel bad about things you can’t control."
     h "I think the same thing applies to fourth places in mahjong. Eventually, everyone gets hit by a fourth place. So you shouldn’t feel bad about it when it does happen to you."
@@ -1265,7 +1271,7 @@ label maccas:
     y "True skill in mahjong is reflected in your performance over hundreds of games. A wide space is needed to eliminate the influence of flukes and chance."
     y "So I don’t think a tournament like this is really reflective of any team’s true skill. It’s just five hanchans after all."
     hide xenia
-    show hinata at right1
+    show hinata at righthinata
     h "Exactly. Now if this was a league that went on for weeks and weeks of games, that would be a bit more accurate."
     hide yui
     show nana at left1
@@ -1275,25 +1281,23 @@ label maccas:
     show xenia at right1
     x "Ahahahaha. Yes, indeed. At least this way we can invent a curse to blame it all on."
     hide nana
-    show hinata at left1
+    show hinata at lefthinata
     h "Hey, Keiku’s been quiet for a while."
     h "Keiku, are you alright there?"
     hide xenia
     show hat at right1
     k "Mmmm… oh….mffff….yeah, I’m just eating, still."
-    h "You’re really going at that Biggest Mac. You’re barely halfway done. Are you sure that you’re going to be able to finish that?"
+    h "You’re really going at that Biggest Wac. You’re barely halfway done. Are you sure that you’re going to be able to finish that?"
     k "Well, I have to admit, I am starting to feel a bit full. I’ll be fine though."
     k "All that stuff you guys were saying was really inspiring."
     k "I always thought that games were all just like, you either win it or you lose it."
     h "The random nature of mahjong makes the line between a win and a loss a bit blurry."
     h "In some situations, you can come third and lose points, but still consider that a victory."
-    hide hat
+    hide hinata
     show yui at left1
     y "I think that it’s possible to even consider certain fourth places as victories."
     y "Given all the elements of the game that are out of your control, you could hypothesize that there is a maximum score and placement one can get in each game relative to one’s opponents."
     y "Thus your goal in each game would simply be to achieve that maximum score. Even if that score is in fourth place, you would want to achieve it so that damage can be kept to a minimum."
-    hide hinata
-    show hat at right1
     k "I see, I see."
     k "Maybe you could apply this to life in general too? We’re all just trying to do our best in life. We shouldn’t be moaning about how we could have gotten more out of it, just so long as we’ve gotten the most we could have out of it."
     hide yui
@@ -1306,7 +1310,7 @@ label maccas:
     k "I think I finally understand why this game is so important to people now."
     k "Mahjong is just like life, in the end. We’re all thrown about by random chance and we’re just trying to make the best of what we’re given."
     hide hat
-    show hinata at right1
+    show hinata at righthinata
     h "Yeah, mahjong sounds like a pretty apt metaphor for life when you put it that way."
     h "Although it’s a little depressing to think about. Mahjong and life both have winners and they both have losers."
     n "That’s fine. All you have to do is just try to not be one of the losers."
@@ -1324,7 +1328,7 @@ label maccas:
     k "I think I’m just going to take it home with me."
     k "(I’ll just keep it under my hat.)"
     hide xenia
-    show hinata at right1
+    show hinata at righthinata
     h "..."
     hide hat
     show nana at left1
@@ -1349,7 +1353,7 @@ label maccas:
     y "Does it?"
     k "Yep."
     hide yui
-    show hinata at left1
+    show hinata at lefthinata
     h "I could swear the hat just winked at me..."
     k "Anyway, it looks like everyone's done eating, so what happens now?"
     k "(It’s only 5pm and I’ve got nothing to do tonight. I might as well stay in the city a while longer.)"
@@ -1364,8 +1368,9 @@ label pre_date3:
     if girl=="Hinata":
         jump hinata_date3
 label post_date3:
+    scene bg black with fade
     "*Weeks later.*"
-    scene bg classroom
+    scene bg classroom with fade
     show hat
     k "(Today was so draining.)"
     k "(It’s my birthday, but I haven’t gotten a single message about it.)"
@@ -1376,7 +1381,7 @@ label post_date3:
     k "(I thought that at least [girl] would maybe text me.)"
     k "(Normally, I feel super excited about going to club after class, but today I don’t know if I’m feeling up to it.)"
     k "(I should still go anyway, though. Everyone expects me there.)"
-    scene bg clubroom
+    scene bg clubroom with fade
     show hat
     k "(What the heck? Why aren’t the lights on? Where’s that switch? Where’s everyone else? Did club get cancelled?)"
     k "(Ah, here it is.)"
@@ -1442,15 +1447,21 @@ label post_date3:
     hide hat
     show hatp
     "Fin."
+    $ renpy.pause (15.0)
     jump credits
 
 label credits:
-    "uh?"
-    "something"
+    scene bg credits with fade
+    "Written by anon"
+    "Coded by anon"
+    "Spell checked by anon"
+    "Miscellaneous done by anon"
+    "Artwork done by anon's >wife"
+    "From everyone at >The >'Winning' >Team, thanks for playing"
     jump bog
 
 label bog:
-    scene bg bogged
+    scene bg bogged with fade
     b1 "How is ze Prophecy proceeding?"
     b2 "It seems zat our agents have been able to distract her. She has totally forgotten about ze UGR."
     b1 "Excellent. It appears zat Watson has failed."

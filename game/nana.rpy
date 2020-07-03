@@ -1,5 +1,5 @@
 label nana_date1:
-    scene bg schoolfront
+    scene bg schoolfront with fade
     show hat
 
     k "(Nana seemed like a fun person to be around. I’ll call and ask her if she wants to hang out.)"
@@ -17,7 +17,7 @@ label nana_date1:
 #    {bg change to the gym. Consider having hat png and nana png with png fencing masks over their faces and (blunted sport) fencing blades, mite b funny}
 #    {Play https://files.catbox.moe/i91fhx.ogg }
     hide hat
-    scene bg gym
+    scene bg gym with fade
     show hatfence at left1
     show nanafence at right1
     n "Keiku, have you ever done this before?"
@@ -135,7 +135,7 @@ label nana_date1:
     k "(Hey, this juice is actually pretty good. She has good taste.)"
 #    {Background transition to Keikus room at night, with crickets playing.}
 #        {same as above. Never gonna date nana in my life ;_;}
-    scene bg keikunight
+    scene bg keikunight with fade
     show hat
     k "(That was really tiring.)"
     k "(But I guess that’s a good thing.)"
@@ -153,14 +153,14 @@ label nana_date2:
     show hat
     k "(Time to head off to the library.)"
     k "(It seems weird that she’d want to meet me in the library, but I was planning on asking her to meet me there anyway.)"
-    scene bg library
+    scene bg library with fade
     show nana at right1
     show hat at left1
     n "Ah, Keiku!"
     k "Hey, Nana."
     n "Listen, I need to talk to you about something personal. Come over here."
     k "(What could it be? With the way she’s yanking me over, it has to be important.)"
-    scene bg bookshelf
+    scene bg bookshelf with fade
     k "Alright, what’s up?"
     n "Keep your voice down. I don’t want people to overhear this."
     k "Okay, I gotcha."
@@ -209,13 +209,13 @@ label nana_date2:
     k "No no, I challenged you, so you should pick."
     n "Well, if that’s the case, I pick black."
 #    {Background transition to chessboard}
-    scene bg chess
+    scene bg chess with fade
     k "(She sure seems confident in herself.)"
     k "(Shoot, I’m not actually that good at chess. I should have picked shogi instead.)"
     k "(I guess I’ll start with this pawn.)"
     k "(Next the other pawn.)"
     k "(. . .)"
-    scene bg chessend
+    scene bg chessend with fade
 #    {fade to black, then transition to chessboard in a late stage game with white winning.}
     k "(We’ve been playing for a while now.)"
     k "(I’m sort of surprised that I’m winning.)"
@@ -273,7 +273,7 @@ label nana_date2:
     k "I guess that is true."
     k "(So that’s just her way of trying to make things interesting, is it?)"
     k "Anyway, it’s time I headed off. Loser has to pack up the game. Laters."
-    scene bg train
+    scene bg train with fade
     show hat
     k "(Hmmm, that was a lot of fun.)"
     k "(Even if I spent most of the game just looking for something interesting to stare at while she thought about her moves.)"
@@ -295,7 +295,7 @@ label nana_date2:
     k "Don’t worry about it. Talk to me about anything, any time you want."
     k "Anyway, my stop’s coming up. I’ll see you tomorrow at the tournament."
     n "Yep, see you tomorrow. Good luck!"
-    scene bg keikunight
+    scene bg keikunight with fade
     show hat
     k "(Well, that was a lot of fun.)"
     k "(At the very least, I can definitely say I got back at her for that fencing match.)"
@@ -308,7 +308,7 @@ label nana_date3:
     scene maccastable
     show xenia at left1
     x "Time to leave, I suppose."
-    show hinata at right1
+    show hinata at righthinata
     h "Yep. Bye, everyone, see you all on monday."
     hide xenia
     show yui at left1
@@ -328,7 +328,7 @@ label nana_date3:
     n "Karaoke with friends is a key part in the social life of any Japanese high schooler."
     n "Come on, it’ll be fun."
     n "Besides, no one actually expects you to be good at singing for karaoke."
-    scene bg karaoke
+    scene bg karaoke with fade
     #{Stop playing previous music}
     show hat at left1
     show nana at right1
@@ -400,7 +400,7 @@ label nana_date3:
     n "Keiku, let’s sing all night!"
 #    {fade bg to black, fade to train night time.}
 #    {play https://www.youtube.com/watch?v=sdpmAAuR1N0&list=PL3-XFrU0Gj6lCJmooIqRJX-kYwhP3fOce&index=14 }
-    scene bg train
+    scene bg train with fade
     show hat at left1
     show nana at right1
     k "Phew, that was a lot of fun, but my voice is all tired out now."
@@ -415,7 +415,7 @@ label nana_date3:
     n "Just meet me on the train. Make sure you’re wearing something you can move freely in."
     k "Alright then. I’ll see you tomorrow."
     n "I’m looking forward to it."
-    scene bg keikunight
+    scene bg keikunight with fade
     show hat
     k "(That whole tournament today was a lot of fun.)"
     k "(Especially watching Nana play. The way she plays is so cool!)"
@@ -428,7 +428,7 @@ label nana_date3:
     k "(I guess that just means I’m excited to see her tomorrow.)"
     k "(. . .)"
     k "( z z z )"
-    scene bg keiku
+    scene bg keiku with fade
     "*Kikikanri!* *Kikikanri!*"
     show hat
     k "*Yawwwwwn*"
@@ -437,7 +437,7 @@ label nana_date3:
     k "(Time to get up and go.)"
     k "(That’s funny. I’m not having any trouble getting out of bed this morning like I normally do on a Sunday.)"
     #{bg fade to black and into train daytime.}
-    scene bg train
+    scene bg train with fade
     show hat at left1
     k "(If I’ve timed this right, I should be on the same train as Nana.)"
     show nanab at right1
@@ -456,7 +456,7 @@ label nana_date3:
     k "(I’m really nervous about this.)"
     k "(But I felt the same way about fencing and karaoke, and those were a lot of fun.)"
     k "(So I’m just going to trust Nana and give it my all.)"
-    scene bg skate
+    scene bg skate with fade
     show nanab at left1
     show hat at right1
     n "Alright, let’s just start by getting you used to the way the board moves."
@@ -555,7 +555,7 @@ label nana_date3:
     k "(It feels like tingles are trickling down my spine.)"
     n "Thanks for carrying me, Keiku. Really. It’s a big help."
 
-    scene bg train
+    scene bg train with fade
     show nanab at right1
     show hat at left1
     n "I really don’t like going home this early, but it can’t be helped."
@@ -590,7 +590,8 @@ label nana_date3:
     n "K-keiku, did you just kiss me?"
     k "Oh god, I’m sorry. I’m sorry, Nana, I shouldn’t have done that, I just felt so caught up and I..."
     n "No, it’s fine. I’m actually glad that you made the first move there."
-    scene bg nanaart
+    scene bg nanaart with fade
+    $ renpy.pause (10.0)
     n "Keiku, I love you."
     k "I’m so happy to hear that. I love you too."
     n "I really wasn’t expecting to have my first kiss today, though."
@@ -603,7 +604,7 @@ label nana_date3:
     n "I’m gonna have to lie down like this for the whole day, so you better stay with me, alright!"
     k "Of course. There’s no way I’d leave you now."
 
-    scene bg black
+    scene bg black with fade
     show hat
     k "(Since I joined the mahjong club, my life has become a lot brighter.)"
     k "(In just one week, I’ve not only made friends, but also met a lover.)"

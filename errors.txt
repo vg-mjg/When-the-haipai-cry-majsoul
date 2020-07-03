@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1471: expected statement.
-    ??? "ALL HAIL THE UGR."
-    ^
+File "game/script.rpy", line 1452: expected ':' not found.
+    label credits
+                 ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Fri Jul  3 08:47:18 2020
+Fri Jul  3 14:30:27 2020

@@ -1,5 +1,5 @@
 label hinata_date1:
-    scene bg schoolfront
+    scene bg schoolfront  with fade
     show hat
     k "(I think I’ll text Hinata. She seemed like a nice person.)"
     "*abababa* *abababa*"
@@ -9,8 +9,8 @@ label hinata_date1:
     h "Ah, this is perfect timing! I actually need some help with the school garden. Would you be able to come on down right now?"
     k "I’d be happy to!"
 #    {BG transition to school garden}
-    scene bg schoolgarden
-    show hinata at right1
+    scene bg schoolgarden with fade
+    show hinata at righthinata
     h "I’m so glad you stopped by. Would you be able to help me pick up that big bag of mulch over there?"
     show hat at left1
     k "Oh, sure."
@@ -61,7 +61,7 @@ label hinata_date1:
     hide hinata
 #    {BG scene transition to Keikumusumes room, night, play the crickets noises. https://www.youtube.com/watch?v=Olfg9KK_bmE}
 #        {same as above.}
-    scene bg keikunight
+    scene bg keikunight with fade
     show hat
     k "(I didn’t realise gardening could be so enjoyable.)"
     k "(I didn’t think it could be so tiring either.)"
@@ -78,12 +78,12 @@ label hinata_date1:
 label hinata_date2:
     show hat
     k "(Off to the gardens then.)"
-    scene bg garden
+    scene bg garden with fade
 #    {play https://www.youtube.com/watch?v=2DuvYC3zENI /// is this good? I’m not sure. Does it fit the somewhat melancholy conversation they’re having?}
 #        {it should be good enough}
     show hat at left1
     k "Hey, Hinata."
-    show hinata at right1
+    show hinata at righthinata
     h "Hello, Keiku. Did you want to go anywhere in particular this afternoon?"
     k "Not really. I was just bored and I thought you might need help with the plants again."
     h "Ah thanks, I really appreciate the help."
@@ -156,12 +156,12 @@ label hinata_date2:
     h "Being acknowledged like that is a really good feeling. It’s like you’re on top of the world."
     h "Oh well. There’s nothing more to it than to do my best."
     k "That’s right."
-    scene bg gardens
+    scene bg gardens with fade
     show hat at left1
     k "(Ah, she took a lot of photos.)"
     k "(She sure can talk for a long time if you ask her about all the plants she has hanging around here.)"
     k "(It’s not like I don’t enjoy listening to it though.)"
-    show hinata at right1
+    show hinata at righthinata
     h "It’s starting to get late. I think now’s a good time to go home."
     k "Yeah, I should probably be heading off soon."
     k "Thanks for having me here and letting me look through all your photos, Hinata."
@@ -169,7 +169,7 @@ label hinata_date2:
     h "Even though I’ve only known you for a few days, I feel like I can relax around you."
     k "I feel the same way. Anyway, I’ll see you tomorrow at the tournament."
     h "Yep. See you tomorrow!"
-    scene bg keikunight
+    scene bg keikunight with fade
     show hat
     k "That was a nice afternoon."
     k "It felt good to confide in someone like that."
@@ -183,7 +183,7 @@ label hinata_date2:
 
 
 label hinata_date3:
-    scene bg maccastable
+    scene bg maccastable with fade
     show xenia at left1
     x "Well, I’ll have to take my leave now."
     show nana at right1
@@ -192,7 +192,7 @@ label hinata_date3:
     show yui at left1
     y "Bye bye. See you all on monday."
     hide nana
-    show hinata at right1
+    show hinata at righthinata
     h "I actually have some free time right now. Would you like to hang out before we go home, Keiku?"
     hide yui
     show hat at left1
@@ -206,9 +206,9 @@ label hinata_date3:
 #    {Background fade to black, image change to the zoo.}
 
 #    {Play https://www.youtube.com/watch?v=fPSCYZW8LjI&list=PL3-XFrU0Gj6labD69JOO6I1mjKaun2-Q-&index=17 }
-    scene bg zoo
+    scene bg zoo with fade
     show hat at left1
-    show hinata at right1
+    show hinata at righthinata
     k "Hinata, do you have a particular favourite animal?"
     h "I don’t have any specific favourite animal, but I think the most interesting animals are those with strong social structures."
     k "Like ants?"
@@ -258,7 +258,7 @@ label hinata_date3:
     h "Would you like to come visit me? I’ve got some fruits that are going to be ripening soon."
     k "Of course, I’d love to!"
     h "Great. Meet me at my place tomorrow morning, then. I’ll text you the address."
-    scene bg keikunight
+    scene bg keikunight with fade
     #{Cut music, play crickets.}
     show hat
     k "(Today's tournament was a lot of fun.)"
@@ -271,7 +271,7 @@ label hinata_date3:
     k "( z z z )"
 
 
-    scene bg keiku
+    scene bg keiku with fade
     "*Kikikanri!* *Kikikanri!*"
     show hat
     k "*Yawwwwn*"
@@ -287,14 +287,14 @@ label hinata_date3:
     k "(Aw, shoot! I was so excited, I forgot my railcard!)"
     k "(Okay, now it’s time to be going.)"
 #    {Fade to black, play a train noise or something, change bg to front of Hinatas house.}
-    scene bg hinata
+    scene bg hinata with fade
     show hinata
     h "Keiku, I’m so glad you came. Come inside with me."
     #{BG change, backyard garden.}
     #{play https://www.youtube.com/watch?v=F-SsPbS-oaY&list=PLWLfw4C6KoVE3qWt834nAHBmy5Rwz6QHb&index=91 }
-    scene bg backyard
+    scene bg backyard with fade
     show hat at left1
-    show hinata at right1
+    show hinata at righthinata
     k "Wow, this is even more impressive than the school gardens."
     h "Thanks. I’ve put a lot of work into them."
     h "Anyway, I’ve got freshly picked strawberries here."
@@ -314,14 +314,14 @@ label hinata_date3:
     #{fade to black}
     #{Play some sound effect that sounds like hand washing.}
     #{BG change, inside Hinatas house.}
-    scene bg hinatainside
+    scene bg hinatainside with fade
     show hat
     k "(Her bathroom smelled nice. I should ask what sort of air freshener she uses.)"
     k "(Actually, I’d bet it’s something homemade that requires specially grown herbs and stuff.)"
     k "(Now, which way was her backyard again?)"
     k "(I can’t believe I got lost inside a simple two-story house.)"
 #    {BG change, living room, photos spread all over the floor (blur photos a lot)}
-    scene bg hinatainside
+    scene bg hinatainside with fade
     show hat
     k "(What’s this? Photos?)"
     k "(Ah, I really shouldn’t be looking through these. They might be Hinata’s private stuff.)"
@@ -329,7 +329,7 @@ label hinata_date3:
     k "(Awwww, she looks so cute. She’s in a little sunflower costume, that’s adorable.)"
     k "(There’s no way I can see that and not take a peek at it.)"
     hide hat
-    show hinata at right1
+    show hinata at righthinata
     show hat at left1
     h "Ah, Keiku."
     k "Gah!"
@@ -377,14 +377,14 @@ label hinata_date3:
     h "It’s decided, then. Where’s the wedding taking place?"
     k "In your garden, of course. We’ve already got the perfect place, don’t we?"
     h "Hm, okay. Why don’t you point out the specific spots to me."
-    scene bg backyard
+    scene bg backyard with fade
     show hat at left1
-    show hinata at right1
+    show hinata at righthinata
     k "Over there, in that clearing, we’d have a space for all our guests to sit."
     k "Of course, everyone from the mahjong club would be our bridesmaids, and they can sit by that rose bush over there."
     h "I see. Where would the bride be kissed?"
     k "How about, right there."
-    scene bg hinataart
+    scene bg hinataart with fade
     k "Yep, this is definitely the sweetest fruit of them all."
     h "Keiku, can you promise me that you’ll always be there for me?"
     k "Of course. We’re family now."
@@ -396,7 +396,7 @@ label hinata_date3:
     h "But please, promise me that you’ll at least be with me until we graduate."
     k "I promise. This will be the best year of our lives."
 
-    scene bg black
+    scene bg black with fade
     show hat
     k "(Since I joined the mahjong club, my life has become a lot brighter.)"
     k "(In just one week, I’ve not only made friends, but also met a lover.)"

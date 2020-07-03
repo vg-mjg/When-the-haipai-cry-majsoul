@@ -1,5 +1,5 @@
 label secret:
-    scene bg dream
+    scene bg dream with fade
     show hat
     k "Yawwwn."
     k "Where am I? This place is weird."
@@ -29,7 +29,7 @@ label secret:
     w "It’s…"
     w "It’s…"
     "*Kikikanri!* *Kikikanri!*"
-    scene bg keiku
+    scene bg keiku with fade
     show hat
     k "..."
     k "Huh? What?"
