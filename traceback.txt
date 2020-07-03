@@ -1,24 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 995, in script
-    if girl="Hinata":
-SyntaxError: invalid syntax (script.rpy, line 995)
+  File "game/nana.rpy", line 388, in script
+    kn ". . ."
+Exception: Sayer 'kn' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 995, in script
-    if girl="Hinata":
-  File "/home/cero/renpy-7.3.5-sdk/renpy/ast.py", line 1832, in execute
-    if renpy.python.py_eval(condition):
-  File "/home/cero/renpy-7.3.5-sdk/renpy/python.py", line 2057, in py_eval
-    code = py_compile(code, 'eval')
-  File "/home/cero/renpy-7.3.5-sdk/renpy/python.py", line 692, in py_compile
-    raise e
-SyntaxError: invalid syntax (script.rpy, line 995)
+  File "game/nana.rpy", line 388, in script
+    kn ". . ."
+  File "/home/cero/renpy-7.3.5-sdk/renpy/ast.py", line 678, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "/home/cero/renpy-7.3.5-sdk/renpy/ast.py", line 576, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who.encode("utf-8"))
+Exception: Sayer 'kn' is not defined.
 
 Linux-4.13.0-32-generic-x86_64-with-debian-stretch-sid
 Ren'Py 7.3.5.606
 WTHC 1.0
-Thu Jul  2 22:04:08 2020
+Fri Jul  3 08:49:10 2020

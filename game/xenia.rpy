@@ -274,3 +274,276 @@ label xenia_date2:
     k "(. . .)"
     k "( z z z )"
     jump post_date2
+
+
+
+label xenia_date3:
+    scene bg maccastable
+    show nana at left1
+    n "Well, I’m off. Laters, guys."
+    show hinata at right1
+    h "Yep. See you all on monday."
+    hide nana
+    show yui at left1
+    y "Bye bye."
+    hide hinata
+    show xenia at right1
+    x "Oh, Keiku, I’ve got some free time before I have to go home, too. Do you want to hang out?"
+    hide yui
+    show hat at left1
+    k "Of course I want to hang out."
+    x "Great. Quick question. Do you have a tent? What about sleeping bags?"
+    k "Huh? No, I don’t have any of that stuff."
+    x "That’s fine. Now’s the time we buy them."
+    x "It’s an excellent opportunity, after all."
+    k "You’re right. If we’re here in the city then we might as well go look at a camping store right now."
+    scene bg campingstore
+#    {Play https://www.youtube.com/watch?v=sdpmAAuR1N0&list=PL3-XFrU0Gj6lCJmooIqRJX-kYwhP3fOce&index=14 }
+    show hat at left1
+    show xenia at right1
+    k "Hmmmmm."
+    k "Xenia, what exactly do you think we’ll need for this camping trip?"
+    x "Well, we’ll only be away for one night, and not even a full night at that. I’ll definitely need to sneak back home in the morning."
+    x "So we’ll need a tent and sleeping bags. Also hiking packs to carry them and maybe some food in."
+    k "I see. What about this tent over there? It looks big and comfy. Look how much room there is in this thing."
+    x "No, that won’t do. Although I admit it looks cozy, it’s just too big."
+    x "You need a small tent or we won’t be able to carry it."
+    x "Something like this will do well."
+    k "But that tent looks tiny. Are we going to even be able to fit in that?"
+    x "It’ll be fine, we might just need to squeeze together a little bit."
+    k "(Somehow I feel like squeezing together with Xenia... might not be so bad.)"
+    x "Hmmm, we’ll also need decent walking shoes, packs, scroggin..."
+    k "Oh, Xenia, what about this pack here? It’s a Hello Kitty pack, it looks so cute."
+    x "Indeed it does. However it’s simply not robust enough."
+    k "(I don’t know anything about this stuff at all. I guess it’s fine to just let her take care of it.)"
+    k "(She really is full of surprises.)"
+    scene bg campingstoreout
+    show xenia at right1
+    show hat at left1
+    x "Right, that’s everything we need."
+    k "You bought a lot. Let me carry it."
+    x "Why? I can carry my own share just fine."
+    k "Fair enough, then. I wouldn’t have minded doing it. After all, you’re the one who paid for everything."
+    x "It’s still not really money that I earned, though. I guess I just want to feel like I did something myself, huh."
+    scene bg train
+    show hat at left1
+    show xenia at right1
+    k "Say, Xenia, when do you want to actually do this sneak camping trip?"
+    x "Hmmm."
+    x "How about tonight?"
+    k "Tonight? Are you sure about that?"
+    x "Tonight is just as good as any other night."
+    k "Tonight it is, then. What’s the plan?"
+    x "Well, first of all, you’ll need to take everything back to your place."
+    x "My parents are usually in bed by around 10pm. So come at that time. Bring everything with you, and meet at the gate at my place."
+    k "What’s the actual plan for smuggling you out of the house?"
+    x "It’s simple. I’ll just walk out the front door. I can use a chair or something to climb over the gate."
+    k "If it’s that simple then why did you want me to go with you?"
+    x "Isn’t it obvious? Camping’s no fun if you’re alone. I want your company."
+    k "Where are we actually going camping?"
+    x "There’s a forest not too far from my house. There’s a good, clear space there that we can use."
+    x "Then, in the morning, we walk back and I sneak in, like nothing happened."
+    x "It’s foolproof."
+    k "I have to say, spontaneously sneaking out of the house to go camping on a whim is pretty crazy."
+    k "Your parents are quite strict, aren’t they? Aren’t you worried about them finding out?"
+    x "I don’t even care if they do find out. One night of freedom with you is well worth it."
+    k "Well, that’s that, then. Let’s make tonight a night to remember."
+    x "Indeed. My stop’s coming up now. I trust that you’ll be there tonight."
+    k "You can count on it. I’ll see you tonight."
+
+    scene bg keikusunset
+    show hat
+    k "(I’ve got about an hour before I need to go to Xenia’s. I guess I’ll lie down and read for a bit.)"
+    k "(. . .)"
+    k "(. . .)"
+    k "(Argh, I just can’t sit still and concentrate.)"
+    k "(I feel funny. I can hear my heart beating.)"
+    k "(I can’t get tonight's camping trip out of my head. What if we get caught sneaking out? What if something goes wrong?)"
+    k "(All I can do is pace around my room and think about this trip.)"
+    k "(Actually, I’m not sure if I’d truly say that I’m worried.)"
+    k "(Maybe I’m really just excited? Excitement and fear feel kind of similar in a way.)"
+    k "(Yeah, I’m actually just really excited for this trip with Xenia.)"
+    k "(It’s like I’m a knight rescuing a princess from her castle.)"
+    k "(Although she’d probably kill me if I were to describe it like that.)"
+    k "(Yeah, she’d definitely kill me if I ever actually referred to her as a princess, haha.)"
+    k "(Ahhhh, what am I thinking. It’s just a camping trip. Nothing more than that.)"
+    k "(Tick tock. Come on, move faster, clock.)"
+    scene bg keikunight
+    show hat
+    k "(Finally! I’d better hop on that late night train.)"
+    scene bg xenianight
+    show xenia at left1
+    show hat at right1
+    x "Oh, Keiku, you came. Thank you so much."
+    x "Did you bring everything?"
+    k "Got it all right here."
+    x "Excellent. Let me just climb over this gate and we can get going."
+#    *Play thud noise https://www.youtube.com/watch?v=4OUa62jBA6Y*
+#    {///maybe consider adding some *thud* sound to indicate landing after the jump between these two lines?}
+    x "Alright, let’s start walking."
+#    {change background to forest at night.}
+#    {play https://www.youtube.com/watch?v=cQwCOBBLXEI }
+    scene bg forest
+    show hat at left1
+    show xenia at right1
+    k "This forest is pretty dense. Aren’t you worried about getting lost, Xenia?"
+    x "Don’t worry, I know this forest pretty well."
+    x "My family actually owns this land."
+    k "Wow, seriously? This whole forest? How much land does your family own?"
+    x "Uhhhh."
+    x "Lots."
+    x "I find this walkway quite nostalgic."
+    x "I played here a lot as a kid. So even at night, I know this place like the back of my hand."
+    x "I miss those days. I didn’t have to worry about how I would be representing the family's image or things like that."
+    x "When you’re a little kid, you can say whatever you want and people will just write it off as a kid being a kid."
+    x "But I feel like I need to constantly watch myself when I’m around my family. I’m always putting on a face for them."
+    x "Hanging out with you and the mahjong club are the only times when I get to feel like I’m me."
+    k "I’m glad that we can do that much for you at least."
+    k "I think I used to feel similarly."
+    k "Not because I had to hide any parts of myself."
+    k "But because I don’t think I really had a sense of who I was in the first place."
+    k "Before becoming a mahjong detective, and before joining the club, I was just the girl who sat and read books in silence."
+    k "Always taking in the stories of other people, but never living my own stories."
+    k "You can’t express your true self if there’s nothing there to express in the first place."
+    k "In comparison to that sort of life, going out like this is really exciting."
+    k "Even though we’re basically just going for a walk, my heart is racing."
+    x "I absolutely agree with you. Adventures like this develop character. We can’t develop if we’re just locked inside all day."
+    k "Exactly."
+    k "Oh yeah, Xenia, I have to ask this."
+    k "Why are you still wearing such a fancy outfit? Aren’t you worried about it getting muddy?"
+    x "{size=-10}Because there weren’t any assets of me in camping clothes for the developers to steal.{/size}"
+    k "Huh? I didn’t hear that."
+    x "Like I said, I know this forest well already, and it’s not like it’s raining."
+    x "Why are you wearing that hat on a night time camping trip? It’s not like you need to protect yourself from the sun."
+    k "This hat is just special to me is all."
+    k "Hats are an old tradition in my family."
+    k "It belonged to my great grandparents, who passed it down to my grandparents, who passed it down to my parents, who passed it on to my uncle, who left it to me."
+    k "So I wear it to remember them all. It’s like I’m able to take them wherever I go."
+    k "I know you’re not that fond of your family, but it’s important to remember that they’re the only family you’ve got."
+    k "Once they’re gone, that’s it."
+    x "Keiku..."
+    k "Ah, I’m sorry. I don’t want to sound like I’m accusing you of anything."
+    x "No, it’s fine. Maybe it’s true that I should appreciate them a little more."
+    x "I think I might have a better perspective on that when I’m older."
+    x "Maybe when I become an independent adult I’ll miss it."
+    x "Or perhaps if I ever have to look after a child, I’ll understand."
+    x "It’s easy to complain about not being able to do certain things, or having to take extra lessons at home."
+    x "But perhaps from their perspective they want to protect me or help me grow into the finest person I can be."
+    k "Well, I definitely think they’re a bit overzealous. But I don’t think it necessarily comes from a bad place."
+    k "I mean, not letting your daughter go on a little camping trip is a bit ridiculous. They definitely should tone it down."
+    k "I’m sorry if it sounds like I’m lecturing you or anything like that."
+    x "Nah, it’s fine. I like you, and I appreciate whatever you have to say."
+    x "We’re here, by the way. This is the spot we’re going to use to pitch our tent."
+    scene bg forestmoon
+    show hat at left1
+    show xenia at right1
+    #{Play  https://www.youtube.com/watch?v=VWPACef2_eY }
+    k "This is beautiful."
+    k "Your family owns a whole lake?"
+    x "Haha, it’s not really a lake. It just looks bigger than it really is during the night time."
+    k "You can see the full moon reflected in it. It’s so beautiful."
+    x "Yeah, it really is a nice night, isn’t it?"
+    x "I’m going to pitch the tent up now."
+    k "Ah, let me help."
+    k "So this pole goes here… stick this in like that…"
+    k "Why won’t this bit connect properly?"
+    k "Xenia, is it supposed to be all loose like this?"
+    x "Let me handle it, Keiku. This trip wouldn’t be happening without you, so let me take care of this while you take a rest."
+    k "(I guess it’s fine to let her handle it, then.)"
+    k "(At first glance you’d assume she’d be too pampered to do anything on her own, but she goes out of her way to do things by herself.)"
+    k "(That’s a good quality.)"
+    k "(The moon really does look beautiful tonight.)"
+    k "(The way it casts that silver light across the water and gently lights up the flowers around the clearing is so pretty.)"
+    k "(I wouldn’t mind camping out here with her forever.)"
+    k "(Or at least I wouldn’t if it wasn’t so cold!)"
+    x "Keiku, it’s done!"
+    scene bg tent
+    show hat at left1
+    show xenia at right1
+    k "I know earlier I said that this tent looked small, but somehow it feels a lot bigger when you’re actually inside it."
+    k "It’s like the tent is its own little world."
+    x "Indeed. It’s one of the coziest parts of camping."
+    k "So what happens now? Do we just go to sleep?"
+    x "Hmmm. Well, you can, if you want to. But personally, I don’t feel like it. If we came all this way just to sleep, we could have just stayed in bed."
+    k "Yeah, we can’t just waste time sleeping."
+    x "To be honest with you, I got so excited about coming out here that I didn’t think about what we were actually going to do."
+    x "We’ve got the torches and plenty of battery, but we can’t exactly go exploring in the middle of the night like this."
+    k "So do we just stay in this tent?"
+    x "I suppose so."
+    x "Keiku, can I ask you something?"
+    k "Go ahead."
+    x "Do you love me?"
+    k "(Wow, that was upfront.)"
+    k "(But that makes it a lot easier for me.)"
+    k "Yeah, I love you."
+    k "I love how spontaneous you are. Like how this entire trip that got decided on a whim. If I were in your position, I wouldn’t have been brave enough to sneak out. I love that."
+    k "I love everything about you, Xenia. Do you love me?"
+    x "Of course I love you, Keiku. I wouldn’t have asked you if I didn’t."
+    x "I love how you listened to my stupid complaints and that you were willing to come out here with me at the last minute. I love just being around you."
+    x "Of course I consider the other girls in the club to be my friends, but I don’t feel connected to them like I do with you."
+    x "Wouldn’t it be nice to run away together permanently?"
+    k "I was going to say that it’s impossible, but yeah, we could do that."
+    k "I already have my own place I inherited from my uncle, and I’m guaranteed work in the MCD after I graduate."
+    x "Wait, are you serious? I can just move in with you?"
+    x "Hmmmmmm."
+    x "I’d like to, but I don’t think I could just abandon my family so easily."
+    k "Hehehe, that’s fine, I wasn’t expecting you to just drop everything and move in with a girl you’d only known for a week."
+    k "But just for tonight, you and I can have this whole world to ourselves."
+    x "Let’s make tonight a night to remember."
+    scene bg xeniaart
+    $ renpy.pause (10.0)
+    scene bg tent
+    show hat at left1
+    show xenia at right1
+    k "That was an amazing night, Xenia."
+    x "Indeed. That might just have been the best night of my life."
+    k "It’s such a shame it had to end, though."
+    x "Yeah, I really do wish we could stay out here longer, but I need to get going before my family wakes up."
+    x "We’re definitely doing this again, though. There’s no way I’d let this be the last time we go out camping."
+    x "They can disown me for all I care."
+    k "My doors are always open for you if that ends up happening."
+    scene bg xeniafront
+    show hat at left1
+    show xenia at right1
+    k "How are you going to get back over the gate?"
+    x "Ah, I didn’t actually think about that."
+    k "You can use me as a footstool if you like."
+    who "Oh, there’s no need for that."
+    x "M-mother!?"
+    hide hat
+    show mom at left1
+    m "Xenia, where have you been."
+    x "Nowhere. Me and a friend just hung out is all."
+    m "You know, I almost called the police."
+    x "Urk. Does dad know?"
+    m "No, I thought it was better to give you a chance to explain yourself first."
+    m "Come on, in you go. Run inside, we’re going to be having a little chat later."
+    hide xenia
+    m "As for you. What were you doing with my daughter?"
+    show hat at right1
+    k "(Aw shit.)"
+    k "We just went on a little camping trip is all. We just went out by that lake."
+    m "Hmmmmm."
+    k "See, I’ve got the tent and stuff in this pack right here."
+    m "You don’t seem the dishonest type."
+    m "I suppose this is fine."
+    m "I was worried that some boy was getting his filthy hands all over my daughter."
+    k "(I’m not a boy, but hands certainly were going places.)"
+    m "You’re Keikumusume, right?"
+    k "How did you know my name?"
+    m "Xenia has been talking about you a lot lately."
+    m "If we ask about how her day was, or her time in the mahjong club, your name seems to pop up an awful lot."
+    m "So thank you for being my daughter’s friend."
+    m "I think we’ve been a little too protective of her. Feel free to take her out camping any time."
+    k "Right. Thank you!"
+    scene bg black
+    show hat
+    k "(Since I joined the mahjong club, my life has become a lot brighter.)"
+    k "(In just one week, I’ve not only made friends, but also met a lover.)"
+    k "(I’m not sure how long me and Xenia will last.)"
+    k "(Once we graduate, she’ll probably go to some fancy university, and I’ll be super busy working for the MCD.)"
+    k "(But that’s fine. That’s sort of just how highschool relationships go.)"
+    k "(For now, I want to treasure this year with her.)"
+    k "(I need to visit Watson’s grave again soon. In a way, he taught me to not close myself off. I need to thank him for that.)"
+    k "(I can’t go back in time and spend more time with him. But I’ll be sure to treasure the time I have with Xenia now.)"
+    jump post_date3

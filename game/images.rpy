@@ -51,6 +51,30 @@ image nanafence =  ConditionSwitch(
 image cat =  ConditionSwitch(
             "_last_say_who == 'i'", "cat.png",
             "not _last_say_who == 'i'", "catgrey.png")
+image mom =  ConditionSwitch(
+            "_last_say_who == 'm'", "hag.png",
+            "not _last_say_who == 'm'", "haggrey.png")
+image nanab =  ConditionSwitch(
+            "_last_say_who == 'n'", "nanab.png",
+            "not _last_say_who == 'n'", "nanabgrey.png")
+image nanap =  ConditionSwitch(
+            "_last_say_who == 'n'", "nanap.png",
+            "not _last_say_who == 'n'", "nanapgrey.png")
+image yuip =  ConditionSwitch(
+            "_last_say_who == 'y'", "yuip.png",
+            "not _last_say_who == 'y'", "yuipgrey.png")
+image xeniap =  ConditionSwitch(
+            "_last_say_who == 'x'", "xeniap.png",
+            "not _last_say_who == 'x'", "xeniapgrey.png")
+image hinatap =  ConditionSwitch(
+            "_last_say_who == 'h'", "hinatap.png",
+            "not _last_say_who == 'h'", "hinatapgrey.png")
+image hatp =  ConditionSwitch(
+            "_last_say_who == 'k'", "hatp.png",
+            "not _last_say_who == 'k'", "hatpgrey.png")
+image wwyd =  ConditionSwitch(
+            "_last_say_who == 'w'", "wwyd.png",
+            "not _last_say_who == 'w'", "wwydg.png")
 
 
 

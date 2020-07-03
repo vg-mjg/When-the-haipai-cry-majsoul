@@ -180,3 +180,230 @@ label hinata_date2:
     k "(. . .)"
     k "( z z z )"
     jump post_date2
+
+
+label hinata_date3:
+    scene bg maccastable
+    show xenia at left1
+    x "Well, I’ll have to take my leave now."
+    show nana at right1
+    n "Same. Laters."
+    hide xenia
+    show yui at left1
+    y "Bye bye. See you all on monday."
+    hide nana
+    show hinata at right1
+    h "I actually have some free time right now. Would you like to hang out before we go home, Keiku?"
+    hide yui
+    show hat at left1
+    k "Sure, Hinata, I’d love to."
+    h "Great! Is there anywhere in particular that you’d like to go, then?"
+#    {///The following sentence feels slightly off. Please consider rewording a bit. My suggestion: “Is there some place that Hinata might love to visit?”}
+#    {reworked it}
+    k "(Hmmmmmm. Is there any place that Hinata would enjoy visiting?)"
+    k "Oh, what about the zoo? I think there’s a small one close by."
+    h "That sounds wonderful, let’s go there, then."
+#    {Background fade to black, image change to the zoo.}
+
+#    {Play https://www.youtube.com/watch?v=fPSCYZW8LjI&list=PL3-XFrU0Gj6labD69JOO6I1mjKaun2-Q-&index=17 }
+    scene bg zoo
+    show hat at left1
+    show hinata at right1
+    k "Hinata, do you have a particular favourite animal?"
+    h "I don’t have any specific favourite animal, but I think the most interesting animals are those with strong social structures."
+    k "Like ants?"
+    h "Well, not ants. They do have a social structure, of course, but individual ants aren’t very complex. Also, they’re kind of gross."
+    h "I’m thinking more along the lines of animals like prairie dogs or orcas."
+    h "Did you know that scientists once found a pod of orca that were caring for a disabled member?"
+    h "The orca was missing two of its fins. As such, it wasn’t able to hunt for food on its own."
+    h "You’d think that the rest of the pod would have simply abandoned it, since it couldn’t contribute to the group..."
+    h "But every time after the pod finished hunting, they would still allow the disabled orca to eat with the rest of them."
+    h "It would likely have been more efficient for the other orca to have left it behind since it couldn’t catch any of its own food."
+    h "But they didn’t. They stuck together simply because she was family."
+    k "Wow, that’s really fascinating. I thought that animals were all about rules of nature and the law of the jungle and stuff."
+    h "You’d be surprised at how much they can care for each other."
+    h "What about you, Keiku. Do you have a favourite animal?"
+    k "Hmmmmm."
+    k "I like the red panda a lot."
+    h "Any particular reason why?"
+    k "Oh, no reason, they’re just cute is all. No other reason needed."
+    k "Although, I’m also quite fond of emperor penguins."
+    k "It’s like what you were saying about animals with family bonds, I find that trait in the penguins to be admirable."
+    k "The way that they all work together to huddle for warmth."
+    k "They all get their turn on the outside of the huddle, and then their turn near the middle where it’s warmer."
+    k "What really impresses me is the way they’re so dedicated to protecting their young."
+    k "They work so hard to keep their chicks warm, and they go on such harsh journeys with them."
+    k "They suffer a lot to protect their kids. I know it’s probably just instinct or something like that, but I still find it really admirable."
+    h "Ah, you’re right, they’re a pretty good example of what I’m talking about."
+    k "Hinata, did you ever own any pets?"
+    h "Unfortunately not. I would have really liked to have owned a dog, though."
+    h "But there wouldn’t have been anyone around to look after it while I was at school."
+    h "I guess if it was trained I could have just left it indoors, but I feel like it would have gotten lonely."
+    k "That’s sad, but I definitely think it was the mature decision for you to make."
+    h "Heheh, maybe I could have gotten a pet spider instead."
+    k "Yuck. Speaking of insects, though, you should have gotten a pet to go with the garden."
+    k "Like caterpillars, and then you could have butterflies in the garden."
+    h "And let them eat all my precious plants? No, thanks."
+    h "However, I don’t really mind seeing snails and the like enter my gardens."
+    h "They are pests, of course, but it feels nice knowing that someone or something appreciated my hard work."
+    k "They’re just snails, though, aren’t they? Do they even have enough brain cells to appreciate being alive?"
+    h "Heh, you’re right, they probably don’t."
+    h "Oh gosh, look at the time."
+    h "We’ve been talking for so long that the zoo’s about to close."
+    k "Already? We barely saw any of the animals."
+    k "Oh well. I really liked talking with you, Hinata."
+    h "Yep, me too."
+    h "Keiku, are you going to be busy tomorrow?"
+    k "Nope. Why?"
+    h "Would you like to come visit me? I’ve got some fruits that are going to be ripening soon."
+    k "Of course, I’d love to!"
+    h "Great. Meet me at my place tomorrow morning, then. I’ll text you the address."
+    scene bg keikunight
+    #{Cut music, play crickets.}
+    show hat
+    k "(Today's tournament was a lot of fun.)"
+    k "(I can’t believe I actually dealt into a yakuman, though.)"
+    k "(What were even the odds of a kokushi musou on a double riichi.)"
+    k "(Even so, though, everyone was super nice about it.)"
+    k "(I can’t wait to see Hinata tomorrow.)"
+    k "(I should have joined this club a lot earlier. She’s such a good friend. I really feel connected to her.)"
+    k "(. . .)"
+    k "( z z z )"
+
+
+    scene bg keiku
+    "*Kikikanri!* *Kikikanri!*"
+    show hat
+    k "*Yawwwwn*"
+    k "(Usually it’s a lot harder to get out of bed on a sunday morning.)"
+    k "(But not today! Today my heart’s going a million miles a minute, and I’m roaring to go.)"
+    k "(Time to go off to Hinata’s place.)"
+#    {Exit Keikus sprite, play the sound of a door closing}
+    hide hat
+    ". . ."
+    ". . ."
+    ". . ."
+    show hat
+    k "(Aw, shoot! I was so excited, I forgot my railcard!)"
+    k "(Okay, now it’s time to be going.)"
+#    {Fade to black, play a train noise or something, change bg to front of Hinatas house.}
+    scene bg hinata
+    show hinata
+    h "Keiku, I’m so glad you came. Come inside with me."
+    #{BG change, backyard garden.}
+    #{play https://www.youtube.com/watch?v=F-SsPbS-oaY&list=PLWLfw4C6KoVE3qWt834nAHBmy5Rwz6QHb&index=91 }
+    scene bg backyard
+    show hat at left1
+    show hinata at right1
+    k "Wow, this is even more impressive than the school gardens."
+    h "Thanks. I’ve put a lot of work into them."
+    h "Anyway, I’ve got freshly picked strawberries here."
+    k "Wow, are these the strawberries we were planting earlier this week?"
+    h "Haha, unfortunately not. Those won’t be ripe for some time."
+    h "These are just strawberries that I planted a while ago at home."
+    h "I owe you for the help, though, so I want you to have some."
+    k "Thanks. These look delicious. They look so much juicier than the ones you find at the supermarket."
+    h "Thanks."
+    h "Actually, if you see anything else you like, you can have it. You can take whatever you like from my garden."
+    k "Wow, really? Thanks a lot."
+    k "Everything here looks so good! These raspberries are so pink and juicy-looking."
+    h "Thanks. Those were actually the hardest to grow."
+    k "Oh, by the way, where’s the bathroom in your house?"
+    h "Ah, just go inside and down the hall on the left."
+    k "Thanks."
+    #{fade to black}
+    #{Play some sound effect that sounds like hand washing.}
+    #{BG change, inside Hinatas house.}
+    scene bg hinatainside
+    show hat
+    k "(Her bathroom smelled nice. I should ask what sort of air freshener she uses.)"
+    k "(Actually, I’d bet it’s something homemade that requires specially grown herbs and stuff.)"
+    k "(Now, which way was her backyard again?)"
+    k "(I can’t believe I got lost inside a simple two-story house.)"
+#    {BG change, living room, photos spread all over the floor (blur photos a lot)}
+    scene bg hinatainside
+    show hat
+    k "(What’s this? Photos?)"
+    k "(Ah, I really shouldn’t be looking through these. They might be Hinata’s private stuff.)"
+    k "(Oh wait, but there’s one of Hinata when she was younger.)"
+    k "(Awwww, she looks so cute. She’s in a little sunflower costume, that’s adorable.)"
+    k "(There’s no way I can see that and not take a peek at it.)"
+    hide hat
+    show hinata at right1
+    show hat at left1
+    h "Ah, Keiku."
+    k "Gah!"
+    k "Ahhhh, I’m sorry, Hinata, I wasn’t snooping. It’s just that this one photo of you in the sunflower outfit looked so adorable."
+    k "I couldn’t not peek at it."
+    h "That’s fine, I don’t really mind if you look through those."
+    k "So, are these all old family photos?"
+    h "Yep. I was going through some of these last night."
+    h "Look at this one. This one’s from when we were on holiday in the countryside."
+    k "Wow, you look so cute with that little sunhat on."
+    h "And this one here is of my dad eating some of the first fruit I ever grew."
+    k "(She looks so young in a lot of these photos.)"
+    k "(But it’s weird.)"
+    k "(It’s like there’s less and less family photos as she gets older.)"
+    k "Hinata… you really miss them, don’t you?"
+    h ". . ."
+    h "Yeah, I do, actually."
+    h "I really do."
+    h "Their business trips go for weeks at a time."
+    h "Whenever they are around, they’re usually too tired from work to do much."
+    h "I understand that work is important, but I’d take living in a hovel if it meant we could be together as a proper family again."
+    h "I want to help my mother cook again. I remember that being so much fun. We’d make the sweetest apple pies."
+    h "When my dad was around on the weekends, he’d always make us watch a western movie."
+    h "At the time, I always thought they were slow and boring, but I’d really like to do that again."
+    h "I can’t complain to them, though. I’d just look like a stupid crybaby."
+    k "You aren’t a stupid crybaby at all, though. It’s normal to want to have a family around."
+    k "I feel the same way as you, though."
+    k "My parents both passed away when I was really young, and my uncle passed away recently."
+    k "So apart from you and the club, I’m all alone."
+    h "Ah gosh, I’m so sorry, Keiku. At least my family is still around. You probably don’t want to listen to me whining about mine."
+    k "Not at all. It feels nice to find someone who feels the same way as I do."
+    k "You know, I’m really glad I joined the mahjong club. If it weren’t for all of you, I’d be completely alone."
+    h "I’m glad we can at least be there for you."
+    k "Yeah."
+    k "You know, Hinata, what is a family, anyway?"
+    k "If we’re missing family, we should just make our own."
+    h "I’d definitely like that. I’m not sure how it’d work, though. You couldn’t just adopt yourself into my family and become my sister."
+    k "Hmmmmm."
+    k "You’re right. The only other way is marriage. So how about I become your wife instead."
+    h "Wait, Keiku, are you serious?"
+    k "Haha, I was only joking."
+    k "We’d wait until we at least graduate before we get married."
+    h "Pfftahahaha."
+    h "I wouldn’t mind that at all."
+    h "It’s decided, then. Where’s the wedding taking place?"
+    k "In your garden, of course. We’ve already got the perfect place, don’t we?"
+    h "Hm, okay. Why don’t you point out the specific spots to me."
+    scene bg backyard
+    show hat at left1
+    show hinata at right1
+    k "Over there, in that clearing, we’d have a space for all our guests to sit."
+    k "Of course, everyone from the mahjong club would be our bridesmaids, and they can sit by that rose bush over there."
+    h "I see. Where would the bride be kissed?"
+    k "How about, right there."
+    scene bg hinataart
+    k "Yep, this is definitely the sweetest fruit of them all."
+    h "Keiku, can you promise me that you’ll always be there for me?"
+    k "Of course. We’re family now."
+    h "I’m so happy, Keiku. I feel like I could burst into tears."
+    h "I love you, Keiku."
+    k "I love you, too."
+    h "I understand that this might not last forever."
+    h "Marriage is definitely a long shot."
+    h "But please, promise me that you’ll at least be with me until we graduate."
+    k "I promise. This will be the best year of our lives."
+
+    scene bg black
+    show hat
+    k "(Since I joined the mahjong club, my life has become a lot brighter.)"
+    k "(In just one week, I’ve not only made friends, but also met a lover.)"
+    k "(I’m not sure how long me and Hinata will last.)"
+    k "(Once we graduate, she’ll probably have to go to university, or a farm, and I’ll be super busy working for the MCD.)"
+    k "(But that’s fine. That’s sort of just how highschool relationships go.)"
+    k "(For now, I want to treasure this year with her. We’re bound by a promise, after all.)"
+    k "(I need to visit Watson’s grave again soon. In a way, he taught me to not close myself off. I need to thank him for that.)"
+    k "(I can’t go back in time and spend more time with him. But I’ll be sure to treasure the time I have with Hinata now.)"
+    jump post_date3

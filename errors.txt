@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1038: end of line expected.
-    k "(Other people might say that she’s just very lucky, but I think she’s just playing in a way that maximises the chances of success.")
-                                                                                                                                          ^
+File "game/script.rpy", line 1471: expected statement.
+    ??? "ALL HAIL THE UGR."
+    ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Thu Jul  2 22:00:19 2020
+Fri Jul  3 08:47:18 2020

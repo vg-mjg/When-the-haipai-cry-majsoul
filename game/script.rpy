@@ -12,6 +12,11 @@ define h = Character("Hinata")
 define x = Character("Xenia")
 define i = Character("Ichihime")
 define everyone = Character("Everybody")
+define m = Character("Sawako")
+define b1 = Character("Igor Bogdanoff")
+define b2 = Character("Grichka Bogdanoff")
+define boss = Character("???")
+define w = Character("wwyd-chan")
 
 label start:
 
@@ -659,7 +664,7 @@ label post_date1:
             hide xenia
             show nana at right1
             n "I think this is one of those cases where there isn’t exactly an objectively right answer."
-
+            $ s1=True
     hide yui
     hide hinata
     hide hat
@@ -701,6 +706,7 @@ label post_date1:
             y "Yep. That’s the same reasoning I had."
             y "Some people might try to argue that you should discard the one pin since it can upgrade the hand with pinfu if you draw a six souzu."
             y "But I don’t think it’s worth the risk."
+            $ s2=True
             hide hat
             hide yui
 
@@ -790,11 +796,11 @@ label post_date1:
     k "(Guess I’ll just have to do my best, and let the heavens take care of the rest.)"
     k "(. . .)"
     k "( z z z )"
-
-label pre_date2:
+    if s1&s2:
+        jump secret
     scene bg keiku
     "*kikikanri!* *kikikanri!*"
-#    {Play boy in the windmill}
+label pre_date2:
     show hat
     k "Yawwwwwwn."
     k "Time for another school day."
@@ -1349,7 +1355,126 @@ label maccas:
     k "(It’s only 5pm and I’ve got nothing to do tonight. I might as well stay in the city a while longer.)"
     k "It’s getting a little late, but I think I’m going to hang around the city a bit."
 label pre_date3:
-    "fin"
+    if girl=="Yui":
+        jump yui_date3
+    if girl=="Nana":
+        jump nana_date3
+    if girl=="Xenia":
+        jump xenia_date3
+    if girl=="Hinata":
+        jump hinata_date3
+label post_date3:
+    "*Weeks later.*"
+    scene bg classroom
+    show hat
+    k "(Today was so draining.)"
+    k "(It’s my birthday, but I haven’t gotten a single message about it.)"
+    k "(This is the first time I’ve had a birthday like this.)"
+    k "(In the past, Watson would always send me a little gift.)"
+    k "(They were never anything huge, but the acknowledgement was nice.)"
+    k "(I never knew how much I would miss that, until it was gone.)"
+    k "(I thought that at least [girl] would maybe text me.)"
+    k "(Normally, I feel super excited about going to club after class, but today I don’t know if I’m feeling up to it.)"
+    k "(I should still go anyway, though. Everyone expects me there.)"
+    scene bg clubroom
+    show hat
+    k "(What the heck? Why aren’t the lights on? Where’s that switch? Where’s everyone else? Did club get cancelled?)"
+    k "(Ah, here it is.)"
+    hide hat
+    show yuip
+    y "Surprise, Keiku! Happy birthday!"
+    hide yuip
+    show hinatap
+    h "Surprise, Keiku! Happy birthday!"
+    hide hinatap
+    show nanap
+    n "Surprise, Keiku! Happy birthday!"
+    hide nanap
+    show xeniap
+    x "Surprise, Keiku! Happy birthday!"
+    #{Play https://www.youtube.com/watch?v=eFg4dyUuVlM }
+    hide xeniap
+    show hat
+    k "..."
+    k "This is for me?"
+    hide hat
+    show hat at left1
+    show xeniap at right1
+    x "Of course it’s for you. You’re part of this club, are you not?"
+    k "I didn’t think anyone would remember or care."
+    hide hat
+    show hinatap at left1
+    h "Of course we remembered. Everyone in this club is precious."
+    hide xeniap
+    show yuip at right1
+    y "We even made a cake."
+    hide hinatap
+    show nanap at left1
+    n "We got a keiku for Keiku."
+    hide yuip
+    show hat at right1
+    k "..."
+    k "You guys are the best."
+    hide nanap
+    if girl=="Hinata":
+        show hinatap at left1
+        h "Keiku, I brought you a birthday gift. See? It’s the strawberries we planted together. Happy birthday, Keiku."
+        hide hinatap
+    if girl=="Yui":
+        show yuip at left1
+        y "Keiku, I made this for you. It’s a garage kit of the main character from ‘Cry of the Seacat’. Happy birthday."
+        hide yuip
+    if girl=="Nana":
+        show nanap at left1
+        n "Keiku, check out what I got you. It’s your own karaoke machine. I had a peak at the music on your phone and loaded it up with your favourite tracks. Happy birthday."
+        hide nanap
+    if girl=="Xenia":
+        show xeniap at left1
+        x "I got something for you here, Keiku. It’s a bottle of the finest champagne I could smuggle out of the house. Don’t let the teachers catch you with it on your way out. Happy birthday."
+        hide xeniap
+    hide hat
+    show hat
+    k "Thanks, I love it, I love you, [girl]!"
+    k "I can’t believe you all did this for me."
+    k "I’m so happy I joined this club now."
+    k "Where’s that counsellor? I owe the hag a big thank you."
+    k "You guys really are the best!"
+    hide hat
+    show hatp
+    "Fin."
+    jump credits
+
+label credits:
+    "uh?"
+    "something"
+    jump bog
+
+label bog:
+    scene bg bogged
+    b1 "How is ze Prophecy proceeding?"
+    b2 "It seems zat our agents have been able to distract her. She has totally forgotten about ze UGR."
+    b1 "Excellent. It appears zat Watson has failed."
+    b2 "Better luck next time, old man, nyohohohohoh."
+    b1 "Have we gathered enough flow yet?"
+    b2 "We have, indeed. If Keiku had begun investigating us from the start, we would have likely lost already."
+    b2 "Now is the time for us to strike. By ze time she realises her error, it will be too late."
+    b1 "Love truly is ze sweetest poison of them all. Nyohohohoho."
+    b2 "Perhaps one could say zat love is like a blindfold."
+    b2 "With love, it cannot be seen."
+    boss "Is everything proceeding according to plan?"
+    b1 "Of course. Everything is going exactly as ze Dead Sea Scrolls predicted."
+    boss "Ah, then our rigging was a success."
+    boss "My return to the throne of the Akashic Record is inevitable."
+    boss "Soon, the walls will be under my control."
+    boss "OHOHOHOHOHOHO!"
+    b1 "ALL HAIL THE UGR."
+    b2 "ALL HAIL THE UGR."
+    boss "ALL HAIL THE UGR."
+
+    "When the Haipai Cry, Part 3: Killing Arc."
+    "Release date: To be announced whenever FromSoft drops a trailer for Armored Core 6."
+
+
 
 
 
