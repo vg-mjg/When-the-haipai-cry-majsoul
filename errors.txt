@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1452: expected ':' not found.
-    label credits
-                 ^
+File "game/script.rpy", line 24: could not parse statement.
+    play music "audio/detectivekeiku.mp3" with fadein 1.0 with fadeout 1.0
+                                          ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Fri Jul  3 14:30:27 2020
+Sat Jul  4 13:18:15 2020

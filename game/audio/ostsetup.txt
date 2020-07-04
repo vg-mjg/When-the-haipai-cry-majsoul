@@ -1,0 +1,59 @@
+detectivekeiku plays in the opening scene. Cut when you get to the opening credits. 
+doubt plays in the scene right after the opening credits scene. The ony where Keiku is reading over Watsons case file. Cut at the "the next afternoon"
+counselling plays in the first day at school, when Keiku goes to counselling. Trigger when the bg changes to a class room. Cut when the background changes to the school hall, around the line "(Ahhhhhh! That dub hag!)"
+sliceoflice plays when Keiku joins the mahjong club. Specifically at the line "Sure, you can join. Do you have the form?"
+fencingwithnana plays when the first game of mahjong starts. At the line "Okay. This is just like the online games of mahjong I've played. There's no need to be nervous." Cut at "Ron! That's mangan, 12000 points!"
+sliceoflife plays when the first hanchan ends. Starts at the line "Even though I came fourth, and even though I seriously embarrassed myself, that was pretty fun." Cut at the bg change to Keikus room at night
+contemplation plays at keikus room at night. Starts at "they seemed like a strange bunch." cut at " z z z "
+counselling plays at "Another boring day at school has gone by." Cut when the player gets the option to choose which route they're going on 
+yuidate1 plays after the player chooses to date Yui and Yui picks up the phone. Specifically the line "...what?". Cut when the player goes to Keikus bedroom at night. Then play crickets noises. 
+hinatadate1 plays after Hinata is chosen and she picks up her phone. Specifically the line "Hello, who is it?" Cut when BG transitions to Keikus room and play crickets
+thud sfx plays after the line "(Just moving it this short distance is a pain in the backside.)" 
+xeniadate1 plays after Xenia is chosen and she picks up the phone, specifically the line "Hello, Xenia here." Cut when BG transitions to Keikus room at night.
+thud sfx plays on the line "Does Xenia have wobbly floorboards or something? I feel like I could tip over."
+fencingwithnana plays when Nana says "Yo! Who's this?" and cuts at the line "We're going again!" 
+thud sfx plays bwetween "But today that's going to be her downfall." and when nana says "What!" 
+woosh sfx plays after "It's a javelin!"
+nanadate1 plays at "I feel so sweaty. I'm all out of breath. I think I've even got a bruise or two." Cut when bg transitions to Keikus room at night. Play crickets.
+clock sfx plays in the classroom. just before the line "Class is going so slowly today. I want it to end already." Cut at "*time passes*"
+bell sfx plays at *Bing Bong* *Bing bong* 
+sliceoflice plays when the bg changes to the mahjong club room, just before "Ah, Keiku, you're here." cuts at "We're just going to look at a series of mahjong problems to solve."
+wwyd plays when the first wwyd question is presented to the player. Cut at the bg change to Keikus room at night. Play crickets.
+dream plays at "Yawwwn." in the dream scene if the player has that flag ticked.
+sliceoflice plays at "Yawwwwwwwn" when Keiku wakes up in the scene after dream 
+yakumandealin sfx plays at "Wait, what the hell is written on her locker?" for the the Yui date 2. Cut boy in the windmill here.
+yuidate2 starts playing at "Let's watch that then." On yuis second date.Cut at the change to Keikus bedroom at night. and play crickets.
+xeniadate2 plays at "two cages and 100 balls for me and my friend please." Cut when bg changes to Keikus room play crickets."
+hinatadate2 plays at the BG change to the school gardens, right after "Off to the gardens then." cut when BG fades to black and goes to Keikus beroom at night play crickets
+nanadate2 plays at "Ah, Keiku!" after the bg changes to the library. Fade out when BG changes to Keikus room at night."
+meetupatthetournament plays at "(Ah, that tournament is happening today.)" Cut when you get to "Ehe, just leave it to me."
+tournament plays at "(Oh wow, it's starting, this is so exciting.)" cut at "(I’ll discard this worthless Xia tile. That’ll be safe.)"
+yakumandealin plays at "RON NYAA! Kokushi musou! That'll be 48,000 points, please."
+wcdonalds plays at "What were the odds! Who wouldn’t have discarded the xia against a double riichi?" Fade out at "It's getting a little late, but I think I'm going to hang around the city a bit."
+yuicitydate plays when Keiku and Yui go to the arcade. "They're still around. I know a great one in this area." cut at bg change to Keikus room night.
+KO sfx plays at the line "K.O." on the Yui arcade date. 
+thud sfx plays when Keiku falls over. Right after she shouts "This is way too fast!" 
+yuidate3 plays at "*knock knock*" on Yuis third date scene. Fade out when the bg fades to black.
+
+keikunanatrain plays at the bg change to the camping store on the Xenia city date section. Cut at the BG change to Keikus room at sunset. (I know it says keikunanatrain we're using this song twice)
+thud sfx plays after "Excellent. Let me just climb over this gate and we can get going."
+cicadasounds plays at the backgound change to forest at night. Cut at the BG change to the lake 
+xenialakedate plays when the background changes to the lake with a full moon. Cut when the BG fades to black.
+
+futureisinourhands plays at "THE FUTURE IS IN OUR HAAAAAAAAANDS" Cut at the ... after AAAAAAA"
+nantokanare plays at "Y-yaseeeeeee" cut at "Great stuff, Keiku. See how much fun it is to just belt it out?"
+youwashock plays at "YOU ARE SHOCK" cut at bg fade to train night time.
+keikunanatrain plays after the bg fades to the train at night. Cut when the BG changes to Keikus room at night.
+keikunanatrain2 plays at "Time to get up and go." Cut at "Ah, shit!"
+thud plays between "WOOOOO!" and "Ah, shit!"
+keikunanatrain3 plays at "Alright, then" when Keiku is carrying Nana. Cut out when bg fades to black 
+
+hinatacitydate plays at the bg change to the zoo. Cut at the BG change to Keikus bedroom at night.
+hinatadate3 plays when the bg changes to Hinatas garden around "Keiku, I'm so glad you came. Come inside with me." Cut when bg fades to black 
+
+keikubirthdayparty plays at "Surprise Keiku! Happy birthday!"  cut after credits 
+
+bogdanoff plays when the bogdanoffs bg pops up 
+
+
+

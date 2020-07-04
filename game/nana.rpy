@@ -1,6 +1,7 @@
 label nana_date1:
     scene bg schoolfront with fade
     show hat
+    play music "audio/fencingwithnana.mp3" fadeout 1.0 fadein 1.0
 
     k "(Nana seemed like a fun person to be around. I’ll call and ask her if she wants to hang out.)"
     "* abababa* *abababa*"
@@ -68,9 +69,11 @@ label nana_date1:
     k "(I think it’s called a lunge? When she leaps forwards with her arm outstretched, like a scorpion stinging its prey.)"
     k "(Honestly, it’s kind of beautiful in a way. She’s so fast. The form is perfect. You can tell she’s practiced it a lot.)"
     k "(But today that’s going to be her downfall.)"
+    play sound "audio/thud.mp3"
 #    {play thud noise}
 #    {BZZT}
     n "What!"
+    play music "audio/sliceoflife.mp3" fadeout 1.0 fadein 1.0
     n "I don’t believe it. You dived right onto the floor. You went prone just as I lunged, and ducked under the blade."
     n "That’s ridiculous, but it worked."
     k "(I won’t be caught by those lunges anymore. This is it, it’s time for my counter attack!)"
@@ -102,6 +105,7 @@ label nana_date1:
 #    {Play https://www.youtube.com/watch?v=iawEZ2ejWm8&list=PLeKSx7u-0kRiJqH14dswC-lHh8Nuu0APx&index=22}
     hide hatfence
     hide nanafence
+    play music "audio/nanadate1.mp3" fadeout 1.0 fadein 1.0
     show hat at left1
     show nana at right1
     k "(I feel so sweaty. I’m all out of breath. I think I’ve even got a bruise or two.)"
@@ -136,6 +140,7 @@ label nana_date1:
 #    {Background transition to Keikus room at night, with crickets playing.}
 #        {same as above. Never gonna date nana in my life ;_;}
     scene bg keikunight with fade
+    play music "audio/crickets.mp3" fadeout 1.0 fadein 1.0
     show hat
     k "(That was really tiring.)"
     k "(But I guess that’s a good thing.)"
@@ -154,6 +159,7 @@ label nana_date2:
     k "(Time to head off to the library.)"
     k "(It seems weird that she’d want to meet me in the library, but I was planning on asking her to meet me there anyway.)"
     scene bg library with fade
+    play music "audio/nanadate2.mp3" fadeout 1.0 fadein 1.0
     show nana at right1
     show hat at left1
     n "Ah, Keiku!"
@@ -298,6 +304,7 @@ label nana_date2:
     k "Anyway, my stop’s coming up. I’ll see you tomorrow at the tournament."
     n "Yep, see you tomorrow. Good luck!"
     scene bg keikunight with fade
+    play music "audio/crickets.mp3" fadeout 1.0 fadein 1.0
     show hat
     k "(Well, that was a lot of fun.)"
     k "(At the very least, I can definitely say I got back at her for that fencing match.)"
@@ -305,9 +312,10 @@ label nana_date2:
     k "(Oh well. I better go to sleep soon.)"
     k "(. . .)"
     k "( z z z )"
+    jump post_date2
 
 label nana_date3:
-    scene maccastable
+    scene bg maccastable
     show xenia at left1
     x "Time to leave, I suppose."
     show hinata at righthinata
@@ -341,6 +349,7 @@ label nana_date3:
     n "And if that doesn’t work then there’s always alcohol."
     n "Alright, I’ve picked out my song. ‘Mirai wa bokura no te no naka’."
     #{Play https://www.youtube.com/watch?v=j7myzgxz9nI }
+    play music "audio/futureisinourhands.mp3" fadeout 1.0 fadein 1.0
     n "THE FUTURE IS IN OUR HAAAAAAAAANDS."
     k "(Wow, she’s even bringing out the pretend air guitar on stage.)"
     n "WE DON’T NEED ANYONE’S RULES."
@@ -358,6 +367,7 @@ label nana_date3:
     n "OOOOOO"
     n "AAAAAAAA"
     n "..."
+    stop music
     #{cut music}
     n "Alright, how was that?"
     k "Amazing! You look so cool up there."
@@ -367,6 +377,7 @@ label nana_date3:
     k "This song looks nice. ‘Nantokanare’."
     k "Ahem."
     #{play https://www.youtube.com/watch?v=NvJGKyiGPyQ }
+    play music "audio/nantokanare.mp3" fadeout 1.0 fadein 1.0
     k "Y-yaseeeeeee."
     k "G-gaman bakkari deee."
     k "Mou…"
@@ -381,6 +392,7 @@ label nana_date3:
     k "WOAAAAAAAH"
     n "NANTOKANAREEEEEEEE"
 #    {cut music}
+    stop music
     n "Great stuff, Keiku. See how much fun it is to just belt it out?"
     n "Let’s do a proper duet this time."
     k "Hmmm, hmmm..."
@@ -389,6 +401,7 @@ label nana_date3:
     k "Alright, let’s do it."
     k ". . ."
     #{Play https://www.youtube.com/watch?v=sPPVgHQu09Y }
+    play music "audio/youwashock.mp3" fadeout 1.0 fadein 1.0
     n "YOU ARE SHOCK!"
     k "Because of your love, even the sky collapses..."
     n "YOU ARE SHOCK!"
@@ -403,6 +416,7 @@ label nana_date3:
 #    {fade bg to black, fade to train night time.}
 #    {play https://www.youtube.com/watch?v=sdpmAAuR1N0&list=PL3-XFrU0Gj6lCJmooIqRJX-kYwhP3fOce&index=14 }
     scene bg train with fade
+    play music "audio/keikunanatrain.mp3" fadeout 1.0 fadein 1.0
     show hat at left1
     show nana at right1
     k "Phew, that was a lot of fun, but my voice is all tired out now."
@@ -418,6 +432,7 @@ label nana_date3:
     k "Alright then. I’ll see you tomorrow."
     n "I’m looking forward to it."
     scene bg keikunight with fade
+    stop music
     show hat
     k "(That whole tournament today was a lot of fun.)"
     k "(Especially watching Nana play. The way she plays is so cool!)"
@@ -435,7 +450,7 @@ label nana_date3:
     show hat
     k "*Yawwwwwn*"
     #{play https://www.youtube.com/watch?v=yN77vYbXLB4 }
-
+    play music "audio/keikunanatrain2.mp3" fadeout 1.0 fadein 1.0
     k "(Time to get up and go.)"
     k "(That’s funny. I’m not having any trouble getting out of bed this morning like I normally do on a Sunday.)"
     #{bg fade to black and into train daytime.}
@@ -528,9 +543,11 @@ label nana_date3:
     k "(She has a lot of distance between her and the stairs, though.)"
     k "(She’s building up a lot of speed.)"
     k "(Maybe she’ll actually pull this off…)"
+    stop music
     n "WOOOOO!"
     #{Play noise that sounds like a crash}
     #{cut music}
+    play sound "audio/thud.mp3"
     n "Ah, shit!"
     k "Nana! Are you alright?"
     n "Owwwwwww."
@@ -549,6 +566,7 @@ label nana_date3:
     k "I’m going to carry you back to the trainstation. Come on, hop on my back."
     n ". . ."
     n "Alright, then."
+    play music "audio/keikunanatrain3.mp3" fadeout 1.0 fadein 1.0
     #{play https://www.youtube.com/watch?v=OviLl5o4l64&list=PL3-XFrU0Gj6labD69JOO6I1mjKaun2-Q-&index=6 }
     k "(She’s a lot lighter than I expected.)"
     k "(Ah, I can feel her chest pushing against my back.)"
@@ -607,6 +625,7 @@ label nana_date3:
     k "Of course. There’s no way I’d leave you now."
 
     scene bg black with fade
+    stop music
     show hat
     k "(Since I joined the mahjong club, my life has become a lot brighter.)"
     k "(In just one week, I’ve not only made friends, but also met a lover.)"

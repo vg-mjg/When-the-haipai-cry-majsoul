@@ -1,5 +1,6 @@
 label secret:
     scene bg dream with fade
+    play music "audio/dream.mp3" fadeout 1.0 fadein 1.0
     show hat
     k "Yawwwn."
     k "Where am I? This place is weird."

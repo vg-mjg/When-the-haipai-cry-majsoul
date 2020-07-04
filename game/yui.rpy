@@ -1,6 +1,7 @@
 label yui_date1:
     scene bg schoolfront with fade
     show hat
+    play music "audio/yuidate1.mp3" fadeout 1.0 fadein 1.0
     k "(Yui... she seemed like an interesting person. I think I'll give her a ring.)"
     "*abababa* *abababa*"
     y "...what?"
@@ -70,6 +71,7 @@ label yui_date1:
     hide yui
 #    {Scene change. Keikumusume’s bedroom at night. Play crickets https://www.youtube.com/watch?v=Olfg9KK_bmE}
     scene bg keikunight with fade
+    stop music
     show hat
     k "(That was weird. What was up with all that staring and physically dragging me along?)"
     k "(She seems really nice though. I wouldn't mind hanging out with her again.)"
@@ -89,6 +91,7 @@ label yui_date2:
     k "(Hmm, judging by what she texted me, her locker should be right here.)"
     k "(Looks like I got here first.)"
     k "(Wait, what the hell is written on her locker?)"
+    play sound "audio/yakumandealin.mp3"
 #    {play https://www.youtube.com/watch?v=icv-7qvFAHQ and cut boy in the windmill}
 
     k "(‘Autismo’)"
@@ -100,6 +103,7 @@ label yui_date2:
     k "(Is there a sponge or anything like that around here?)"
     k "(No, there’s no time for that! I’m just going to have to use my shirt and some good old-fashioned spit.)"
     k "(I look like such a freak doing this. I’m pretty sure people are staring at me.)"
+    stop sound
     k "(Looks like it’s slowly coming off.)"
     k "(Ugh, this might stain my nice white shirt.)"
     k "(Too late to worry about that now though.)"
@@ -129,6 +133,7 @@ label yui_date2:
     k "Well then, there’s a murder mystery movie I’d really like to show you."
     k "It’s called ‘Cry of the Seacat’. It’s one of my favourite movies."
     y "Let’s watch that then."
+    play music "audio/yuidate2.mp3" fadeout 1.0 fadein 1.0
 #    {Start playing detective music. Either the umineko clarinet song or that one from the detective show that FE linked}
     k "It takes a little while to get going, but I think you’ll really like it."
     y "I see."
@@ -210,6 +215,7 @@ label yui_date2:
     hide yui
     hide hat
     scene bg keikunight with fade
+    play music "audio/crickets.mp3" fadeout 1.0 fadein 1.0
     show hat
     k "(I’m glad that Yui liked ‘Cry of the Seacat’.)"
     k "(Seeing someone else get passionate about a story you love is a really nice feeling.)"
@@ -221,7 +227,7 @@ label yui_date2:
     jump post_date2
 
 label yui_date3:
-    scene bg waccastable with fade
+    scene bg maccastable
     show nana at left1
     n "Well, I’m off. Laters, guys."
     show hinata at right1
@@ -239,6 +245,7 @@ label yui_date3:
     k "Are arcades still a thing?"
     y "They’re still around. I know a great one in this area."
     scene bg arcade with fade
+    play music "audio/yuicitydate.mp3" fadeout 1.0 fadein 1.0
     #{Play https://www.youtube.com/watch?v=3ko-0jUzF4U }
     show hat at left1
     show yui at right1
@@ -261,6 +268,7 @@ label yui_date3:
     k "(I guess I’ll just mash all the buttons.)"
     y "(. . .)"
     k "(. . .)"
+    play sound "audio/ko.mp3"
     "K.O."
     k "(Wow, that worked?)"
     k "GG, Yui. Let’s pick out a different game."
@@ -284,6 +292,7 @@ label yui_date3:
     y "Oh, you know."
     y "I just happen to have memorised most of the songs in this game."
     k "This is way too fast!"
+    play sound "audio/thud.mp3"
     "*Thud*"
     y "Ah, Keiku, are you okay? Let me help you up."
     k "Oh, I’m fine. I think I just tripped over my own feet."
@@ -351,6 +360,7 @@ label yui_date3:
     k "Of course! Just text me a time and place and I’ll be there."
     y "Thank you. I’ll see you tomorrow, then."
     scene bg keikunight with fade
+    stop music
     show hat
     k "(Today's tournament was a lot of fun.)"
     k "(Especially watching Yui play. The way she thinks is so fascinating.)"
@@ -385,6 +395,7 @@ label yui_final:
     k "(It’s not a bad feeling.)"
     "time passes"
     "*knock knock*"
+    play music "audio/yuidate3.mp3" fadeout 1.0 fadein 1.0
 #    {play https://www.youtube.com/watch?v=jI2dAzEAzzk&list=PLE234F313FF53A39C&index=20 }
     k "(Ah, is that her?)"
     k "Yui, is that you? Come on in."
@@ -450,6 +461,7 @@ label yui_final:
     k "(I think that’s the best communication there is.)"
     k "(We can stay like this forever.)"
     scene bg black with fade
+    stop music
     k "(Since I joined the mahjong club, my life has become a lot brighter.)"
     k "(In just one week, I’ve not only made friends, but also met a lover.)"
     k "(I’m not sure how long me and Yui will last.)"

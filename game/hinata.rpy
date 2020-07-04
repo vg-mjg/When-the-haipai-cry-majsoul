@@ -1,5 +1,6 @@
 label hinata_date1:
     scene bg schoolfront  with fade
+    play music "audio/hinatadate1.mp3" fadeout 1.0 fadein 1.0
     show hat
     k "(I think I’ll text Hinata. She seemed like a nice person.)"
     "*abababa* *abababa*"
@@ -17,6 +18,7 @@ label hinata_date1:
     k "1, 2, 3!"
     k "(What the hell, even with two people this is so heavy!)"
     k "(Just moving it this short distance is a pain in the backside.)"
+    play sound "audio/thud.mp3"
 #    {Play some sort of thud sound effect for the sound of the mulch bag being dropped}
     k "Phew. Shouldn’t this be a job for the boys in your club?"
     h "Club? There’s no club. It’s actually just me."
@@ -79,6 +81,7 @@ label hinata_date2:
     show hat
     k "(Off to the gardens then.)"
     scene bg garden with fade
+    play music "audio/hinatadate2.mp3" fadeout 1.0 fadein 1.0
 #    {play https://www.youtube.com/watch?v=2DuvYC3zENI /// is this good? I’m not sure. Does it fit the somewhat melancholy conversation they’re having?}
 #        {it should be good enough}
     show hat at left1
@@ -170,6 +173,7 @@ label hinata_date2:
     k "I feel the same way. Anyway, I’ll see you tomorrow at the tournament."
     h "Yep. See you tomorrow!"
     scene bg keikunight with fade
+    play music "audio/crickets.mp3" fadeout 1.0 fadein 1.0
     show hat
     k "That was a nice afternoon."
     k "It felt good to confide in someone like that."
@@ -183,7 +187,7 @@ label hinata_date2:
 
 
 label hinata_date3:
-    scene bg maccastable with fade
+    scene bg maccastable
     show xenia at left1
     x "Well, I’ll have to take my leave now."
     show nana at right1
@@ -207,6 +211,7 @@ label hinata_date3:
 
 #    {Play https://www.youtube.com/watch?v=fPSCYZW8LjI&list=PL3-XFrU0Gj6labD69JOO6I1mjKaun2-Q-&index=17 }
     scene bg zoo with fade
+    play music "audio/hinatacitydate.mp3" fadeout 1.0 fadein 1.0
     show hat at left1
     show hinata at righthinata
     k "Hinata, do you have a particular favourite animal?"
@@ -260,6 +265,7 @@ label hinata_date3:
     h "Great. Meet me at my place tomorrow morning, then. I’ll text you the address."
     scene bg keikunight with fade
     #{Cut music, play crickets.}
+    play music "audio/crickets.mp3" fadeout 1.0 fadein 1.0
     show hat
     k "(Today's tournament was a lot of fun.)"
     k "(I can’t believe I actually dealt into a yakuman, though.)"
@@ -293,6 +299,7 @@ label hinata_date3:
     #{BG change, backyard garden.}
     #{play https://www.youtube.com/watch?v=F-SsPbS-oaY&list=PLWLfw4C6KoVE3qWt834nAHBmy5Rwz6QHb&index=91 }
     scene bg backyard with fade
+    play music "audio/hinatadate3.mp3" fadeout 1.0 fadein 1.0
     show hat at left1
     show hinata at righthinata
     k "Wow, this is even more impressive than the school gardens."
@@ -398,6 +405,7 @@ label hinata_date3:
     k "I promise. This will be the best year of our lives."
 
     scene bg black with fade
+    stop music
     show hat
     k "(Since I joined the mahjong club, my life has become a lot brighter.)"
     k "(In just one week, I’ve not only made friends, but also met a lover.)"

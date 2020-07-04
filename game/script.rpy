@@ -21,6 +21,7 @@ define w = Character("wwyd-chan", color="#f22199")
 label start:
 
     scene bg parlor with fade
+    play music "audio/detectivekeiku.mp3" fadeout 1.0 fadein 1.0
     show dhat
     dk "(Another case of mahjong cheating huh.)"
     dk "(These mahjongers, they’re just silver room rookies. I don’t know why the mcd even bothered to send me out here.)"
@@ -114,12 +115,14 @@ label start:
     dk "(I have so much school work to do as well!)"
     p "Excellent work as always detective Keikumusume. Job well done!"
     dk "No need to thank me officer. Just doing my job."
+    stop music
 label op_credits:
     scene bg credits  with fade
     ">The Winning Team presents…"
     "A >The Winning Team production."
 label moping:
     scene bg keikunight  with fade
+    play music "audio/doubt.mp3" fadeout 1.0 fadein 1.0
     show hat
     k "(Another pathetic case is over.)"
     k "(I’m glad that I’m not involved in any more petty murder cases and all, but damn, they sure are all so pointless.)"
@@ -149,6 +152,7 @@ label moping:
     k "(If I could wish for anything, right now, I'd just wish that we could play a game of mahjong together. Just one game like you wanted to.)"
 label classroom:
     scene bg classroom with fade
+    play music "audio/counselling.mp3" fadeout 1.0 fadein 1.0
     "*the next afternoon*"
     show hat
     k "(Another day at school is over, huh.)"
@@ -207,6 +211,7 @@ label counsellor:
     hide hag
     scene bg hallway with fade
     show hat
+    stop music
     k "(Ahhhhhhhh! That dumb hag!)"
     k "(I guess I have no choice. It’s decided that I’m going to be joining the mahjong club.)"
     k "(I gotta do it so I’ll just do it. Just walk in and hand in that form.)"
@@ -217,6 +222,7 @@ label counsellor:
     k "(But there’s no use thinking about that. If I can solve a murder case then I can join a mahjong club. I just need to take these first steps inside.)"
 label mahjongclub:
     scene bg clubroom with fade
+    play music "audio/sliceoflife.mp3" fadeout 1.0 fadein 1.0
     show hat at left1
     k "H-hello…"
     k "HELLO! I, WOULD LIKE TO JOIN THE MAHJONG CLUB. PLEASE. THANK YOU."
@@ -253,6 +259,7 @@ label mahjongclub:
     k "(Okay. This is just like the online games of mahjong I've played. There's no need to be nervous!)"
 label game:
     scene bg double with fade
+    play music "audio/fencingwithnana.mp3" fadeout 1.0 fadein 1.0
     k "What to do....."
     menu:
         "Riichi":
@@ -309,6 +316,7 @@ label game:
 
     n "Ron! That's mangan, 12000 points!"
 #    {Cut music, play https://www.youtube.com/watch?v=szDKbPLq-to}
+    play music "audio/sliceoflife.mp3" fadeout 1.0 fadein 1.0
     k "(Even though I came fourth, and even though I seriously embarrassed myself, that was pretty fun.)"
     hide nana
     show xenia at left1
@@ -486,6 +494,7 @@ label next:
     #{Change bg scene, Keikus room at night. Stop music, play cricket sounds https://www.youtube.com/watch?v=Olfg9KK_bmE}
     #    {add music here: some ambivalent contemplation music, like https://www.youtube.com/watch?v=-l1W6g7UYtY}
     scene bg keikunight with fade
+    play music "audio/contemplation.mp3" fadeout 1.0 fadein 1.0
     show hat
     k "(They seemed like a strange bunch.)"
     k "(But I'm really happy that they accepted me so easily.)"
@@ -496,6 +505,7 @@ label next:
     k "( z z z )"
     scene bg schoolfront with fade
     show hat
+    play music "audio/counselling.mp3" fadeout 1.0 fadein 1.0
     k "(Another boring day at school has gone by.)"
     k "(I don't have any exams coming up.)"
     k "(I don't feel like actually doing any of this homework either.)"
@@ -537,6 +547,7 @@ label post_date1:
     scene bg schoolfront with fade
     "...."
     scene bg classroom with fade
+    play music "audio/clock.mp3" fadeout 1.0 fadein 1.0
 #    {play clock ticking noise https://www.youtube.com/watch?v=8VUgLhAvN0U}
     k "(Class is going so slowly today. I want it to end already.)"
     k "(I feel something tingling in my stomach. It’s like there’s a ping-pong ball bouncing around my head.)"
@@ -545,10 +556,13 @@ label post_date1:
     k "(That counsellor was right. I’m going to have to eat my hat.)"
     k "(. . .)"
     k "(Come on you dumb clock, move faster!)"
+    stop music
     "*time passes*"
+    play sound "audio/bell.mp3"
     "*Bing bong* *Bing bong*"
     k "(About time!)"
     scene bg clubroom with fade
+    play music "audio/sliceoflife.mp3" fadeout 1.0 fadein 1.0
 #    {Play https://www.youtube.com/watch?v=szDKbPLq-to}
     hide hat
     show nana at right1
@@ -620,6 +634,7 @@ label post_date1:
     h "We’re just going to look at a series of mahjong problems to solve."
 
     #{change bgm to  https://www.youtube.com/watch?v=szDKbPLq-to}
+    play music "audio/wwyd.mp3" fadeout 1.0 fadein 1.0
     h "Let’s start off with something simple. What would you discard in this situation?"
     hide hinata
     hide hat
@@ -793,6 +808,7 @@ label post_date1:
     hide hinata
     #{Fade to black, bg change to Keikus room at night}
     scene bg keikunight with fade
+    play music "audio/crickets.mp3" fadeout 1.0 fadein 1.0
     show hat
     k "(Club was a lot of fun today.)"
     k "(Even if half of it was just goofing off.)"
@@ -806,6 +822,7 @@ label post_date1:
     "*kikikanri!* *kikikanri!*"
 label pre_date2:
     show hat
+    play music "audio/sliceoflife.mp3" fadeout 1.0 fadein 1.0
     k "Yawwwwwwn."
     k "Time for another school day."
     scene bg schoolfront with fade
@@ -835,6 +852,7 @@ label post_date2:
     "*yawwwwwwn*"
     #{Play https://www.youtube.com/watch?v=yN77vYbXLB4 }
     show hat
+    play music "audio/meetupatthetournament.mp3" fadeout 1.0 fadein 1.0
     k "(Ah, that tournament is happening today.)"
     k "(Oh look, Nana texted me the time and place.)"
     k "(Better get going then. I don’t want to keep them all waiting.)"
@@ -926,6 +944,7 @@ label post_date2:
     k "Good luck, Nana."
     n "Ehe, just leave it to me."
     scene bg seats with fade
+    play music "audio/tournament.mp3" fadeout 1.0 fadein 1.0
     #{Play https://files.catbox.moe/i91fhx.ogg }
     show hat
     k "(Oh wow, it’s starting, this is so exciting.)"
@@ -1104,6 +1123,8 @@ label post_date2:
     k "(Hoh? A double riichi? Don’t make me laugh. Even if I deal into that, we’ll still be in first.)"
     k "(But just to be sure, I’ll play around it.)"
     k "(I’ll discard this worthless Xia tile. That’ll be safe.)"
+    stop music
+    play sound "audio/yakumandealin.mp3"
     #{play https://www.youtube.com/watch?v=iVay367HM3Y}
     i ". . ."
     k ". . ."
@@ -1114,6 +1135,8 @@ label post_date2:
     k "T-thanks for playing guys."
     scene bg seats with fade
     show hat at left1
+    stop sound
+    play music "audio/wcdonalds.mp3" fadeout 1.0 fadein 1.0
     k "What were the odds! Who wouldn’t have discarded the xia against a double riichi?"
     k "(Mahjong is bullshit!)"
     show hinata at righthinata
@@ -1386,6 +1409,8 @@ label post_date3:
     k "(What the heck? Why aren’t the lights on? Where’s that switch? Where’s everyone else? Did club get cancelled?)"
     k "(Ah, here it is.)"
     hide hat
+    play music "audio/keikubirthdayparty.mp3" fadeout 1.0 fadein 1.0
+    scene bg clubroom
     show yuip
     y "Surprise, Keiku! Happy birthday!"
     hide yuip
@@ -1457,10 +1482,13 @@ label credits:
     "Miscellaneous done by anon"
     "Artwork done by anon's >wife"
     "From everyone at >The >'Winning' >Team, thanks for playing"
+    stop music
+    $ renpy.pause (20.0)
     jump bog
 
 label bog:
     scene bg bogged with fade
+    play music "audio/bogdanoff.mp3" fadeout 1.0 fadein 1.0
     b1 "How is ze Prophecy proceeding?"
     b2 "It seems zat our agents have been able to distract her. She has totally forgotten about ze UGR."
     b1 "Excellent. It appears zat Watson has failed."

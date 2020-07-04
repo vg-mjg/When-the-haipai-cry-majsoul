@@ -1,5 +1,6 @@
 label xenia_date1:
     scene bg schoolfront with fade
+    play music "audio/xeniadate1.mp3" fadeout 1.0 fadein 1.0
     show hat
     k "(I think I’ll call Xenia. She seemed like a fun person.)"
     k "(Also she’s rich. Gotta grab opportunities when you see ‘em.)"
@@ -106,6 +107,7 @@ label xenia_date1:
     x "Frankly, I don’t know why people pay for therapists when we’ve got alcohol."
     k "Hahaha, yeah, this is way better than any counsellor."
     k "(Does Xenia have wobbly floorboards or something? I feel like I could tip over…)"
+    play sound "audio/thud.mp3"
     "*thud*"
     k "Owwww, my head."
     x "Oh dear, I should have realised your tolerance would be lower than mine. You didn’t grow up on this stuff."
@@ -159,6 +161,7 @@ label xenia_date2:
 #    {Fade bg to black, play some train noises (https://www.youtube.com/watch?v=xugNNnGhRIY) , fade out bg to batting cages}
 #    {Play https://mega.nz/folder/f8EUHCIB#pOX8ovIQx0mQ9eFdiXf5UA/file/KwswRSgJ}
     scene bg batting with fade
+    play music "audio/xeniadate1.mp3" fadeout 1.0 fadein 1.0
     show xenia
     x "Two cages and 100 balls for me and my friend please."
     "That’ll be $50."
@@ -264,6 +267,7 @@ label xenia_date2:
     x "Yep. Best of luck!"
     k "You too!"
     scene bg keikunight with fade
+    play music "audio/crickets.mp3" fadeout 1.0 fadein 1.0
     show hat
     k "(That was a lot of fun.)"
     k "(Or at least it was when I actually managed to connect the bat with the ball.)"
@@ -278,7 +282,7 @@ label xenia_date2:
 
 
 label xenia_date3:
-    scene bg maccastable with fade
+    scene bg maccastable
     show nana at left1
     n "Well, I’m off. Laters, guys."
     show hinata at righthinata
@@ -298,6 +302,7 @@ label xenia_date3:
     x "It’s an excellent opportunity, after all."
     k "You’re right. If we’re here in the city then we might as well go look at a camping store right now."
     scene bg campingstore with fade
+    play music "audio/keikunanatrain.mp3" fadeout 1.0 fadein 1.0
 #    {Play https://www.youtube.com/watch?v=sdpmAAuR1N0&list=PL3-XFrU0Gj6lCJmooIqRJX-kYwhP3fOce&index=14 }
     show hat at left1
     show xenia at right1
@@ -352,6 +357,7 @@ label xenia_date3:
     k "You can count on it. I’ll see you tonight."
 
     scene bg keikusunset with fade
+    stop music
     show hat
     k "(I’ve got about an hour before I need to go to Xenia’s. I guess I’ll lie down and read for a bit.)"
     k "(. . .)"
@@ -378,12 +384,14 @@ label xenia_date3:
     x "Did you bring everything?"
     k "Got it all right here."
     x "Excellent. Let me just climb over this gate and we can get going."
+    play sound "audio/thud.mp3"
 #    *Play thud noise https://www.youtube.com/watch?v=4OUa62jBA6Y*
 #    {///maybe consider adding some *thud* sound to indicate landing after the jump between these two lines?}
     x "Alright, let’s start walking."
 #    {change background to forest at night.}
 #    {play https://www.youtube.com/watch?v=cQwCOBBLXEI }
     scene bg forest with fade
+    play music "audio/cicadasounds.mp3" fadeout 1.0 fadein 1.0
     show hat at left1
     show xenia at right1
     k "This forest is pretty dense. Aren’t you worried about getting lost, Xenia?"
@@ -435,6 +443,7 @@ label xenia_date3:
     x "Nah, it’s fine. I like you, and I appreciate whatever you have to say."
     x "We’re here, by the way. This is the spot we’re going to use to pitch our tent."
     scene bg forestmoon with fade
+    play music "audio/xenialakedate.mp3" fadeout 1.0 fadein 1.0
     show hat at left1
     show xenia at right1
     #{Play  https://www.youtube.com/watch?v=VWPACef2_eY }
@@ -537,6 +546,7 @@ label xenia_date3:
     m "I think we’ve been a little too protective of her. Feel free to take her out camping any time."
     k "Right. Thank you!"
     scene bg black with fade
+    stop music
     show hat
     k "(Since I joined the mahjong club, my life has become a lot brighter.)"
     k "(In just one week, I’ve not only made friends, but also met a lover.)"
