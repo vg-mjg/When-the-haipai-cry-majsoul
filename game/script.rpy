@@ -816,6 +816,7 @@ label post_date1:
     k "(Guess I’ll just have to do my best, and let the heavens take care of the rest.)"
     k "(. . .)"
     k "( z z z )"
+    stop music
     if s1&s2:
         jump secret
     scene bg keiku with fade

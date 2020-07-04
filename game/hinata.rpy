@@ -64,6 +64,7 @@ label hinata_date1:
 #    {BG scene transition to Keikumusumes room, night, play the crickets noises. https://www.youtube.com/watch?v=Olfg9KK_bmE}
 #        {same as above.}
     scene bg keikunight with fade
+    play music "audio/crickets.mp3" fadeout 1.0 fadein 1.0
     show hat
     k "(I didn’t realise gardening could be so enjoyable.)"
     k "(I didn’t think it could be so tiring either.)"
@@ -74,6 +75,7 @@ label hinata_date1:
     k "(Hinata seems like a nice girl. I want to pick those strawberries we planted together soon.)"
     k "(. . .)"
     k "( z z z )"
+    stop music
     jump post_date1
 
 
@@ -183,6 +185,7 @@ label hinata_date2:
     k "(I don’t want to be the girl who deals into an open daisangen.)"
     k "(. . .)"
     k "( z z z )"
+    stop music
     jump post_date2
 
 
@@ -275,7 +278,7 @@ label hinata_date3:
     k "(I should have joined this club a lot earlier. She’s such a good friend. I really feel connected to her.)"
     k "(. . .)"
     k "( z z z )"
-
+    stop music
 
     scene bg keiku with fade
     "*Kikikanri!* *Kikikanri!*"

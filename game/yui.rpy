@@ -71,7 +71,7 @@ label yui_date1:
     hide yui
 #    {Scene change. Keikumusume’s bedroom at night. Play crickets https://www.youtube.com/watch?v=Olfg9KK_bmE}
     scene bg keikunight with fade
-    stop music
+    play music "audio/crickets.mp3" fadeout 1.0 fadein 1.0
     show hat
     k "(That was weird. What was up with all that staring and physically dragging me along?)"
     k "(She seems really nice though. I wouldn't mind hanging out with her again.)"
@@ -80,6 +80,7 @@ label yui_date1:
     k "(I feel like tonight is just a bit brighter than last night.)"
     k "(. . .)"
     k "( z z z )"
+    stop music
     jump post_date1
 
 
@@ -360,7 +361,7 @@ label yui_date3:
     k "Of course! Just text me a time and place and I’ll be there."
     y "Thank you. I’ll see you tomorrow, then."
     scene bg keikunight with fade
-    stop music
+    play music "audio/crickets.mp3" fadeout 1.0 fadein 1.0
     show hat
     k "(Today's tournament was a lot of fun.)"
     k "(Especially watching Yui play. The way she thinks is so fascinating.)"
@@ -369,6 +370,7 @@ label yui_date3:
     k "(I want to wake up soon so that I can see her again...)"
     k "(. . .)"
     k "( z z z )"
+    stop music
     jump yui_final
 
 label yui_final:

@@ -151,6 +151,7 @@ label nana_date1:
     k "(Nah, no way. I’m too uncoordinated.)"
     k "(. . .)"
     k "( z z z )"
+    stop music
     jump post_date1
 
 
@@ -312,6 +313,7 @@ label nana_date2:
     k "(Oh well. I better go to sleep soon.)"
     k "(. . .)"
     k "( z z z )"
+    stop music
     jump post_date2
 
 label nana_date3:
@@ -432,7 +434,7 @@ label nana_date3:
     k "Alright then. I’ll see you tomorrow."
     n "I’m looking forward to it."
     scene bg keikunight with fade
-    stop music
+    play music "audio/crickets.mp3" fadeout 1.0 fadein 1.0
     show hat
     k "(That whole tournament today was a lot of fun.)"
     k "(Especially watching Nana play. The way she plays is so cool!)"
@@ -445,6 +447,7 @@ label nana_date3:
     k "(I guess that just means I’m excited to see her tomorrow.)"
     k "(. . .)"
     k "( z z z )"
+    stop music
     scene bg keiku with fade
     "*Kikikanri!* *Kikikanri!*"
     show hat

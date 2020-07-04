@@ -120,6 +120,7 @@ label xenia_date1:
 #    {Play crickets noise}
 #        {same as above}
     scene bg keikunight with fade
+    play music "audio/crickets.mp3" fadeout 1.0 fadein 1.0
     show hat
     k "(Aaaa, my head feels funny.)"
     k "(I feel like if I got out of this bed, the floor would just collapse underneath me.)"
@@ -130,6 +131,7 @@ label xenia_date1:
     k "(And maybe also get some more of that drink from her, hehehe.)"
     k "(. . .)"
     k "( z z z )"
+    stop music
     jump post_date1
 
 
@@ -277,6 +279,7 @@ label xenia_date2:
     k "(But if we have to sneak around and do it in secret, then that’s just what we’ll do.)"
     k "(. . .)"
     k "( z z z )"
+    stop music
     jump post_date2
 
 
