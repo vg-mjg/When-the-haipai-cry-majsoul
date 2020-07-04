@@ -1,4 +1,4 @@
-Sat Jul  4 20:14:34 2020
+Sat Jul  4 21:14:10 2020
 Linux-4.13.0-32-generic-x86_64-with-debian-stretch-sid
 Ren'Py 7.3.5.606
  
@@ -6,31 +6,31 @@ Ren'Py 7.3.5.606
 Bootstrap to the start of init.init took 0.06s
 Early init took 0.00s
 Loader init took 0.01s
-Loading error handling took 0.61s
-Loading script took 2.17s
-Loading save slot metadata. took 0.69s
+Loading error handling took 0.02s
+Loading script took 1.27s
+Loading save slot metadata. took 0.05s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
 Running init code took 0.05s
-Loading analysis data took 0.04s
+Loading analysis data took 0.02s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
 Backing up script files to '/home/cero/.renpy/backups/WTHC':
-Dump and make backups. took 0.20s
+Dump and make backups. took 0.06s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc. took 0.03s
 DPI scale factor: 1.000000
-Creating interface object took 0.03s
+Creating interface object took 0.05s
 Cleaning stores took 0.00s
 Init translation took 0.03s
-Build styles took 0.01s
-Load screen analysis took 0.01s
-Analyze screens took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
 Save screen analysis took 0.06s
-Prepare screens took 0.06s
+Prepare screens took 0.07s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.07s
+Save bytecode. took 0.08s
 Running _start took 0.00s
 Performance test:
 Interface start took 0.03s
@@ -297,18 +297,11 @@ Texture testing:
 - 2048px textures work.
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-Total time until interface ready: 4.40224099159s
+Total time until interface ready: 2.15470790863s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.005966 seconds.
-- Frame drawn at 0.014416 seconds.
-- Frame drawn at 0.048717 seconds.
-- Frame drawn at 0.051298 seconds.
-- 0.051298 seconds to render 5 frames.
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.01s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
+- Frame drawn at 0.016704 seconds.
+- Frame drawn at 0.048137 seconds.
+- Frame drawn at 0.053794 seconds.
+- Frame drawn at 0.062703 seconds.
+- 0.062703 seconds to render 5 frames.

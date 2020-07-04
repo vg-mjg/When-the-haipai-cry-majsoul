@@ -3,6 +3,7 @@ label hinata_date1:
     play music "audio/hinatadate1.mp3" fadeout 1.0 fadein 1.0
     show hat
     k "(I think I’ll text Hinata. She seemed like a nice person.)"
+    play sound "audio/aba.mp3"
     "*abababa* *abababa*"
     h "Hello, who is it?"
     #{Play https://www.youtube.com/watch?v=Jqv3No98j5M }

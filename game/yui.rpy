@@ -3,6 +3,7 @@ label yui_date1:
     show hat
     play music "audio/yuidate1.mp3" fadeout 1.0 fadein 1.0
     k "(Yui... she seemed like an interesting person. I think I'll give her a ring.)"
+    play sound "audio/aba.mp3"
     "*abababa* *abababa*"
     y "...what?"
     k "(Oof, that seemed like a cold answer.)"

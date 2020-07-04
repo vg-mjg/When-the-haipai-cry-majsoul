@@ -4,6 +4,7 @@ label nana_date1:
     play music "audio/fencingwithnana.mp3" fadeout 1.0 fadein 1.0
 
     k "(Nana seemed like a fun person to be around. I’ll call and ask her if she wants to hang out.)"
+    play sound "audio/aba.mp3"
     "* abababa* *abababa*"
 
     n "Yo! Who’s this?"

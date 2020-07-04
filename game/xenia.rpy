@@ -4,6 +4,7 @@ label xenia_date1:
     show hat
     k "(I think I’ll call Xenia. She seemed like a fun person.)"
     k "(Also she’s rich. Gotta grab opportunities when you see ‘em.)"
+    play sound "audio/aba.mp3"
     "*abababa* *abababa*"
     x "Hello, Xenia here."
 #    {Play https://www.youtube.com/watch?v=gvFN1uB7qy0 /// not too sure about this one.}
