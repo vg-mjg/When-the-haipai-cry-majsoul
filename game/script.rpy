@@ -1381,7 +1381,7 @@ label post_date3:
     k "(I thought that at least [girl] would maybe text me.)"
     k "(Normally, I feel super excited about going to club after class, but today I don’t know if I’m feeling up to it.)"
     k "(I should still go anyway, though. Everyone expects me there.)"
-    scene bg clubroom with fade
+    scene bg clubroomblack with fade
     show hat
     k "(What the heck? Why aren’t the lights on? Where’s that switch? Where’s everyone else? Did club get cancelled?)"
     k "(Ah, here it is.)"

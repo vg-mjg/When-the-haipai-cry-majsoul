@@ -321,7 +321,7 @@ label hinata_date3:
     k "(Now, which way was her backyard again?)"
     k "(I can't believe I got lost inside a simple two-story house.)"
 #    {BG change, living room, photos spread all over the floor (blur photos a lot)}
-    scene bg hinatainside with fade
+    scene bg photo with fade
     show hat
     k "(What’s this? A photo album? It looks pretty big.)"
     k "(I really shouldn’t look through this. Hinata might consider it to be private.)"
