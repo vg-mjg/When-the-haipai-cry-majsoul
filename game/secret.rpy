@@ -6,7 +6,7 @@ label secret:
     k "It’s pretty cozy though."
     hide hat
     show hat at left1
-    show wwyd at right1
+    show wwyd at rightw
     w "Hello! This is a dream world."
     k "So this isn’t the afterlife then? That’s a relief."
     k "If this is my dream, then who are you?"

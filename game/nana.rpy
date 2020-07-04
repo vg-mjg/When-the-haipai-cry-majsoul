@@ -161,6 +161,8 @@ label nana_date2:
     n "Listen, I need to talk to you about something personal. Come over here."
     k "(What could it be? With the way she’s yanking me over, it has to be important.)"
     scene bg bookshelf with fade
+    show nana at right1
+    show hat at left1
     k "Alright, what’s up?"
     n "Keep your voice down. I don’t want people to overhear this."
     k "Okay, I gotcha."
