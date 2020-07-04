@@ -6,10 +6,24 @@ transform right1:
 
 transform lefthinata:
     xpos 0.05 xanchor 0.0 ypos 1.0 yanchor 1.0
+    zoom 0.9
 
 transform righthinata:
     xpos 1.0 xanchor 1.0 ypos 1.0 yanchor 1.0
+    zoom 0.9
 
+transform leftmom:
+    xpos -0.1 xanchor 0.0 ypos 1.0 yanchor 0.9
+
+transform lefthag:
+    xpos 0.00 xanchor 0.0 ypos 1.0 yanchor 1.0
+
+transform lefthp:
+    xpos 0.00 xanchor 0.0 ypos 1.0 yanchor 1.0
+    zoom 0.9
+
+transform lefthb:
+    xpos 0.0 xanchor 0.0 ypos 1.0 yanchor 1.0
 
 
 image hat =  ConditionSwitch(
@@ -57,8 +71,8 @@ image cat =  ConditionSwitch(
             "_last_say_who == 'i'", "cat.png",
             "not _last_say_who == 'i'", "catgrey.png")
 image mom =  ConditionSwitch(
-            "_last_say_who == 'm'", "hag.png",
-            "not _last_say_who == 'm'", "haggrey.png")
+            "_last_say_who == 'm'", "mommy.png",
+            "not _last_say_who == 'm'", "mommygrey.png")
 image nanab =  ConditionSwitch(
             "_last_say_who == 'n'", "nanab.png",
             "not _last_say_who == 'n'", "nanabgrey.png")

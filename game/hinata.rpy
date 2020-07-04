@@ -319,15 +319,16 @@ label hinata_date3:
     k "(Her bathroom smelled nice. I should ask what sort of air freshener she uses.)"
     k "(Actually, I’d bet it’s something homemade that requires specially grown herbs and stuff.)"
     k "(Now, which way was her backyard again?)"
-    k "(I can’t believe I got lost inside a simple two-story house.)"
+    k "(I can't believe I got lost inside a simple two-story house.)"
 #    {BG change, living room, photos spread all over the floor (blur photos a lot)}
     scene bg hinatainside with fade
     show hat
-    k "(What’s this? Photos?)"
-    k "(Ah, I really shouldn’t be looking through these. They might be Hinata’s private stuff.)"
-    k "(Oh wait, but there’s one of Hinata when she was younger.)"
+    k "(What’s this? A photo album? It looks pretty big.)"
+    k "(I really shouldn’t look through this. Hinata might consider it to be private.)"
+    k "(But now I’m really curious! Just one little peek couldn’t hurt.)"
+    k "(Oh cute, here’s one of Hinata when she was younger.)"
     k "(Awwww, she looks so cute. She’s in a little sunflower costume, that’s adorable.)"
-    k "(There’s no way I can see that and not take a peek at it.)"
+    k "(There’s no way I can see that and not want to peek at the rest.)"
     hide hat
     show hinata at righthinata
     show hat at left1

@@ -336,7 +336,7 @@ label yui_date3:
     y "It’s got a complete inner frame that allows for full scale transformations. It’s really amazing."
     k "(I don’t know what that means, but I’m happy she’s happy.)"
     y "I’m just going to go ring this up and we can go."
-    scene bg train  with fade #to change
+    scene bg trainstation  with fade #to change
     show hat at left1
     show yui at right1
     k "Yui, you’re on a seperate train line to me, right?"

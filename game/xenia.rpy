@@ -28,7 +28,7 @@ label xenia_date1:
 #    {Remember to add gate plus loud buzzing sound}
     scene bg xeniafront with fade
     show xenia at right1
-    show hatbond at left1
+    show hatbond at lefthb
     x "Ah, I’m so glad you came over. Give me one second, I just need to explain to my father."
     hide xenia
 #    {Xenias sprite disappears}
@@ -45,7 +45,7 @@ label xenia_date1:
     k "(I followed Xenia inside, up the stairs, and into her room.)"
     k "(I can hear the faint mutterings of men downstairs.)"
     show xenia at right1
-    show hatbond at left1
+    show hatbond at lefthb
     x "Ah, thank you so much for coming. Please make yourself at home."
     k "Wow, this bedroom is huge. I can’t believe you have a couch in your room, and such a fancy TV."
     x "Yes, well, the family certainly comes with perks."
@@ -90,7 +90,7 @@ label xenia_date1:
     k "Get me another glass anyway!"
 #    {Glug glug glug sfx}
     hide hatbond
-    show hatbondwast at left1
+    show hatbondwast at lefthb
     k "Xenia, I think I get it now."
     k "Drinking with someone else really improves the flavour, y’know’what’I’m’sayin?"
     x "Indeed! In fact to add on to that, one might even say that the fact that we’re not allowed to do this makes it taste even better."
@@ -511,7 +511,7 @@ label xenia_date3:
     who "Oh, there’s no need for that."
     x "M-mother!?"
     hide hat
-    show mom at left1
+    show mom at leftmom
     m "Xenia, where have you been."
     x "Nowhere. Me and a friend just hung out is all."
     m "You know, I almost called the police."

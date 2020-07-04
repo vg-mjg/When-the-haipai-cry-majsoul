@@ -166,7 +166,7 @@ label classroom:
     k "(Ugh, why do they have to announce it over the speaker system like that? It’s so embarrassing.)"
 label counsellor:
     scene bg counsellor with fade
-    show hag at left1
+    show hag at lefthag
     h1 "Keikumusume, please take a seat."
     show hat at right1
     k "Sure."
@@ -1408,7 +1408,7 @@ label post_date3:
     x "Of course it’s for you. You’re part of this club, are you not?"
     k "I didn’t think anyone would remember or care."
     hide hat
-    show hinatap at left1
+    show hinatap at lefthp
     h "Of course we remembered. Everyone in this club is precious."
     hide xeniap
     show yuip at right1
@@ -1422,7 +1422,7 @@ label post_date3:
     k "You guys are the best."
     hide nanap
     if girl=="Hinata":
-        show hinatap at left1
+        show hinatap at lefthp
         h "Keiku, I brought you a birthday gift. See? It’s the strawberries we planted together. Happy birthday, Keiku."
         hide hinatap
     if girl=="Yui":
@@ -1446,7 +1446,6 @@ label post_date3:
     k "You guys really are the best!"
     hide hat
     show hatp
-    "Fin."
     $ renpy.pause (15.0)
     jump credits
 
