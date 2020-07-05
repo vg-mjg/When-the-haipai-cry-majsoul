@@ -30,6 +30,7 @@ label nana_date1:
     k "Isn’t this dangerous? Aren’t there safety precautions or something that we should be going over?"
     n "Nah. Look, they bend to soften the impact. Totally harmless."
     n "First to ten points wins. Get ready!"
+    "*schwing*"
 #    {play schwing sound effect, then buzzer.}
     n "Point one to me~"
     k "(S-she’s fast!)"
@@ -44,9 +45,9 @@ label nana_date1:
     n "Honestly, you’re learning pretty quick. You only just started, but it looks like you’ve intuitively worked out the proper way to space your feet already."
 #    {Moar sword noises}
 #    {BZZT}
-#    {BZZT}
-#    {BZZT}
-#    {BZZT}
+    "BZZT"
+    "BZZT"
+    "BZZT"
 #    {BZZT}
 #    {BZZT}
 
@@ -101,6 +102,9 @@ label nana_date1:
     n "GG. Well played."
     k "D-don’t think this means you’ve won!"
     k "We’re going again!"
+    scene bg black with fade
+    "Time passes"
+    scene bg gym with fade
 #    {sword noises, fade into black. Stop sword noises, show outside the gym at sunset}
 #    {Play https://www.youtube.com/watch?v=iawEZ2ejWm8&list=PLeKSx7u-0kRiJqH14dswC-lHh8Nuu0APx&index=22}
     hide hatfence
@@ -132,7 +136,7 @@ label nana_date1:
     n "So I just do this stuff whenever I happen to have the time."
     k "Why’s the mahjong club the exception then?"
     n "Well, the mahjong club is a little less maintenance, and I could potentially make a career out of it."
-    n "Also, I actually find it to be the most fun out of all the sports clubs. Also there isn’t a skateboarding club."
+    n "Also, I actually find it to be the most fun out of all the sports clubs. That and there isn’t a skateboarding club."
     k "Hmm, I see."
     n "Anyway, I have study to do now. I’ll catch ya later."
     k "(I guess it’s about time I got going too.)"
@@ -157,8 +161,9 @@ label nana_date1:
 
 label nana_date2:
     show hat
-    k "(Time to head off to the library.)"
-    k "(It seems weird that she’d want to meet me in the library, but I was planning on asking her to meet me there anyway.)"
+    k "(That was a fast response. She wants me to meet her in the library.)"
+    k "(Time to head off to the library then.)"
+#    k "(It seems weird that she’d want to meet me in the library, but I was planning on asking her to meet me there anyway.)"
     scene bg library with fade
     play music "audio/nanadate2.mp3" fadeout 1.0 fadein 1.0
     show nana at right1
@@ -562,12 +567,12 @@ label nana_date3:
     n "Yeah. This really sucks, though. I would have looked so cool if I actually made that jump."
     k "Do you need an ambulance?"
     n "Nah. I just need to go home and rest."
-    n "I’ll just have to hop back to the train station, I guess."
+    n "I’ll just have to hop back to the train station."
     k "Don’t be ridiculous."
     k "Here, get on."
     k "I’ll take the bag, too."
     n "Keiku, what are you doing?"
-    k "I’m going to carry you back to the trainstation. Come on, hop on my back."
+    k "I’m going to carry you back to the trains tation. Come on, hop on my back."
     n ". . ."
     n "Alright, then."
     play music "audio/keikunanatrain3.mp3" fadeout 1.0 fadein 1.0
