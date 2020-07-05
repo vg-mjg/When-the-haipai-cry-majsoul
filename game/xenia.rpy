@@ -167,7 +167,7 @@ label xenia_date2:
     play music "audio/xeniadate2.mp3" fadeout 1.0 fadein 1.0
     show xenia
     x "Two cages and one hundred balls for me and my friend please."
-    "That’ll be $50."
+    boss "That’ll be $50."
     x "Right here."
     hide xenia
     show xenia at right1

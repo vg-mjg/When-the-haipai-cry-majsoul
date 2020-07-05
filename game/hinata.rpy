@@ -182,8 +182,8 @@ label hinata_date2:
     scene bg keikunight with fade
     play music "audio/crickets.mp3" fadeout 1.0 fadein 1.0
     show hat
-    k "That was a nice afternoon."
-    k "It felt good to confide in someone like that."
+    k "(That was a nice afternoon.)"
+    k "(It felt good to confide in someone like that.)"
     k "(Despite meeting her just a few days ago, it really does feel like Hinata is someone who I can trust.)"
     k "(I feel like we’re similar in a way. Maybe you could say we’re like two peas in a pod?)"
     k "(Anyway, time for bed. Gotta be well rested for that tournament.)"
