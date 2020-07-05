@@ -471,6 +471,7 @@ label yui_final:
     k "(I think that’s the best communication there is.)"
     k "(We can stay like this forever.)"
     scene bg black with fade
+    show hat
     stop music
     k "(Since I joined the mahjong club, my life has become a lot brighter.)"
     k "(In just one week, I’ve not only made friends, but also met a lover.)"
