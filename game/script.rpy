@@ -285,7 +285,7 @@ label game:
     h "So be it then."
     hide hat
     show nana at right1
-    n "Wait.. that's furiten!"
+    n "Wait... that's furiten!"
     h "Oh you’re right, that is furiten."
     hide nana
     show hat at right1
@@ -836,16 +836,16 @@ label pre_date2:
     show hat
     play music "audio/sliceoflife.mp3" fadeout 1.0 fadein 1.0
     k "Yawwwwwwn."
-    k "Time for another school day."
+    k "(Time for another school day.)"
     scene bg schoolfront with fade
     show hat
-    k "Thank god it’s friday."
+    k "(Thank god it’s friday.)"
     scene bg classroom with fade
     show hat
     k "(Ahhhhhh, history class is so dull. I want the weekend to hurry up already.)"
     k "(Why do we have to learn about Australian history in a Japanese school?)"
     k "(Nothing happened there, it’s so boring and irrelevant.)"
-    k "(I wonder what [girl] is doing this afternoon. Maybe they’d like to hang out.)"
+    k "(I wonder what [girl] is doing this afternoon. Maybe she’d like to hang out.)"
     k "(I’ll send her a text.)"
     k "(. . .)"
     "*bzzt*"
@@ -1516,7 +1516,7 @@ label bog:
     b1 "Excellent. It appears zat Watson has failed."
     b2 "Better luck next time, old man, nyohohohohoh."
     b1 "Have we gathered enough flow yet?"
-    b2 "We have, indeed. If Keiku had begun investigating us from the start, we would have likely lost already."
+    b2 "We have, indeed. If Keiku had begun investigating us from ze start, we would have likely lost already."
     b2 "Now is ze time for us to strike. By ze time she realises her error, it will be too late."
     b1 "Love truly is ze sweetest poison of them all. Nyohohohoho."
     b2 "Perhaps one could say zat love is like a blindfold."

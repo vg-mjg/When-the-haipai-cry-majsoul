@@ -102,6 +102,7 @@ label nana_date1:
     k "(Wait, she’s not pointing the tip at me?)"
     k "(She just forced my blade out of the way!)"
 #    {BZZT}
+    "BZZZ"
     n "Those were some fancy tricks, but they weren’t going to beat good old fashioned practice."
     n "GG. Well played."
     k "D-don’t think this means you’ve won!"
