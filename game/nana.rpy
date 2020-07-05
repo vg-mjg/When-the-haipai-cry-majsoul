@@ -74,7 +74,6 @@ label nana_date1:
 #    {play thud noise}
 #    {BZZT}
     n "What!"
-    play music "audio/sliceoflife.mp3" fadeout 1.0 fadein 1.0
     n "I don’t believe it. You dived right onto the floor. You went prone just as I lunged, and ducked under the blade."
     n "That’s ridiculous, but it worked."
     k "(I won’t be caught by those lunges anymore. This is it, it’s time for my counter attack!)"
@@ -450,6 +449,7 @@ label nana_date3:
     k "( z z z )"
     stop music
     scene bg keiku with fade
+    play sound "audio/kiki.mp3"
     "*Kikikanri!* *Kikikanri!*"
     show hat
     k "*Yawwwwwn*"

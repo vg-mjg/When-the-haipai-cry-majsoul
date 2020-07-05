@@ -282,6 +282,7 @@ label hinata_date3:
     stop music
 
     scene bg keiku with fade
+    play sound "audio/kiki.mp3"
     "*Kikikanri!* *Kikikanri!*"
     show hat
     k "*Yawwwwn*"

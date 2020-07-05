@@ -164,7 +164,7 @@ label xenia_date2:
 #    {Fade bg to black, play some train noises (https://www.youtube.com/watch?v=xugNNnGhRIY) , fade out bg to batting cages}
 #    {Play https://mega.nz/folder/f8EUHCIB#pOX8ovIQx0mQ9eFdiXf5UA/file/KwswRSgJ}
     scene bg batting with fade
-    play music "audio/xeniadate1.mp3" fadeout 1.0 fadein 1.0
+    play music "audio/xeniadate2.mp3" fadeout 1.0 fadein 1.0
     show xenia
     x "Two cages and 100 balls for me and my friend please."
     "That’ll be $50."

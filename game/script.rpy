@@ -297,18 +297,18 @@ label game:
     n "Wow. Yikes!"
     k "Ehehe, next hand."
 #    {play tile shuffling sounds}
-    k "(Hmmmm... I can riichi here for a pair wait. But which wait should I pick?)"
+    k "(Hmmmm... I can riichi here for a tanki. But which wait should I pick?)"
 #    {present the following options: south wind, north wind. If North is picked, play the following dialogue.}
     menu:
         "North":
-            k "(I'll go with the pair wait on the north wind!)"
+            k "(I'll go with the tanki on the north wind!)"
             k "(...)"
             k "(...)"
             k "(Come on, come on...)"
             k "(Ah, I just drew the south wind!)"
             k "(Geez come on!)"
         "South":
-            k "(I'll go with the pair wait on the south wind!)"
+            k "(I'll go with the tanki on the south wind!)"
             k "(...)"
             k "(...)"
             k "(Come on, come on...)"
@@ -357,10 +357,13 @@ label game:
     n "Tell us about it! Is it really like how it is in all those television dramas about MCD officers? Do you have a catchphrase you shout when you send someone to the shadowrealm?"
     k "Honestly it was pretty similar to what you'd see in a detective manga, or even a video game. As for the catchphrase, I guess it was something like..."
 #    {Play KAAAAN.wav}
+    play sound "audio/kan.mp3"
     k "KAAAAAAAAN!"
 #    {Play SORERONDE.wav}
+    play sound "audio/ron.mp3"
     k "SORE RON DE!"
 #    {Play YAKUMAN.wav}
+    play sound "audio/yaku.mp3"
     k "YAKUMAN!"
     k "Aaaah, honestly I actually feel sort of embarrassed shouting that out loud."
     hide hat
@@ -459,11 +462,13 @@ label first_choice:
 
 label next:
     scene bg clubroom with fade
+    play sound "audio/bell.mp3"
     "*ding dong* *ding dong*"
     show hat at left1
     k "Ah, the bell's ringing."
     show nana at right1
     n "Time to go then."
+    stop sound
     hide hat
     show hinata at lefthinata
     h "Yep, I'll see you all next meeting."
@@ -540,6 +545,7 @@ label next:
 
 label post_date1:
     scene bg keiku with fade
+    play sound "audio/kiki.mp3"
     "*Kikikanri!* *Kikikanri!*"
     show hat
     k "Ugh, be quiet you useless alarm..."
@@ -562,6 +568,7 @@ label post_date1:
     play sound "audio/bell.mp3"
     "*Bing bong* *Bing bong*"
     k "(About time!)"
+    stop sound
     scene bg clubroom with fade
     play music "audio/sliceoflife.mp3" fadeout 1.0 fadein 1.0
 #    {Play https://www.youtube.com/watch?v=szDKbPLq-to}
@@ -821,6 +828,7 @@ label post_date1:
     if s1&s2:
         jump secret
     scene bg keiku with fade
+    play sound "audio/kiki.mp3"
     "*kikikanri!* *kikikanri!*"
 label pre_date2:
     show hat
@@ -1130,7 +1138,10 @@ label post_date2:
     #{play https://www.youtube.com/watch?v=iVay367HM3Y}
     i ". . ."
     k ". . ."
-    i "RON NYAA! Kokushi musou! That’ll be 48,000 points, please."
+    play sound "audio/ronnya.mp3"
+    i "RON NYAA!"
+    play sound "audio/yakunya.mp3"
+    i "Kokushi musou! That’ll be 48,000 points, please."
     i "Good game everynyan!"
     k ". . ."
     k "Y-yep. Good game."
@@ -1485,7 +1496,12 @@ label credits:
     "Artwork done by anon's >wife"
     "From everyone at >The >'Winning' >Team, thanks for playing"
     stop music
-    $ renpy.pause (20.0)
+    "..."
+    "..."
+    "..."
+    "..."
+    "..."
+    "..."
     jump bog
 
 label bog:

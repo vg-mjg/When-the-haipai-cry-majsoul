@@ -93,6 +93,7 @@ label yui_date2:
     k "(Hmm, judging by what she texted me, her locker should be right here.)"
     k "(Looks like I got here first.)"
     k "(Wait, what the hell is written on her locker?)"
+    stop music
     play sound "audio/yakumandealin.mp3"
 #    {play https://www.youtube.com/watch?v=icv-7qvFAHQ and cut boy in the windmill}
 
@@ -376,6 +377,7 @@ label yui_date3:
 
 label yui_final:
     scene bg keiku with fade
+    play sound "audio/kiki.mp3"
     "*Kiki kanri!* *Kikikanri!*"
     show hat
     k "Yawwwwwwn."
@@ -403,6 +405,7 @@ label yui_final:
     k "(Ah, is that her?)"
     k "Yui, is that you? Come on in."
     hide hat
+    scene bg couch
     show hat at left1
     show yui at right1
     y "Hello, Keikumusume."
@@ -456,7 +459,6 @@ label yui_final:
     k "(It feels so warm.)"
     y "Do you mind if we just stay like this for a while?"
     k "Of course not. I wouldn’t mind staying like this forever."
-    k "(Her fingers are interlocked with mine...)"
     k "(I don’t think either of us needs to say anything else now.)"
     k "(I’d love to just lie with her like this for the rest of time.)"
     k "(Nothing else needs to be said or done.)"
