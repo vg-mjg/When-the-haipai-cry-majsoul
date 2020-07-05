@@ -13,9 +13,8 @@ label hinata_date1:
 #    {BG transition to school garden}
     scene bg schoolgarden with fade
     show hinata at righthinata
-    h "I’m so glad you stopped by. Would you be able to help me pick up that big bag of mulch over there?"
-    show hat at left1
-    k "Oh, sure."
+h "I’m so glad you stopped by. Would you be able to help me pick up that big bag of mulch over there?"
+    show hat at left1    k "Oh, sure."
     k "1, 2, 3!"
     k "(What the hell, even with two people this is so heavy!)"
     k "(Just moving it this short distance is a pain in the backside.)"
@@ -36,6 +35,9 @@ label hinata_date1:
     h "Like these flowers right here. The poor things are starting to wilt because I’ve gotten a little slack in watering them."
     k "I see. Well I can help out for today at least. Let’s give it our all."
 #    {fade bg to black, into sunset shool garden.}
+    scene bg gardens with fade
+    show hinata at righthinata
+    show hat at left1
     k "(Me and Hinata both worked hard.)"
     k "(Although honestly I feel like all I really did was carry stuff. I really don’t know what I’m doing when it comes to garden stuff.)"
     k "(Every movement she makes with the plants looks so precise. It’s like she knows the exact correct distance to put between seeds when she puts them into the soil.)"
@@ -82,6 +84,7 @@ label hinata_date1:
 
 label hinata_date2:
     show hat
+    k "(Oh a reply already. It says,'I'd love to hang out. Meet me in the gardens'.)"
     k "(Off to the gardens then.)"
     scene bg garden with fade
     play music "audio/hinatadate2.mp3" fadeout 1.0 fadein 1.0
@@ -138,7 +141,7 @@ label hinata_date2:
     h "Maybe we should go start a farm somewhere."
     k "That sounds comfy, but I don’t think there’s anything I could contribute to a farm."
     h "Oh don’t worry about that. I’m sure there’ll be a ‘mysterious case of the missing eggs’ or something for you to solve."
-    k "Heh, that’d feel a lot less high pressure than another murder case."
+    k "Heh, that’d feel a lot less high pressure than my usual cases."
     k "Although in this property market, I don’t think we’re going to be able to afford any farming land anytime soon."
     h "Ah, that’s true. Reality is such a drag."
     k "Anyway, do you mind if I see some of your photos?"
@@ -296,7 +299,7 @@ label hinata_date3:
     ". . ."
     show hat
     k "(Aw, shoot! I was so excited, I forgot my railcard!)"
-    k "(Okay, now it’s time to be going.)"
+    k "(Okay, now it’s time to get going.)"
 #    {Fade to black, play a train noise or something, change bg to front of Hinatas house.}
     scene bg hinata with fade
     show hinata
@@ -344,14 +347,14 @@ label hinata_date3:
     hide hat
     show hinata at righthinata
     show hat at left1
-    h "Ah, Keiku."
+    h "Ah, there you are Keiku."
     k "Gah!"
     k "Ahhhh, I’m sorry, Hinata, I wasn’t snooping. It’s just that this one photo of you in the sunflower outfit looked so adorable."
     k "I couldn’t not peek at it."
     h "That’s fine, I don’t really mind if you look through those."
     k "So, are these all old family photos?"
     h "Yep. I was going through some of these last night."
-    h "Look at this one. This one’s from when we were on holiday in the countryside."
+    h "Look at this one. It’s a photo from when we were on holiday in the countryside."
     k "Wow, you look so cute with that little sunhat on."
     h "And this one here is of my dad eating some of the first fruit I ever grew."
     k "(She looks so young in a lot of these photos.)"
