@@ -13,8 +13,9 @@ label hinata_date1:
 #    {BG transition to school garden}
     scene bg schoolgarden with fade
     show hinata at righthinata
-h "I’m so glad you stopped by. Would you be able to help me pick up that big bag of mulch over there?"
-    show hat at left1    k "Oh, sure."
+    h "I’m so glad you stopped by. Would you be able to help me pick up that big bag of mulch over there?"
+    show hat at left1
+    k "Oh, sure."
     k "1, 2, 3!"
     k "(What the hell, even with two people this is so heavy!)"
     k "(Just moving it this short distance is a pain in the backside.)"
@@ -84,7 +85,7 @@ h "I’m so glad you stopped by. Would you be able to help me pick up that big b
 
 label hinata_date2:
     show hat
-    k "(Oh a reply already. It says,'I'd love to hang out. Meet me in the gardens'.)"
+    k "(Oh a reply already. It says, \"I'd love to hang out. Meet me in the gardens.\")"
     k "(Off to the gardens then.)"
     scene bg garden with fade
     play music "audio/hinatadate2.mp3" fadeout 1.0 fadein 1.0

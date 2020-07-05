@@ -1127,7 +1127,7 @@ label post_date2:
     k "(Whatever. No matter how good her luck is, I just need to play better than her.)"
     k "(We’re The Winning Team! There’s no one we can’t beat!)"
     scene bg black with fade
-    "(Time passes)"
+    "(Time passes.)"
     scene bg tablemat with fade
     show hat at left1
     show cat at right1

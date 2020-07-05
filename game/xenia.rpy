@@ -507,7 +507,7 @@ label xenia_date3:
     scene bg xeniaart with fade
     $ renpy.pause (10.0)
     scene bg black with fade
-    "(Time passes)"
+    "(Time passes.)"
     scene bg tent with fade
     show hat at left1
     show xenia at right1

@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 24: could not parse statement.
-    play music "audio/detectivekeiku.mp3" with fadein 1.0 with fadeout 1.0
-                                          ^
+File "game/hinata.rpy", line 17: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    show hat at left1    k "Oh, sure."
+    ^
+
+File "game/yui.rpy", line 20: end of line expected.
+    show hat at left1    k "Well I'm glad you invited me."
+                         ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sat Jul  4 13:18:15 2020
+Sun Jul  5 13:10:12 2020
