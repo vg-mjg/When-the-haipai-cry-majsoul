@@ -64,7 +64,7 @@ label xenia_date1:
     x "Being able to afford things is nice. But there’s a lot of expectations that come with living in a family like this you know."
     x "I have to constantly be on guard in public, ‘for the good of the family image.’"
     x "Like, I can’t go outside wearing just a regular pair of jean shorts, it has to be a nice dress and of course it has to fit within the family definition of what’s ‘appropriate.’"
-    x "Can you believe they actually get the maid to measure the length of the skirts I buy? I can’t even wear anything below the knee in summer."
+    x "Can you believe they actually get the maid to measure the length of the skirts I buy? I can’t even wear anything above the knee in summer."
     x "You know what I’d like to wear most of all? A swimsuit. Begone wetsuits."
     k "Wow, I guess being rich isn’t that great after all."
     x "I mean, being rich is pretty great, not gonna lie. It’s all the expectations I hate."

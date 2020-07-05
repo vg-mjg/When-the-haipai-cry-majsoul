@@ -30,16 +30,19 @@ label nana_date1:
     k "Isn’t this dangerous? Aren’t there safety precautions or something that we should be going over?"
     n "Nah. Look, they bend to soften the impact. Totally harmless."
     n "First to ten points wins. Get ready!"
-    "*schwing*"
+    "BZZZ"
 #    {play schwing sound effect, then buzzer.}
     n "Point one to me~"
     k "(S-she’s fast!)"
+    "BZZZ"
 #    {Play clank then schwing sound effect}
     n "Nice work! You’ve only just started, but you already figured out what a parry is. Although you’re still a little too slow."
     k "(Damnit, when she talks like that, I really want to beat her!)"
 #    {Play continuous sword clanging noises}
+    "BZZZ"
     k "(Kgh, she’s so fast!)"
     k "(But I’m starting to get the hang of this. I can keep up with her!)"
+    "BZZZ"
 #    {Play BZZT sound}
     k "(Ah! She got me again!)"
     n "Honestly, you’re learning pretty quick. You only just started, but it looks like you’ve intuitively worked out the proper way to space your feet already."
@@ -61,6 +64,7 @@ label nana_date1:
     n "Huh?"
     k "Gotcha!"
 #    {BZZT}
+    "BZZZ"
     k "(I can’t believe that worked!)"
     n "Aaaaaa, I can’t believe I fell for that. What a dirty trick."
     k "Sorry, is that frowned upon in fencing? Can’t blame a novice for not knowing."
@@ -74,6 +78,7 @@ label nana_date1:
     play sound "audio/thud.mp3"
 #    {play thud noise}
 #    {BZZT}
+    "BZZZ"
     n "What!"
     n "I don’t believe it. You dived right onto the floor. You went prone just as I lunged, and ducked under the blade."
     n "That’s ridiculous, but it worked."
@@ -84,6 +89,7 @@ label nana_date1:
     k "(But in this game, you score so long as the button on the tip pushes against your opponent.)"
     k "(So in truth, this isn’t a blade at all!)"
     k "(It’s a javelin!)"
+    "BZZZ"
 #    {woosh sound effect}
 #    {BZZT}
     n "What the hell! You can’t throw your blade at someone, that’s against the rules."
@@ -163,7 +169,7 @@ label nana_date2:
     show hat
     k "(That was a fast response. She wants me to meet her in the library.)"
     k "(Time to head off to the library then.)"
-#    k "(It seems weird that she’d want to meet me in the library, but I was planning on asking her to meet me there anyway.)"
+    k "(It seems weird that she’d want to meet me in the library, but I was planning on asking her to meet me there anyway.)"
     scene bg library with fade
     play music "audio/nanadate2.mp3" fadeout 1.0 fadein 1.0
     show nana at right1
