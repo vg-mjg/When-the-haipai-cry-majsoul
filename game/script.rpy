@@ -4,7 +4,7 @@ define dk = Character("Detective Keikumusume", color="#1adf0a")
 define p = Character("Policeman", color="#e60101")
 define z = Character("Zan", color="#009702")
 define sp= Character("PA speaker")
-define h1 = Character("Hag", color="#6c00a2")
+define h1 = Character("Miki", color="#6c00a2")
 define who=Character("???")
 define y=Character("Yui", color="#88b2e1")
 define n = Character("Nana", color="#ecf300")
@@ -16,7 +16,7 @@ define m = Character("Sawako", color="#7400d5")
 define b1 = Character("Igor Bogdanoff", color="#db1919")
 define b2 = Character("Grichka Bogdanoff", color="#db1919")
 define boss = Character("???", color="#db1919")
-define w = Character("wwyd-chan", color="#f22199")
+define w = Character("Akane", color="#f22199")
 
 label start:
 
@@ -86,7 +86,7 @@ label start:
     dk "Officer, was there any alcohol found at the scene of the crime?"
     hide zan at right1
     show police at right1
-    p "Ah, yes! There was an opened bottle of vodka that belonged to Zun here."
+    p "Ah, yes! There was an opened bottle of vodka that belonged to Zan here."
     dk "Well there you go, there’s the ‘weapon’ of this case."
     hide police at right1
     show zan at right1
@@ -99,7 +99,7 @@ label start:
     hide zan at right1
     show police at right1
     p "Keikumusume, if this guy really has been cheating, he must be punished!"
-    dk "(It’s just a game of mahjong, I don’t understand why everyone gets so invested in it."
+    dk "(It’s just a game of mahjong, I don’t understand why everyone gets so invested in it.)"
     dk "Zan, uh, Zucchini? Was that the name?"
     dk "Whatever. Zan, I, mahjong detective Keikumusume, sentence you to, uhhh, twenty hours of community service."
     hide police at right1
@@ -246,14 +246,16 @@ label mahjongclub:
     show hinata at righthinata
     h "Hello, my name’s Hinata. Welcome to the club."
     y "My name's Yui."
+    hide yui
+    show hat at left1
     k "Ah, I'm Keiku. Keikumusume! I'm very new to mahjong but I'd really like to play with you guys."
     h "That’s no problem. We all had to start somewhere."
     hide hinata
     show nana at right1
     n "Yep. Just take a seat and do your best."
-    hide nana
-    show hat at right1
     k "(I guess it’s fine then? There’s nothing to be worried about?)"
+    hide nana
+    show yui at right1
     y "I'm glad you came today."
     k "Eh? Really?"
     y "Yep. I don't like playing sanma at all."
@@ -410,7 +412,7 @@ label first_choice:
             k "So Yui, do you have any sort of hobbies?"
             y "Yes. I really like anime."
             k "Ah well, I'm a big light novel fan, and a lot of anime adapt those, so I guess that sort of makes me an anime fan too. What sort of anime do you like?"
-            y "...Gundam"
+            y "{size=-10}...Gundam{/size}"
             k "Huh? I couldn't hear you."
             y "I really like Gundam."
             k "Sorry, I still didn't quite catch that."
@@ -858,6 +860,8 @@ label pre_date2:
 
 label post_date2:
     scene bg keiku with fade
+    stop music
+    play sound "audio/kiki.mp3"
     "*Kiki kanri!* *Kiki kanri!*"
     "*yawwwwwwn*"
     #{Play https://www.youtube.com/watch?v=yN77vYbXLB4 }

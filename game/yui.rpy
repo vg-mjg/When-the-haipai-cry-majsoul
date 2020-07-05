@@ -11,7 +11,7 @@ label yui_date1:
     y "I'd like to do that. Yep."
     k "(Oh crap I didn't actually have any idea of where we'd go or what we'd do.)"
     y "Come to my house after school. I'll text you the address."
-    k "(She's already inviting me to her house? That's a bit forwards, but I guess it's not an issue.)"
+    k "(She's already inviting me to her house? That's a bit forward, but I guess it's not an issue.)"
 #    {Scene change, Yui's house}
     scene bg yuibedroom with fade
     hide hat
@@ -380,12 +380,14 @@ label yui_final:
     play sound "audio/kiki.mp3"
     "*Kiki kanri!* *Kikikanri!*"
     show hat
+    play music "audio/clock.mp3" fadeout 1.0 fadein 1.0
     k "Yawwwwwwn."
     k "(That’s strange, I don’t feel at all tired today.)"
     k "(That’s right. Because today I have something to look forward to.)"
     k "(Somehow, having something to look forward to makes it a lot easier to get out of bed.)"
     k "(Before meeting Yui, I would have just laid about in bed until 1pm.)"
     k "(I might not have even eaten breakfast.)"
+    play sound "audio/aba.mp3"
     "*Abababa* *ababababa*"
     k "(Ah, there’s her text now.)"
     y "Keikumusume, do you mind if I come over to your house soon? Or you to mine. Whichever one is more convenient."
