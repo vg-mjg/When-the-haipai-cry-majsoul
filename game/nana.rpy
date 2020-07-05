@@ -528,6 +528,7 @@ label nana_date3:
     k "Point up..."
     k "Flip it..."
     #{Play sound effect that sounds like someone falling over.}
+    play sound "audio/thud.mp3"
     n "Keiku! Are you alright?"
     k "Ugh, yeah, I’m fine. I just had a little fall."
     n "Are you hurt anywhere?"
@@ -576,7 +577,7 @@ label nana_date3:
     k "Here, get on."
     k "I’ll take the bag, too."
     n "Keiku, what are you doing?"
-    k "I’m going to carry you back to the trains tation. Come on, hop on my back."
+    k "I’m going to carry you back to the train station. Come on, hop on my back."
     n ". . ."
     n "Alright, then."
     play music "audio/keikunanatrain3.mp3" fadeout 1.0 fadein 1.0

@@ -29,6 +29,8 @@ label secret:
     k "Go on…"
     w "It’s…"
     w "It’s…"
+    stop music
+    play sound "audio/kiki.mp3"
     "*Kikikanri!* *Kikikanri!*"
     scene bg keiku with fade
     show hat

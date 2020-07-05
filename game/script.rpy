@@ -24,10 +24,11 @@ label start:
     play music "audio/detectivekeiku.mp3" fadeout 1.0 fadein 1.0
     show dhat
     dk "(Another case of mahjong cheating huh.)"
-    dk "(These mahjongers, they’re just silver room rookies. I don’t know why the mcd even bothered to send me out here.)"
+    dk "(These mahjongers, they’re just silver room rookies. I don’t know why the MCD even bothered to send me out here.)"
     dk "Officer. Tell me about the crime scene here."
     show dhat at left1
     show police at right1
+    p "Yes, ma’am!"
     p "This group was playing a hanchan, and they found that there was an extra haku in their set."
     p "We’ve also found that the set is missing a two sou."
     dk "Have you checked to make sure that it’s a standard issue set for silver ranked games?"
@@ -48,7 +49,6 @@ label start:
     show police at right1
     dk "These are all four players from the hanchan, correct?"
     p "Yes, these are the four."
-    p "Presenting suspect Mai Aihara."
     hide dhat
     hide police
     show mai
@@ -105,7 +105,7 @@ label start:
     hide police at right1
     show zan at right1
     z "Thank you! Thank you! I owe you a life debt!"
-    dk "(It’s just a gambling game, it’s NOT that big of a deal!)"
+    dk "(It’s just a gambling game, it’s not that big of a deal!)"
     dk "Well that wraps this case up."
     hide zan at right1
     show police at right1
@@ -117,7 +117,7 @@ label start:
     dk "No need to thank me officer. Just doing my job."
     stop music
 label op_credits:
-    scene bg credits  with fade
+    scene bg start  with fade
     ">The Winning Team presents…"
     "A >The Winning Team production."
 label moping:
@@ -147,7 +147,7 @@ label moping:
     k "(. . .)"
     k "(I remember you always tried to show me how to play mahjong.)"
     k "(Remember that joke you would always repeat?)"
-    k "('Why Keikumusume, I do think that with our brains put together, we could clear out my bosses entire paycheck in just a hanchan or two!')"
+    k "('Why Keikumusume, I do think that with our brains put together, we could clear out my boss's entire paycheck in just a hanchan or two!')"
     k "(I always found those jokes so corny. I'd laugh and tell you I was busy reading.) "
     k "(If I could wish for anything, right now, I'd just wish that we could play a game of mahjong together. Just one game like you wanted to.)"
 label classroom:
@@ -187,7 +187,7 @@ label counsellor:
     k ". . ."
     h1 "I understand that your work is important to you, but school is important too."
     h1 "You have the rest of your life to work, but you only have one year left in highschool."
-    h1 "We’ve already made the arrangements with the higher ups at the division for you to take a holiday."
+    h1 "We’ve already made the arrangements with the higher-ups at the division for you to take a holiday."
     k "Sounds fine to me. It’ll give me more time to read."
     h1 "However, we’re also worried that you aren’t making any friends."
     h1 "It’s not good for your mental health to remain cooped up."
@@ -289,7 +289,7 @@ label game:
     h "Oh you’re right, that is furiten."
     hide nana
     show hat at right1
-    k "Wait, if my double riichi was furiten then that means…"
+    k "Wait, if my double riichi was furiten, that means…"
     hide hinata
     show yui at left1
     y "Tenhou…"
@@ -459,7 +459,7 @@ label first_choice:
             jump first_choice
 
 
-        "That's all I guess" if (q1&q2&q3&q4) == True :
+        "That's all, I guess" if (q1&q2&q3&q4) == True :
             jump next
 
 label next:
@@ -578,7 +578,7 @@ label post_date1:
     show nana at right1
     show hat at left1
     n "Ah, Keiku, you’re here."
-    k "Hi Nana. Where is everyone?"
+    k "Hi, Nana. Where is everyone?"
     n "Ah, they’re running a little late. So right now it’s just me and Yui here."
     n "Actually, we were wondering if you could settle a debate for us."
     n "Which do you think is cooler. Shounen anime or mecha anime?"
@@ -846,7 +846,7 @@ label pre_date2:
     k "(Why do we have to learn about Australian history in a Japanese school?)"
     k "(Nothing happened there, it’s so boring and irrelevant.)"
     k "(I wonder what [girl] is doing this afternoon. Maybe they’d like to hang out.)"
-    k "(I’ll send them a text.)"
+    k "(I’ll send her a text.)"
     k "(. . .)"
     "*bzzt*"
     if girl=="Yui":
@@ -1049,14 +1049,14 @@ label post_date2:
     hide nana
     show yui at right1
     y "Wow, she managed to draw it. Is she going to riichi it?"
-    x "Nope. I think she’s still looking to draw in the 4man too, so that she can add sanshoku doujun to her iipeikou."
+    x "Nope. I think she’s still looking to draw in the 2man too, so that she can add sanshoku doujun to her iipeikou."
     hide xenia
     show nana at left1
-    n "Wow, she actually managed to draw the 4man as well."
+    n "Wow, she actually managed to draw the 2man as well."
     y "And there’s the riichi."
     hide yui
     show xenia at right1
-    x "The way she plays is truly fascinating. She managed to take a measly riichi pinfu hand and turned it into riichi, pinfu, iipeikou, and sanshoku for mangan."
+    x "The way she plays is truly fascinating. She managed to take a measly riichi pinfu hand and turned it into riichi, pinfu, tanyao, iipeikou, and sanshoku for haneman."
     n "That’s our Hinata."
     hide nana
     hide xenia
@@ -1517,7 +1517,7 @@ label bog:
     b2 "Better luck next time, old man, nyohohohohoh."
     b1 "Have we gathered enough flow yet?"
     b2 "We have, indeed. If Keiku had begun investigating us from the start, we would have likely lost already."
-    b2 "Now is the time for us to strike. By ze time she realises her error, it will be too late."
+    b2 "Now is ze time for us to strike. By ze time she realises her error, it will be too late."
     b1 "Love truly is ze sweetest poison of them all. Nyohohohoho."
     b2 "Perhaps one could say zat love is like a blindfold."
     b2 "With love, it cannot be seen."
