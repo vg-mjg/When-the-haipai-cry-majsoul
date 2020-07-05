@@ -95,7 +95,7 @@ label xenia_date1:
     show hatbondwast at lefthb
     k "Xenia, I think I get it now."
     k "Drinking with someone else really improves the flavour, y’know’what’I’m’sayin?"
-    x "Indeed! In fact to add on to that, one might even say that the fact that we’re not allowed to do this makes it taste even better."
+    x "Indeed! To add on to that, one might even say that the fact that we’re not allowed to do this makes it taste even better."
     k "Yeah, yeah! It’s like, this champagne is a uhhhh, what’s the word, a forbidden fruit."
     x "A fermented forbidden fruit."
     k "Yeah, yeah that’s it."
@@ -138,7 +138,7 @@ label xenia_date1:
 
 label xenia_date2:
     show hat
-    k "Alright. She said to meet her out the front of school."
+    k "(Alright. She said to meet her out the front of school.)"
     scene bg schoolfront with fade
 #    {Play https://www.youtube.com/watch?v=IDv7fPjHDxc0  /// really REALLY not sure about this but I can’t think of anything}
 #    {Another potential option: https://www.youtube.com/watch?v=wL5hVgLET-U&list=PLKbO8VpACX_5U43g4JofYURa6D733iWsw&index=7}
@@ -166,7 +166,7 @@ label xenia_date2:
     scene bg batting with fade
     play music "audio/xeniadate2.mp3" fadeout 1.0 fadein 1.0
     show xenia
-    x "Two cages and 100 balls for me and my friend please."
+    x "Two cages and one hundred balls for me and my friend please."
     "That’ll be $50."
     x "Right here."
     hide xenia
@@ -185,7 +185,7 @@ label xenia_date2:
     k "(I didn’t think a rich girl like her would be so passionately into something like baseball.)"
     x "Let me guess. You’re surprised that a rich girl like me is into something like baseball?"
     k "You’re not wrong. Great intuition there."
-    x "It’s not like I’m a princess or something, you know. I do have normal hobbies."
+    x "It’s not like I’m a princess or something, you know. I do have normal interests."
     x "My dad loves baseball, so I grew up on watching it."
     x "Unfortunately, I never really had the chance to join a proper team, but I love these batting cages."
     x "Good luck!"
@@ -206,7 +206,7 @@ label xenia_date2:
     "*thwack*"
     "*crack!*"
     "*HOME RUN!*"
-    k "So what sort of other hobbies do you have, Xenia?"
+    k "So what sort of other interests do you have, Xenia?"
     x "I like video games a lot. I have to spend a lot of time at home during the holidays, so video games are an excellent way to pass the time indoors."
     "*thwack*"
     x "I also like the idea of camping a lot. Although I haven’t actually been able to do it since middle school."
@@ -344,7 +344,7 @@ label xenia_date3:
     x "Tonight is just as good as any other night."
     k "Tonight it is, then. What’s the plan?"
     x "Well, first of all, you’ll need to take everything back to your place."
-    x "My parents are usually in bed by around 10pm. So come at that time. Bring everything with you, and meet at the gate at my place."
+    x "My parents are usually in bed by around 10pm. So come at that time. Bring everything with you, and meet by the gate at my place."
     k "What’s the actual plan for smuggling you out of the house?"
     x "It’s simple. I’ll just walk out the front door. I can use a chair or something to climb over the gate."
     k "If it’s that simple then why did you want me to go with you?"
@@ -415,7 +415,7 @@ label xenia_date3:
     k "Not because I had to hide any parts of myself."
     k "But because I don’t think I really had a sense of who I was in the first place."
     k "Before becoming a mahjong detective, and before joining the club, I was just the girl who sat and read books in silence."
-    k "Always taking in the stories of other people, but never living my own stories."
+    k "Always taking in the stories of other people, but never living my own."
     k "You can’t express your true self if there’s nothing there to express in the first place."
     k "In comparison to that sort of life, going out like this is really exciting."
     k "Even though we’re basically just going for a walk, my heart is racing."
@@ -498,6 +498,7 @@ label xenia_date3:
     k "I was going to say that it’s impossible, but yeah, we could do that."
     k "I already have my own place I inherited from my uncle, and I’m guaranteed work in the MCD after I graduate."
     x "Wait, are you serious? I can just move in with you?"
+    k "Yep. Anytime you want."
     x "Hmmmmmm."
     x "I’d like to, but I don’t think I could just abandon my family so easily."
     k "Hehehe, that’s fine, I wasn’t expecting you to just drop everything and move in with a girl you’d only known for a week."
@@ -505,6 +506,8 @@ label xenia_date3:
     x "Let’s make tonight a night to remember."
     scene bg xeniaart with fade
     $ renpy.pause (10.0)
+    scene bg black with fade
+    "(Time passes)"
     scene bg tent with fade
     show hat at left1
     show xenia at right1
@@ -535,7 +538,7 @@ label xenia_date3:
     m "As for you. What were you doing with my daughter?"
     show hat at right1
     k "(Aw shit.)"
-    k "We just went on a little camping trip is all. We just went out by that lake."
+    k "We just went on a little camping trip is all. Just out by that lake."
     m "Hmmmmm."
     k "See, I’ve got the tent and stuff in this pack right here."
     m "You don’t seem the dishonest type."

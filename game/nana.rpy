@@ -109,7 +109,7 @@ label nana_date1:
     k "D-don’t think this means you’ve won!"
     k "We’re going again!"
     scene bg black with fade
-    "Time passes"
+    "(Time passes)"
     scene bg gym with fade
 #    {sword noises, fade into black. Stop sword noises, show outside the gym at sunset}
 #    {Play https://www.youtube.com/watch?v=iawEZ2ejWm8&list=PLeKSx7u-0kRiJqH14dswC-lHh8Nuu0APx&index=22}

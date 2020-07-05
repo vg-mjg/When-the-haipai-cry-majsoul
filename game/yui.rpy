@@ -17,8 +17,7 @@ label yui_date1:
     hide hat
     show yui at right1
     y "Hello. I'm glad you came."
-    show hat at left1
-    k "Well I'm glad you invited me."
+    show hat at left1    k "Well I'm glad you invited me."
     y "I want to show you something. Please come with me."
     k "Wait what? What are you showing me?"
     y "Something really good..."
@@ -38,8 +37,11 @@ label yui_date1:
     k "(The characters are really interesting and the story is surprisingly dramatic.)"
     k "(. . .)"
     y "(. . .)"
-    "*time passes*"
+    "(Time passes)"
+    scene bg yuibedroom with fade
 #    {Stop playing gundam sounds}
+    show yui at right1
+    show hat at left1
     k "That movie was actually really good."
     y "You liked it?"
     k "Yeah, I thought it was just going to be like a toy commercial, but I got really invested in the main character."
@@ -400,7 +402,7 @@ label yui_final:
     k "(It feels like there are ping-pong balls in my brain again, only even more intense.)"
     k "(I guess that just means I’m really looking forward to this, then.)"
     k "(It’s not a bad feeling.)"
-    "time passes"
+    "(Time passes)"
     "*knock knock*"
     play music "audio/yuidate3.mp3" fadeout 1.0 fadein 1.0
 #    {play https://www.youtube.com/watch?v=jI2dAzEAzzk&list=PLE234F313FF53A39C&index=20 }
