@@ -8,4 +8,6 @@ I'd like to thank all of my team mates for putting in so much blood and sweat in
 Do keep in mind that this is a sequel to the original When the Tiles Cry. While you can read this without playing the original, I would recommend reading that first if you haven't already. 
 
 
+Screenshots:
 ![Try](https://github.com/watterle/When-the-haipai-cry-majsoul/blob/master/game/screen/1.png?raw=true "Optional Title")
+![Try](https://github.com/watterle/When-the-haipai-cry-majsoul/blob/master/game/screen/2.png?raw=true "Optional Title")
